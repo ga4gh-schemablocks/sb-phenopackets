@@ -1,0 +1,23 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/ExternalReference/v0.0.1
+title: External Reference
+description: |
+  Many of the defined elements in a resource are references to other resources.
+  Using these references, the resources combine to build a web of information.
+type: object
+properties:
+  id:
+    description: Identifer of the external reference
+    type: string
+    examples:
+      - 'cellosaurus:CVCL_0312'
+  description:
+    description: Free text about the external reference
+    type: string
+    examples:
+      - 'Cellosaurus cell line identifier'
+required:
+  - id
+examples:
+  - id: 'cellosaurus:CVCL_0312'
+    description: 'Cellosaurus cell line identifier'

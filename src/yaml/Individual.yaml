@@ -1,0 +1,71 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/Individual/v0.0.1
+title: Individual
+description: |
+  An individual is a single organism (here typically a human).
+type: object
+properties:
+  id:
+    description: The local-unique identifier of this individual
+    type: string
+    examples:
+      - 'AM_BS__NCBISKYCGH-1993'
+  dataset_id:
+    description: The ID of the dataset this Individual belongs to.
+    type: string
+    examples:
+      - 'ABCD1234'
+  date_of_birth:
+    description: |
+      The date of birth of the individual as an ISO8601 UTC timestamp - rounded down to the closest known
+      year/month/day/hour/minute
+    type: string
+    examples:
+      - '2018-03-01T00:00:00Z'
+  age_at_collection:
+    description: |
+      An age object describing the age of the individual at the time of collection.
+      The Age object allows the encoding of the age either as ISO8601 duration or
+      time interval (preferred), or as ontology term object.
+    "$ref": https://schemablocks.org/Age/v0.0.1
+    examples:
+      - age: 'P14Y'
+  age_range_at_collection:
+    description: |
+      An age object describing the age of the individual at the time of collection.
+      The Age object allows the encoding of the age either as ISO8601 duration or
+      time interval (preferred), or as ontology term object.
+    "$ref": https://schemablocks.org/AgeRange/v0.0.1
+    examples:
+      - start:
+          age: 'P14Y'
+  sex:
+    description: The phenotypic/ administrative sex of the individual, one of UNKNOWN_SEX, FEMALE, MALE, OTHER_SEX
+    "$ref": https://schemablocks.org/Sex/v0.0.1
+    examples:
+      - 'FEMALE'
+  karyotypic_sex:
+    description: |
+      Karyotypic sex of the individual,
+      one of UNKNOWN_KARYOTYPE, XX, XY, XO, XXY, XXX, XXYY, XXXY, XXXX, XYY, OTHER_KARYO,
+    "$ref": https://schemablocks.org/KaryotypicSex/v0.0.1
+    examples:
+      - 'XX'
+  taxonomy:
+    description: |
+      NCBI taxonomic identifier. For resources where there may be more than one organism being studied
+      it is advisable to indicate the taxonomic identifier of that organism, to its most specific level
+    "$ref": https://schemablocks.org/OntologyClass/v0.0.1
+    examples:
+      - id: 'NCBITaxon:9606'
+        label: 'Homo sapiens'
+required:
+  - id
+oneof:
+  - properties:
+      - age_at_collection
+  - properties:
+      - age_range_at_collection
+examples:
+  - id: 'add example'
+    description: 'add example'

@@ -22,8 +22,11 @@ properties:
     examples:
       - id: 'HsapDv:0000083'
         label: 'infant stage'
-required:
-  - age
+anyof:
+  - required:
+      - age
+  - required:
+      - age_class
 examples:
   - age: 'P14Y'
     age_class:
