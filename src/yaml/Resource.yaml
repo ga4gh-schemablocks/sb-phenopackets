@@ -1,0 +1,88 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/Resource/v0.0.1
+title: Resource
+description: |
+  Description of an external resource used for referencing an object. For example the resource may be an ontology such
+  as the HPO or SNOMED.
+  FHIR mapping: CodeSystem (http://www.hl7.org/fhir/codesystem.html)
+type: object
+properties:
+  id:
+    description: |
+      for OBO Ontologies, the value of this string MUST always be the official
+      OBO ID, which is always equivalent to the ID prefix in lower case.
+      Examples: hp, go, mp, mondo
+      Consult http://obofoundry.org for a complete list
+      For other ontologies (e.g. SNOMED), use the prefix in identifiers.org
+    type: string
+    examples:
+      - 'pato'
+  name:
+    description: |
+      for OBO Ontologies, the value of this string SHOULD be the same as the title
+      field on http://obofoundry.org
+      however, this field is purely for information purposes and software
+      should not encode any assumptions
+    type: string
+    examples:
+      - 'The Human Phenotype Ontology'
+  url:
+    description: |
+      For OBO ontologies, this should always be the PURL
+    type: string
+    examples:
+      - 'http://purl.obolibrary.org/obo/hp.owl'
+      - 'http://purl.obolibrary.org/obo/hp.obo'
+  version:
+    description: for OBO ontologies, this should be the versionIRI
+    type: string
+    examples:
+      - '2.97'
+  namespace_prefix:
+    description: |
+      The prefix used in the CURIE of an OntologyClass e.g. HP, MP, ECO
+      For example an HPO term will have a CURIE like this - HP:0012828 which should be used in combination with
+      he iri_prefix to form a fully-resolvable IRI
+    type: string
+    examples:
+      - 'HP'
+  iri_prefix:
+    description: |
+      Full IRI prefix which can be used with the namespace_prefix and the OntologyClass::id to resolve to an IRI for a
+      term. Tools such as the curie-util (https://github.com/prefixcommons/curie-util) can utilise this to produce
+      fully-resolvable IRIs for an OntologyClass.
+      e.g. Using the HPO term encoding the concept of 'Severe'
+        OntologyClass:
+          id: 'HP:0012828'
+          label: 'Severe'
+        Resource:
+          namespace_prefix: 'HP'
+          iri_prefix: 'http://purl.obolibrary.org/obo/HP_'
+      the term can be resolved to http://purl.obolibrary.org/obo/HP_0012828
+    type: string
+    examples:
+      - 'http://purl.obolibrary.org/obo/HP_'
+required:
+  - id
+examples:
+  - id: 'pato'
+    name: 'PhenotypicFeature And Trait Ontology'
+    url: 'http://purl.obolibrary.org/obo/pato.owl'
+    version: '2018-03-28'
+    namespace_prefix: 'PATO'
+  - id: 'efo'
+    name: 'Experimental Factor Ontology'
+    url: 'http://purl.obolibrary.org/obo/pato.owl'
+    version: '2.97'
+    namespace_prefix: 'EFO'
+  - id: 'ncbitaxon'
+    name: 'NCBI organismal classification'
+    url: 'http://purl.obolibrary.org/obo/ncbitaxon.owl'
+    version: '2018-03-02'
+    namespace_prefix: 'NCBITaxon'
+  - id: 'hp'
+    name: 'human phenotype ontology'
+    url: 'http://purl.obolibrary.org/obo/hp.owl'
+    version: '2018-03-08'
+    namespace_prefix: 'HP'
+    iri_prefix: 'http://purl.obolibrary.org/obo/HP_'

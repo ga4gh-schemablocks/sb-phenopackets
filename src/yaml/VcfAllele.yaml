@@ -1,0 +1,55 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/VcfAllele/v0.0.1
+title: VcfAllele
+description: |
+  A single VCF allele.
+  For structural variation the INFO field should contain the relevant information e.g.
+  END=43500;SVTYPE=DUP;CHR2=1;SVLEN=29000;
+  See https://samtools.github.io/hts-specs/VCFv4.3.pdf
+type: object
+properties:
+  genome_assembly:
+    description: |
+      Genome assembly the allele was called against. We recommend using the Genome Reference Consortium
+      nomenclature e.g. GRCh37, GRCh38
+    type: string
+    examples:
+      - 'GRCh37'
+  id:
+    description: add description
+    type: string
+    examples:
+      - 'add example'
+  chr:
+    description: add description
+    type: string
+    examples:
+      - '10'
+  pos:
+    description: add description
+    type: integer
+    examples:
+      - 123256215
+  ref:
+    description: add description
+    type: string
+    examples:
+      - 'T'
+  alt:
+    description: add description
+    type: string
+    examples:
+      - 'G'
+  info:
+    description: add description
+    type: string
+    examples:
+      - 'add example'
+#required:
+#  - id
+examples:
+  - genome_assembly: 'GRCh37'
+    chr: '10'
+    pos: 123256215
+    ref: 'T'
+    alt: 'G'

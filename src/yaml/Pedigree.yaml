@@ -1,0 +1,19 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/Pedigree/v0.0.1
+title: Pedigree
+description: |
+  https://software.broadinstitute.org/gatk/documentation/article?id=11016
+type: object
+properties:
+  person:
+    description: add description
+    type: array
+    items:
+      "$ref": https://schemablocks.org/Person/v0.0.1
+    examples:
+      - - individual_id: 'add example'
+required:
+  - person
+examples:
+  - person:
+      - individual_id: 'add example'

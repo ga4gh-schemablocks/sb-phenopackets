@@ -1,0 +1,22 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/IscnAllele/v0.0.1
+title: IscnAllele
+description: |
+  See https://www.humpath.com/spip.php?article13862
+type: object
+properties:
+  id:
+    description: add description
+    type: string
+    examples:
+      - 'add example'
+  var:
+    description: An ICSN code such as del(6)(q23q24) , t(8;9;11)(q12;p24;p12), +15
+    type: string
+    examples:
+      - 'add example'
+required:
+  - id
+examples:
+  - id: 'add example'
+    var: 'add example'

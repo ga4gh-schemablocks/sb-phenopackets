@@ -1,0 +1,87 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/ExternalReference/v0.0.1
+title: External Reference
+description: |
+  A variant allele. Alleles can be listed using HGVS, VCF, SPDI or ISCN notation.
+  SPDI format is the exchange standard used for ClinVar, dbSNP and soon the EVA
+  Tools for interconversion between SPDI, HGVS and VCF exist at https://api.ncbi.nlm.nih.gov/variation/v0/
+type: object
+properties:
+  hgvs_allele:
+    description: add description
+    "$ref": https://schemablocks.org/HgvsAllele/v0.0.1
+    examples:
+      - 'add example'
+  vcf_allele:
+    description: add description
+    "$ref": https://schemablocks.org/VcfAllele/v0.0.1
+    examples:
+      - genome_assembly: 'GRCh37'
+        chr: '10'
+        pos: 123256215
+        ref: 'T'
+        alt: 'G'
+  spdi_allele:
+    description: add description
+    "$ref": https://schemablocks.org/SpdiAllele/v0.0.1
+    examples:
+      - id: 'id_abc_123'
+        seq_id: 'NC_000010.10'
+        position: 123256214
+        deleted_sequence: 'T'
+        inserted_sequence: 'G'
+  iscn_allele:
+    description: add description
+    "$ref": https://schemablocks.org/IscnAllele/v0.0.1
+    examples:
+      - 'add example'
+  murine_allele:
+    description: add description
+    "$ref": https://schemablocks.org/MurineAllele/v0.0.1
+    examples:
+      - id: 'MGI:3690325'
+        gene: 'Fbn1'
+        allele_symbol: 'tm1Hcd'
+  zygosity:
+    description: add description
+    "$ref": https://schemablocks.org/OntologyClass/v0.0.1
+    examples:
+      - id: 'GENO:0000135'
+        label: 'heterozygous'
+  background:
+    description: add description
+    type: string
+    examples:
+      - 'involves: 129S1/Sv * 129X1/SvJ * C57BL/6J'
+required:
+  - id
+oneof:
+  - properties:
+      - hgvs_allele
+  - properties:
+      - vcf_allele
+  - properties:
+      - spdi_allele
+  - properties:
+      - iscn_allele
+  - properties:
+      - murine_allele
+examples:
+  - id: 'ID_12345'
+    description: 'description of variant'
+    murine_allele:
+      id: 'MGI:3690325'
+      gene: 'Fbn1'
+      allele_symbol: 'tm1Hcd'
+    background: 'involves: 129S1/Sv * 129X1/SvJ * C57BL/6J'
+    zygosity:
+      id: 'GENO:0000135'
+      label: 'heterozygous'
+  - id: 'ID_12345'
+    description: 'description of variant'
+    vcf_allele:
+      genome_assembly: 'GRCh37'
+      chr: '10'
+      pos: 123256215
+      ref: 'T'
+      alt: 'G'

@@ -1,0 +1,62 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/Disease/v0.0.1
+title: Disease
+description: |
+  Message to indicate a disease (diagnosis) and its recorded onset.
+type: object
+properties:
+  term:
+    description:  |
+      The identifier of this disease
+      e.g. MONDO:0007043, OMIM:101600, Orphanet:710, DOID:14705 (note these are all equivalent)
+    "$ref": https://schemablocks.org/OntologyClass/v0.0.1
+    examples:
+      - id: 'MONDO:0007043'
+  age_of_onset:
+    description: |
+      The onset of the disease. The values of this will come from the HPO onset hierarchy
+      i.e. subclasses of HP:0003674
+      FHIR mapping: Condition.onset
+    "$ref": https://schemablocks.org/Age/v0.0.1
+    examples:
+      - age: 'P35Y'
+        age_class:
+          id: 'HP:0003596'
+          label: 'Middle age onset'
+  age_range_of_onset:
+    description: |
+      The onset of the disease. The values of this will come from the HPO onset hierarchy
+      i.e. subclasses of HP:0003674
+      FHIR mapping: Condition.onset
+    "$ref": https://schemablocks.org/AgeRange/v0.0.1
+    examples:
+      - start:
+          age: 'P35Y'
+          age_class:
+            id: 'HP:0003596'
+            label: 'Middle age onset'
+  class_of_onset:
+    description: |
+      The onset of the disease. The values of this will come from the HPO onset hierarchy
+      i.e. subclasses of HP:0003674
+      FHIR mapping: Condition.onset
+    "$ref": https://schemablocks.org/OntologyClass/v0.0.1
+    examples:
+      - id: 'HP:0003596'
+        label: 'Middle age onset'
+required:
+  - term
+oneof:
+  - properties:
+      - age_of_onset
+  - properties:
+      - age_range_of_onset
+  - properties:
+      - class_of_onset
+examples:
+  - term:
+      id: 'MONDO:0007043'
+      label: 'Pfeiffer syndrome'
+    class_of_onset:
+      id: 'HP:0003596'
+      label: 'Middle age onset'

@@ -19,10 +19,14 @@ properties:
       FHIR mapping - Condition.evidence.detail
     "$ref": https://schemablocks.org/ExternalReference/v0.0.1
     examples:
-      - id: 'add example'
-        description: 'add example'
-required:
-  - evidence_code
+      - id: 'PMID:30808312'
+        description: 'COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.'
+#required:
+#  - evidence_code
 examples:
-  - evidence_code: 'add example'
-    reference: 'add example'
+  - evidence_code:
+      id: 'add example'
+      label: 'add example'
+    reference:
+      id: 'PMID:30808312'
+      description: 'COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.'

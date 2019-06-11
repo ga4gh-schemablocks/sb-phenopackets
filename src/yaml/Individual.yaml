@@ -41,7 +41,11 @@ properties:
           age: 'P14Y'
   sex:
     description: The phenotypic/ administrative sex of the individual, one of UNKNOWN_SEX, FEMALE, MALE, OTHER_SEX
-    "$ref": https://schemablocks.org/Sex/v0.0.1
+    enum:
+      - UNKNOWN_SEX
+      - FEMALE
+      - MALE
+      - OTHER_SEX
     examples:
       - 'FEMALE'
   karyotypic_sex:
@@ -67,5 +71,8 @@ oneof:
   - properties:
       - age_range_at_collection
 examples:
-  - id: 'add example'
-    description: 'add example'
+  - id: 'SAMN05324082-individual'
+    sex: 'MALE'
+    taxonomy:
+      id: 'NCBITaxon:9606'
+      label: 'Homo sapiens'

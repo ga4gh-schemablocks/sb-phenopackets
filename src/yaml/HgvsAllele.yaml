@@ -1,0 +1,24 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/HgvsAllele/v0.0.1
+title: HgvsAllele
+description: |
+  A single HGVS allele.
+  It is recommended that the string is validated using the VariantValidator - https://variantvalidator.org/
+  See http://varnomen.hgvs.org/recommendations/DNA/variant/alleles/
+type: object
+properties:
+  id:
+    description: add description
+    type: string
+    examples:
+      - 'add example'
+  hgvs:
+    description: add description
+    type: string
+    examples:
+      - 'NM_001848.2:c.877G>A'
+#required:
+#  - id
+examples:
+  - id: 'add example'
+    hgvs: 'NM_001848.2:c.877G>A'

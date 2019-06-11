@@ -1,0 +1,48 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/Person/v0.0.1
+title: Person
+description: |
+  person
+type: object
+properties:
+  family_id:
+    description: add description
+    type: string
+    examples:
+      - 'add example'
+  individual_id:
+    description: add description
+    type: string
+    examples:
+      - 'add example'
+  paternal_id:
+    description: add description
+    type: string
+    examples:
+      - 'add example'
+  maternal_id:
+    description: add description
+    type: string
+    examples:
+      - 'add example'
+  sex:
+    description: one of UNKNOWN_SEX, FEMALE, MALE, OTHER_SEX
+    enum:
+      - UNKNOWN_SEX
+      - FEMALE
+      - MALE
+      - OTHER_SEX
+    examples:
+      - 'FEMALE'
+  affected_status:
+    description: one of MISSING, UNAFFECTED, AFFECTED
+    enum:
+      - MISSING
+      - UNAFFECTED
+      - AFFECTED
+    examples:
+      - 'MISSING'
+required:
+  - individual_id
+examples:
+  - individual_id: 'add example'

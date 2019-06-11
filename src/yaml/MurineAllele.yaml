@@ -1,0 +1,36 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/MurineAllele/v0.0.1
+title: MurineAllele
+description: |
+  Message specifically for encoding mouse alleles in accordance with the
+  International Committee on Standardized Genetic Nomenclature for Mice
+  The example given here encodes the allele Fbn1<tm1Hcd>
+  See http://informatics.jax.org/mgihome/nomen/
+type: object
+properties:
+  id:
+    description: add description
+    type: string
+    examples:
+      - 'MGI:3690325'
+  gene:
+    description: add description
+    type: string
+    examples:
+      - 'Fbn1'
+  allele_symbol:
+    description: |
+      The allele_symbol should be used for denoting the unformatted allele symbol, which is written
+      in superscript according to the International Committee on Standardized Genetic
+      Nomenclature for Mice. In written text it is customary to enclose the allele symbol in angled brackets to
+      denote the superscript e.g. <tm1Hcd>. However in this field the allele code should be stored here as without the
+      angled brackets e.g. tm1Hcd in order to allow software to correctly format the symbol
+    type: string
+    examples:
+      - 'tm1Hcd'
+required:
+  - id
+examples:
+  - id: 'MGI:3690325'
+    gene: 'Fbn1'
+    allele_symbol: 'tm1Hcd'

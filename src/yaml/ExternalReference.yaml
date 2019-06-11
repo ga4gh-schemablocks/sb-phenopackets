@@ -21,3 +21,7 @@ required:
 examples:
   - id: 'cellosaurus:CVCL_0312'
     description: 'Cellosaurus cell line identifier'
+  - id: 'PMID:15254584'
+    description: 'Heterozygous Fbn1 C1039G mutation. Judge DP, et al.
+      Evidence for a critical contribution of haploinsufficiency in the complex
+      pathogenesis of Marfan syndrome. J Clin Invest. 2004;114(2):172-81.'
