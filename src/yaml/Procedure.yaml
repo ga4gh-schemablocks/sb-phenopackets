@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/Procedure/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/Procedure/v0.0.1
 title: Procedure
 description: |
   A clinical procedure performed on a subject. By preference a single concept to indicate both the procedure and the
@@ -10,14 +10,14 @@ properties:
   code:
     description: |
       FHIR mapping - Procedure.code
-    "$ref": https://schemablocks.org/OntologyClass/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
     examples:
       - id: 'NCIT:C28743'
         label: 'Funch Biopsy'
   body_site:
     description: |
       FHIR mapping - Procedure.bodySite
-    "$ref": https://schemablocks.org/OntologyClass/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
     examples:
       - id: 'UBERON:0003403'
         label: 'skin of forearm'

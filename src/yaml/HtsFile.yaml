@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/HtsFile/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1
 title: HtsFile
 description: |
   A file in one of the HTS formats (https://samtools.github.io/hts-specs)
@@ -35,7 +35,7 @@ properties:
   file:
     description: |
       the actual hts file
-    $ref": https://schemablocks.org/File/v0.0.1
+    $ref": https://schemablocks.org/schemas/ga4gh/File/v0.0.1
     examples:
       - path: '/data/genomes/file1.vcf.gz'
         uri: 'file://data/genomes/file1.vcf.gz'

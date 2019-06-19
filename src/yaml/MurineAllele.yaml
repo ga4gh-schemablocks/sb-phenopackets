@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/MurineAllele/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/MurineAllele/v0.0.1
 title: MurineAllele
 description: |
   Message specifically for encoding mouse alleles in accordance with the

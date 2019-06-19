@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/MetaData/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/MetaData/v0.0.1
 title: Metadata
 description: |
   metadata
@@ -26,7 +26,7 @@ properties:
       A listing of the ontologies/resources referenced in the phenopacket
     type: array
     items:
-      "$ref": https://schemablocks.org/Resource/v0.0.1
+      "$ref": https://schemablocks.org/schemas/ga4gh/Resource/v0.0.1
     examples:
       - - id: '12345'
           name: 'The Human Phenotype Ontology'
@@ -51,7 +51,7 @@ properties:
       to a study in which the individuals are reported.
     type: array
     items:
-      "$ref": https://schemablocks.org/ExternalReference/v0.0.1
+      "$ref": https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1
     examples:
       - - id: 'cellosaurus:CVCL_0312'
           description: 'Cellosaurus cell line identifier'

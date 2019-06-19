@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/ExternalReference/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1
 title: External Reference
 description: |
   Many of the defined elements in a resource are references to other resources.

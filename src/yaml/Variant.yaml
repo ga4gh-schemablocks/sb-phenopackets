@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/ExternalReference/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1
 title: External Reference
 description: |
   A variant allele. Alleles can be listed using HGVS, VCF, SPDI or ISCN notation.
@@ -9,12 +9,12 @@ type: object
 properties:
   hgvs_allele:
     description: add description
-    "$ref": https://schemablocks.org/HgvsAllele/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/HgvsAllele/v0.0.1
     examples:
       - 'add example'
   vcf_allele:
     description: add description
-    "$ref": https://schemablocks.org/VcfAllele/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/VcfAllele/v0.0.1
     examples:
       - genome_assembly: 'GRCh37'
         chr: '10'
@@ -23,7 +23,7 @@ properties:
         alt: 'G'
   spdi_allele:
     description: add description
-    "$ref": https://schemablocks.org/SpdiAllele/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/SpdiAllele/v0.0.1
     examples:
       - id: 'id_abc_123'
         seq_id: 'NC_000010.10'
@@ -32,19 +32,19 @@ properties:
         inserted_sequence: 'G'
   iscn_allele:
     description: add description
-    "$ref": https://schemablocks.org/IscnAllele/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/IscnAllele/v0.0.1
     examples:
       - 'add example'
   murine_allele:
     description: add description
-    "$ref": https://schemablocks.org/MurineAllele/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/MurineAllele/v0.0.1
     examples:
       - id: 'MGI:3690325'
         gene: 'Fbn1'
         allele_symbol: 'tm1Hcd'
   zygosity:
     description: add description
-    "$ref": https://schemablocks.org/OntologyClass/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
     examples:
       - id: 'GENO:0000135'
         label: 'heterozygous'

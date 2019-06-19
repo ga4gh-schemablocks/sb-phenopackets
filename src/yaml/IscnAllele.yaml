@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/IscnAllele/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/IscnAllele/v0.0.1
 title: IscnAllele
 description: |
   See https://www.humpath.com/spip.php?article13862

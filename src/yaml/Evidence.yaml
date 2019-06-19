@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/Evidence/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/Evidence/v0.0.1
 title: Evidence
 description: |
   Evidence, FHIR mapping: Condition.evidence (https://www.hl7.org/fhir/condition-definitions.html#Condition.evidence)
@@ -10,14 +10,14 @@ properties:
       The encoded evidence type using, for example the Evidence & Conclusion Ontology
       (ECO - http://purl.obolibrary.org/obo/eco.owl)
       FHIR mapping - Condition.evidence.code
-    "$ref": https://schemablocks.org/OntologyClass/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
     examples:
       - id: 'add example'
         label: 'add example'
   reference:
     description: |
       FHIR mapping - Condition.evidence.detail
-    "$ref": https://schemablocks.org/ExternalReference/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1
     examples:
       - id: 'PMID:30808312'
         description: 'COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.'
