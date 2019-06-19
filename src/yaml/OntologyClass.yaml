@@ -2,7 +2,7 @@
 "$id": https://schemablocks.org/OntologyClass/v0.0.1
 title: Ontology Class
 description: |
-  Ontology_term represents the core object used to reference domain-specific
+  OntologyClass represents the core object used to reference domain-specific
   entities, as well as to identify their domains through the appropriate
   prefix.
   CURIES are case sensitive, although for prefixes this practice is
