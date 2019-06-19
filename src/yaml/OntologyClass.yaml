@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/OntologyClass/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
 title: Ontology Class
 description: |
   OntologyClass represents the core object used to reference domain-specific
@@ -7,10 +7,12 @@ description: |
   prefix.
   CURIES are case sensitive, although for prefixes this practice is
   inconsistently followed.
+  This is a mature GA4GH core object.
 type: object
 properties:
   id:
-    description: properly prefixed CURIE of the ontology term
+    description: |
+      properly prefixed CURIE of the ontology term
     type: string
     examples:
       - 'ncit:C8294'
@@ -26,3 +28,5 @@ examples:
     label: 'no restriction'
   - id: 'HP:0003621'
     label: 'Juvenile onset'
+  - id: 'ncit:C3058'
+    label: 'Glioblastoma'
