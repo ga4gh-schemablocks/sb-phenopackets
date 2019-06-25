@@ -47,7 +47,7 @@ properties:
     description: Phenotypic characteristics of the BioSample, for example histological findings of a biopsy
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Phenotype/v0.0.1
+      "$ref": https://schemablocks.org/schemas/ga4gh/PhenotypicFeature/v0.0.1
     examples:
       - - type:
             id: 'EFO:0001253'

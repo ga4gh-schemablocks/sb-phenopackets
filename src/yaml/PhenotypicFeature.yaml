@@ -1,6 +1,6 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Phenotype/v0.0.1
-title: Phenotype
+"$id": https://schemablocks.org/schemas/ga4gh/PhenotypicFeature/v0.0.1
+title: PhenotypicFeature
 description: |
   An individual phenotypic feature, observed as either present or absent (negated),
   with possible onset, modifiers and frequency.
@@ -98,10 +98,10 @@ oneof:
   - properties:
       - class_of_onset
 examples:
-  - description: ''
+  - description: 'add example'
     type:
-      id: ''
-      label: ''
+      id: 'add example'
+      label: 'add example'
     negated: false
     severity:
       id: 'HP:0012825'

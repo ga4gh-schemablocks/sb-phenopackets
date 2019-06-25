@@ -1,0 +1,58 @@
+"$schema": http://json-schema.org/draft-07/schema#
+"$id": https://schemablocks.org/schemas/ga4gh/Cohort/v0.0.1
+title: Cohort
+description: |
+  A group of individuals related in some phenotypic or genotypic aspect
+type: object
+properties:
+  id:
+    description: An identifier specific to the cohort
+    type: string
+    examples:
+      - 'cohort-id-123'
+  description:
+    description: description about the cohort
+    type: string
+    examples:
+      - 'this is a description about the cohort'
+  members:
+    description: add description
+    type: array
+    items:
+      "$ref": https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1
+    examples:
+      - - id: 'phenopacketid-123'
+          meta_data:
+            created: '2016-06-29T12:03:03.240Z'
+            updated:
+              - '2018-06-10T10:59:06.784Z'
+  hts_files:
+    description: |
+      Pointer to the relevant HTS file(s) for the cohort
+    type: array
+      items:
+        "$ref": https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1
+    examples:
+      - - hts_format: 'GVCF'
+          file:
+            path: '/data/genomes/file1.vcf.gz'
+            uri: 'file://data/genomes/file1.vcf.gz'
+  meta_data:
+    allof:
+      - "$ref": https://schemablocks.org/schemas/ga4gh/MetaData/v0.0.1
+      - description: |
+          Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
+        examples:
+          - created: '2016-06-29T12:03:03.240Z'
+            updated:
+              - '2018-06-10T10:59:06.784Z'
+required:
+  - id
+  - meta_data
+examples:
+  - id: 'cohort-id-123'
+    meta_data:
+      created: '2016-06-29T12:03:03.240Z'
+      updated:
+        - '2018-06-10T10:59:06.784Z'
+
