@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1
+"$id": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/ExternalReference.yaml
 title: External Reference
 description: |
   A variant allele. Alleles can be listed using HGVS, VCF, SPDI or ISCN notation.
@@ -9,12 +9,12 @@ type: object
 properties:
   hgvs_allele:
     description: add description
-    "$ref": https://schemablocks.org/schemas/ga4gh/HgvsAllele/v0.0.1
+    "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/HgvsAllele.yaml
     examples:
       - 'add example'
   vcf_allele:
     description: add description
-    "$ref": https://schemablocks.org/schemas/ga4gh/VcfAllele/v0.0.1
+    "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/VcfAllele.yaml
     examples:
       - genome_assembly: 'GRCh37'
         chr: '10'
@@ -23,7 +23,7 @@ properties:
         alt: 'G'
   spdi_allele:
     description: add description
-    "$ref": https://schemablocks.org/schemas/ga4gh/SpdiAllele/v0.0.1
+    "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/SpdiAllele.yaml
     examples:
       - id: 'id_abc_123'
         seq_id: 'NC_000010.10'
@@ -32,19 +32,19 @@ properties:
         inserted_sequence: 'G'
   iscn_allele:
     description: add description
-    "$ref": https://schemablocks.org/schemas/ga4gh/IscnAllele/v0.0.1
+    "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/IscnAllele.yaml
     examples:
       - 'add example'
   murine_allele:
     description: add description
-    "$ref": https://schemablocks.org/schemas/ga4gh/MurineAllele/v0.0.1
+    "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/MurineAllele.yaml
     examples:
       - id: 'MGI:3690325'
         gene: 'Fbn1'
         allele_symbol: 'tm1Hcd'
   zygosity:
     description: add description
-    "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
+    "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/OntologyClass.yaml
     examples:
       - id: 'GENO:0000135'
         label: 'heterozygous'

@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Family/v0.0.1
+"$id": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Family.yaml
 title: Family
 description: |
   Phenotype, sample and pedigree data required for a genomic diagnosis.
@@ -14,7 +14,7 @@ properties:
       - 'family-id-123'
   proband:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1
+      - "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Phenopacket.yaml
       - description: |
           The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
         examples:
@@ -32,7 +32,7 @@ properties:
       the cohort.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1
+      "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Phenopacket.yaml
     examples:
       - - id: 'phenopacketid-123'
           meta_data:
@@ -41,7 +41,7 @@ properties:
               - '2018-06-10T10:59:06.784Z'
   pedigree:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/Pedigree/v0.0.1
+      - "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Pedigree.yaml
       - description: |
           The pedigree defining the relations between the proband and their relatives. Pedigree.individual_id should
           map to the PhenoPacket.Individual.id
@@ -54,7 +54,7 @@ properties:
       members e.g a multi-sample VCF
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1
+      "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/HtsFile.yaml
     examples:
       - - hts_format: 'GVCF'
           file:
@@ -62,7 +62,7 @@ properties:
             uri: 'file://data/genomes/file1.vcf.gz'
   meta_data:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/MetaData/v0.0.1
+      - "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/MetaData.yaml
       - description: |
           Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
         examples:

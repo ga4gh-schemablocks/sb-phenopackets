@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Cohort/v0.0.1
+"$id": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Cohort.yaml
 title: Cohort
 description: |
   A group of individuals related in some phenotypic or genotypic aspect
@@ -19,7 +19,7 @@ properties:
     description: add description
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1
+      "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Phenopacket.yaml
     examples:
       - - id: 'phenopacketid-123'
           meta_data:
@@ -31,7 +31,7 @@ properties:
       Pointer to the relevant HTS file(s) for the cohort
     type: array
       items:
-        "$ref": https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1
+        "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/HtsFile.yaml
     examples:
       - - hts_format: 'GVCF'
           file:
@@ -39,7 +39,7 @@ properties:
             uri: 'file://data/genomes/file1.vcf.gz'
   meta_data:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/MetaData/v0.0.1
+      - "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/MetaData.yaml
       - description: |
           Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
         examples:

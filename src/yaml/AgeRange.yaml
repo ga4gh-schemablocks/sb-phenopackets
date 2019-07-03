@@ -1,17 +1,17 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/AgeRange/v0.0.1
+"$id": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/AgeRange.yaml
 title: AgeRange
 description: Age range
 type: object
 properties:
   start:
     description: Age as ISO8601 string
-    "$ref": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
+    "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Age.yaml
     examples:
       - 'P12Y'
   end:
     description: Age as ISO8601 string
-    "$ref": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
+    "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Age.yaml
     examples:
       - 'P18Y'
 anyof:

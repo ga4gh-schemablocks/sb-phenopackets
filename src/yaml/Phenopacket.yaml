@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1
+"$id": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Phenopacket.yaml
 title: Phenopacket
 description: |
   An anonymous phenotypic description of an individual or biosample with potential genes of interest and/or diagnoses.
@@ -15,7 +15,7 @@ properties:
       - 'phenopacketid123'
   subject:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/Individual/v0.0.1
+      - "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Individual.yaml
       - description: |
           The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
         examples:
@@ -29,7 +29,7 @@ properties:
       Phenotypic features relating to the subject of the phenopacket
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/PhenotypicFeature/v0.0.1
+      "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/PhenotypicFeature.yaml
     examples:
       - - description: 'add example'
           type:
@@ -40,7 +40,7 @@ properties:
       Biosample(s) derived from the patient or a collection of biosamples in isolation
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Biosample/v0.0.1
+      "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Biosample.yaml
     examples:
       - - id: 'SAMN05324082'
           individual_id: 'SAMN05324082-individual'
@@ -55,7 +55,7 @@ properties:
       obfuscate the specific causative/candidate variant.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Gene/v0.0.1
+      "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Gene.yaml
     examples:
       - - id: 'HGNC:3477'
           symbol: 'ETF1'
@@ -65,7 +65,7 @@ properties:
       variants. The resources using these fields should define what this represents in their context.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Variant/v0.0.1
+      "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Variant.yaml
     examples:
       - - id: 'ID_12345'
           description: 'description of variant'
@@ -79,7 +79,7 @@ properties:
       resources using these fields should define what this represents in their context.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Disease/v0.0.1
+      "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Disease.yaml
     examples:
       - - term:
           id: 'MONDO:0007043'
@@ -92,7 +92,7 @@ properties:
       Pointer to the relevant HTS file(s) for the patient
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1
+      "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/HtsFile.yaml
     examples:
       - - hts_format: 'GVCF'
           file:
@@ -100,7 +100,7 @@ properties:
             uri: 'file://data/genomes/file1.vcf.gz'
   meta_data:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/MetaData/v0.0.1
+      - "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/MetaData.yaml
       - description: |
           Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
         examples:

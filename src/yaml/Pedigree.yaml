@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Pedigree/v0.0.1
+"$id": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Pedigree.yaml
 title: Pedigree
 description: |
   https://software.broadinstitute.org/gatk/documentation/article?id=11016
@@ -9,7 +9,7 @@ properties:
     description: add description
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Person/v0.0.1
+      "$ref": https://github.com/ga4gh-schemablocks/blocks-json-schema/blob/elixier_json_schema_validator_ref_resolution_test/src/yaml/Person.yaml
     examples:
       - - individual_id: 'add example'
 required:
