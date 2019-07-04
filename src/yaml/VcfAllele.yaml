@@ -8,7 +8,7 @@ description: |
   See https://samtools.github.io/hts-specs/VCFv4.3.pdf
 type: object
 properties:
-  genome_assembly:
+  genomeAssembly:
     description: |
       Genome assembly the allele was called against. We recommend using the Genome Reference Consortium
       nomenclature e.g. GRCh37, GRCh38
@@ -48,7 +48,7 @@ properties:
 #required:
 #  - id
 examples:
-  - genome_assembly: 'GRCh37'
+  - genomeAssembly: 'GRCh37'
     chr: '10'
     pos: 123256215
     ref: 'T'

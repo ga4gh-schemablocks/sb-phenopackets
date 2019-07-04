@@ -7,41 +7,41 @@ description: |
   Tools for interconversion between SPDI, HGVS and VCF exist at https://api.ncbi.nlm.nih.gov/variation/v0/
 type: object
 properties:
-  hgvs_allele:
+  hgvsAllele:
     description: add description
     "$ref": https://schemablocks.org/schemas/ga4gh/HgvsAllele/v0.0.1
     examples:
       - 'add example'
-  vcf_allele:
+  vcfAllele:
     description: add description
     "$ref": https://schemablocks.org/schemas/ga4gh/VcfAllele/v0.0.1
     examples:
-      - genome_assembly: 'GRCh37'
+      - genomeAssembly: 'GRCh37'
         chr: '10'
         pos: 123256215
         ref: 'T'
         alt: 'G'
-  spdi_allele:
+  spdiAllele:
     description: add description
     "$ref": https://schemablocks.org/schemas/ga4gh/SpdiAllele/v0.0.1
     examples:
       - id: 'id_abc_123'
-        seq_id: 'NC_000010.10'
+        seqId: 'NC_000010.10'
         position: 123256214
-        deleted_sequence: 'T'
-        inserted_sequence: 'G'
-  iscn_allele:
+        deletedSequence: 'T'
+        insertedSequence: 'G'
+  iscnAllele:
     description: add description
     "$ref": https://schemablocks.org/schemas/ga4gh/IscnAllele/v0.0.1
     examples:
       - 'add example'
-  murine_allele:
+  murineAllele:
     description: add description
     "$ref": https://schemablocks.org/schemas/ga4gh/MurineAllele/v0.0.1
     examples:
       - id: 'MGI:3690325'
         gene: 'Fbn1'
-        allele_symbol: 'tm1Hcd'
+        alleleSymbol: 'tm1Hcd'
   zygosity:
     description: add description
     "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
@@ -57,30 +57,30 @@ required:
   - id
 oneof:
   - properties:
-      - hgvs_allele
+      - hgvsAllele
   - properties:
-      - vcf_allele
+      - vcfAllele
   - properties:
-      - spdi_allele
+      - spdiAllele
   - properties:
-      - iscn_allele
+      - iscnAllele
   - properties:
-      - murine_allele
+      - murineAllele
 examples:
   - id: 'ID_12345'
     description: 'description of variant'
-    murine_allele:
+    murineAllele:
       id: 'MGI:3690325'
       gene: 'Fbn1'
-      allele_symbol: 'tm1Hcd'
+      alleleSymbol: 'tm1Hcd'
     background: 'involves: 129S1/Sv * 129X1/SvJ * C57BL/6J'
     zygosity:
       id: 'GENO:0000135'
       label: 'heterozygous'
   - id: 'ID_12345'
     description: 'description of variant'
-    vcf_allele:
-      genome_assembly: 'GRCh37'
+    vcfAllele:
+      genomeAssembly: 'GRCh37'
       chr: '10'
       pos: 123256215
       ref: 'T'

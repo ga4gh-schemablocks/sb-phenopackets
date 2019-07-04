@@ -22,7 +22,7 @@ anyof:
 examples:
   - start:
       age: 'P12Y'
-      age_class:
+      ageClass:
         id: 'HsapDv:0000086'
         label: 'adolescent stage'
     end:

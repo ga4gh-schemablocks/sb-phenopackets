@@ -10,19 +10,19 @@ properties:
     type: string
     examples:
       - 'AM_BS__NCBISKYCGH-1993'
-  dataset_id:
+  datasetId:
     description: The ID of the dataset this Individual belongs to.
     type: string
     examples:
       - 'ABCD1234'
-  date_of_birth:
+  dateOfBirth:
     description: |
       The date of birth of the individual as an ISO8601 UTC timestamp - rounded down to the closest known
       year/month/day/hour/minute
     type: string
     examples:
       - '2018-03-01T00:00:00Z'
-  age_at_collection:
+  ageAtCollection:
     description: |
       An age object describing the age of the individual at the time of collection.
       The Age object allows the encoding of the age either as ISO8601 duration or
@@ -30,7 +30,7 @@ properties:
     "$ref": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
     examples:
       - age: 'P14Y'
-  age_range_at_collection:
+  ageRangeAtCollection:
     description: |
       An age object describing the age of the individual at the time of collection.
       The Age object allows the encoding of the age either as ISO8601 duration or
@@ -48,7 +48,7 @@ properties:
       - OTHER_SEX
     examples:
       - 'FEMALE'
-  karyotypic_sex:
+  karyotypicSex:
     description: |
       Karyotypic sex of the individual,
       one of UNKNOWN_KARYOTYPE, XX, XY, XO, XXY, XXX, XXYY, XXXY, XXXX, XYY, OTHER_KARYO,
@@ -67,9 +67,9 @@ required:
   - id
 oneof:
   - properties:
-      - age_at_collection
+      - ageAtCollection
   - properties:
-      - age_range_at_collection
+      - ageRangeAtCollection
 examples:
   - id: 'SAMN05324082-individual'
     sex: 'MALE'

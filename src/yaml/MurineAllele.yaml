@@ -18,9 +18,9 @@ properties:
     type: string
     examples:
       - 'Fbn1'
-  allele_symbol:
+  alleleSymbol:
     description: |
-      The allele_symbol should be used for denoting the unformatted allele symbol, which is written
+      The alleleSymbol should be used for denoting the unformatted allele symbol, which is written
       in superscript according to the International Committee on Standardized Genetic
       Nomenclature for Mice. In written text it is customary to enclose the allele symbol in angled brackets to
       denote the superscript e.g. <tm1Hcd>. However in this field the allele code should be stored here as without the
@@ -33,4 +33,4 @@ required:
 examples:
   - id: 'MGI:3690325'
     gene: 'Fbn1'
-    allele_symbol: 'tm1Hcd'
+    alleleSymbol: 'tm1Hcd'
