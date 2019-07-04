@@ -30,8 +30,8 @@ properties:
     description: |
       Pointer to the relevant HTS file(s) for the cohort
     type: array
-      items:
-        "$ref": https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1
+    items:
+      "$ref": https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1
     examples:
       - - hts_format: 'GVCF'
           file:
