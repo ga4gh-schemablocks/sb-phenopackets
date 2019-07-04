@@ -38,17 +38,17 @@ properties:
     type: string
     examples:
       - '2.97'
-  namespace_prefix:
+  namespacePrefix:
     description: |
       The prefix used in the CURIE of an OntologyClass e.g. HP, MP, ECO
       For example an HPO term will have a CURIE like this - HP:0012828 which should be used in combination with
-      he iri_prefix to form a fully-resolvable IRI
+      he iriPrefix to form a fully-resolvable IRI
     type: string
     examples:
       - 'HP'
-  iri_prefix:
+  iriPrefix:
     description: |
-      Full IRI prefix which can be used with the namespace_prefix and the OntologyClass::id to resolve to an IRI for a
+      Full IRI prefix which can be used with the namespacePrefix and the OntologyClass::id to resolve to an IRI for a
       term. Tools such as the curie-util (https://github.com/prefixcommons/curie-util) can utilise this to produce
       fully-resolvable IRIs for an OntologyClass.
       e.g. Using the HPO term encoding the concept of 'Severe'
@@ -56,8 +56,8 @@ properties:
           id: 'HP:0012828'
           label: 'Severe'
         Resource:
-          namespace_prefix: 'HP'
-          iri_prefix: 'http://purl.obolibrary.org/obo/HP_'
+          namespacePrefix: 'HP'
+          iriPrefix: 'http://purl.obolibrary.org/obo/HP_'
       the term can be resolved to http://purl.obolibrary.org/obo/HP_0012828
     type: string
     examples:
@@ -69,20 +69,20 @@ examples:
     name: 'PhenotypicFeature And Trait Ontology'
     url: 'http://purl.obolibrary.org/obo/pato.owl'
     version: '2018-03-28'
-    namespace_prefix: 'PATO'
+    namespacePrefix: 'PATO'
   - id: 'efo'
     name: 'Experimental Factor Ontology'
     url: 'http://purl.obolibrary.org/obo/pato.owl'
     version: '2.97'
-    namespace_prefix: 'EFO'
+    namespacePrefix: 'EFO'
   - id: 'ncbitaxon'
     name: 'NCBI organismal classification'
     url: 'http://purl.obolibrary.org/obo/ncbitaxon.owl'
     version: '2018-03-02'
-    namespace_prefix: 'NCBITaxon'
+    namespacePrefix: 'NCBITaxon'
   - id: 'hp'
     name: 'human phenotype ontology'
     url: 'http://purl.obolibrary.org/obo/hp.owl'
     version: '2018-03-08'
-    namespace_prefix: 'HP'
-    iri_prefix: 'http://purl.obolibrary.org/obo/HP_'
+    namespacePrefix: 'HP'
+    iriPrefix: 'http://purl.obolibrary.org/obo/HP_'

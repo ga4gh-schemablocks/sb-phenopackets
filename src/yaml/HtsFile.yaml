@@ -5,7 +5,7 @@ description: |
   A file in one of the HTS formats (https://samtools.github.io/hts-specs)
 type: object
 properties:
-  hts_format:
+  htsFormat:
     description: |
       one of UNKNOWN, SAM, BAM, CRAM, VCF, BCF, GVCF
     enum:
@@ -18,14 +18,14 @@ properties:
       - GVCF
     examples:
       - 'SAM'
-  genome_assembly:
+  genomeAssembly:
     description: |
       Genome assembly the contents of this file was called against. We recommend using the Genome Reference Consortium
       nomenclature e.g. GRCh37, GRCh38
     type: string
     examples:
       - 'GRCh37'
-  individual_to_sample_identifiers:
+  individualToSampleIdentifiers:
     description: |
       A map of identifiers mapping an individual to a sample in the file. The key values must correspond to the
       Individual::id for the individuals in the message, the values must map to the samples in the file.
@@ -40,10 +40,10 @@ properties:
       - path: '/data/genomes/file1.vcf.gz'
         uri: 'file://data/genomes/file1.vcf.gz'
 required:
-  - hts_format
+  - htsFormat
   - file
 examples:
-  - hts_format: 'GVCF'
+  - htsFormat: 'GVCF'
     file:
       path: '/data/genomes/file1.vcf.gz'
       uri: 'file://data/genomes/file1.vcf.gz'

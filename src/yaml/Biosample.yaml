@@ -17,12 +17,12 @@ properties:
     type: string
     examples:
       - 'SAMN05324082'
-  dataset_id:
+  datasetId:
     description: The ID of the dataset this Biosample belongs to
     type: string
     examples:
       - 'dataset-id-123'
-  individual_id:
+  individualId:
     description: The id of the individual this biosample was derived from
     type: string
     examples:
@@ -34,7 +34,7 @@ properties:
     type: string
     examples:
       - 'THP-1; 6 hours; DMSO; Replicate 1'
-  sampled_tissue:
+  sampledTissue:
     description: |
       UBERON class describing the tissue from which the specimen was collected.
       PDX-MI mapping: 'Specimen tumor tissue'
@@ -43,7 +43,7 @@ properties:
     examples:
       - id: 'UBERON:0000178'
         label: 'peripheral blood'
-  phenotypic_feature:
+  phenotypicFeature:
     description: Phenotypic characteristics of the BioSample, for example histological findings of a biopsy
     type: array
     items:
@@ -58,7 +58,7 @@ properties:
     examples:
       - type: 'NCBITaxon:9606'
         description: 'Homo sapiens'
-  age_of_individual_at_collection:
+  ageOfIndividualAtCollection:
     description: |
       An age object describing the age of the individual this biosample was
       derived from at the time of collection. The Age object allows the encoding
@@ -68,7 +68,7 @@ properties:
     "$ref": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
     examples:
       - age: 'P48Y3M'
-  age_range_of_individual_at_collection:
+  ageRangeOfIndividualAtCollection:
     description: |
       An age range object describing the age of the individual this biosample was
       derived from at the time of collection. The Age object allows the encoding
@@ -81,7 +81,7 @@ properties:
           age: 'P12Y'
         end:
           age: 'P18Y'
-  histological_diagnosis:
+  histologicalDiagnosis:
     description: |
       This is the pathologist’s diagnosis and may often represent a refinement of the clinical diagnosis given in the
       Patient/Clinical module. Should use the same terminology as diagnosis, but represent the pathologist’s findings.
@@ -90,7 +90,7 @@ properties:
     examples:
       - id: 'EFO:0000221'
         label: 'Acute Monocytic Leukemia'
-  tumor_progression:
+  tumorProgression:
     description: |
       Is the specimen tissue from the primary tumor, a metastasis or a recurrence?
       Most likely a child term of NCIT:C7062 (Neoplasm by Special Category)
@@ -103,7 +103,7 @@ properties:
     examples:
       - id: 'NCIT:C84509'
         label: 'Primary Malignant Neoplasm'
-  tumor_grade:
+  tumorGrade:
     description: |
       Potentially a child term of NCIT:C28076 (Disease Grade Qualifier) or equivalent
       See https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis/tumor-grade-fact-sheet
@@ -111,7 +111,7 @@ properties:
     examples:
       - id: 'NCIT:C28091'
         label: 'Gleason Score 7'
-  tumor_stage:
+  tumorStage:
     description: |
       Cancer findings in the TNM system that is relevant to the diagnosis of cancer.
       See https://www.cancer.gov/about-cancer/diagnosis-staging/staging
@@ -122,7 +122,7 @@ properties:
     examples:
       - - id: 'NCIT:C48706'
           label: 'N1 Stage Finding'
-  diagnostic_markers:
+  diagnosticMarkers:
     description: |
       Clinically relevant bio markers. Most of the assays such as IHC are covered by the NCIT under the sub-hierarchy
       NCIT:C25294 (Laboratory Procedure).
@@ -141,17 +141,17 @@ properties:
       - code:
           id: 'NCIT:C28743'
           label: 'Funch Biopsy'
-        body_site:
+        bodySite:
           id: 'UBERON:0003403'
           label: 'skin of forearm'
-  hts_files:
+  htsFiles:
     description: |
       Pointer to the relevant HTS file(s) for the biosample
     type: array
     items:
       "$ref": https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1
     examples:
-      - - hts_format: 'GVCF'
+      - - htsFormat: 'GVCF'
           file:
             path: '/data/genomes/file1.vcf.gz'
             uri: 'file://data/genomes/file1.vcf.gz'
@@ -162,9 +162,9 @@ properties:
     items:
       "$ref": https://schemablocks.org/schemas/ga4gh/Variant/v0.0.1
     examples:
-      - - hgvs_allele: 'add example'
+      - - hgvsAllele: 'add example'
           background: 'add example'
-  is_control_sample:
+  isControlSample:
     description: |
       if true, this sample is being use as a normal control, often in combination with
       another sample that is thought to contain a pathological finding the default value is false
@@ -175,49 +175,49 @@ required:
   - id
 oneof:
   - properties:
-      - age_of_individual_at_collection
+      - ageOfIndividualAtCollection
   - properties:
-      - age_range_of_individual_at_collection
+      - ageRangeOfIndividualAtCollection
 examples:
   - id: 'SAMN05324082'
-    individual_id: 'SAMN05324082-individual'
+    individualId: 'SAMN05324082-individual'
     description: 'THP-1; 6 hours; DMSO; Replicate 1'
-    sampled_tissue:
+    sampledTissue:
       id: 'UBERON:0000178'
       label: 'peripheral blood'
-    phenotypic_feature:
+    phenotypicFeature:
       - type:
           id: 'EFO:0001253'
           label: 'THP-1'
     taxonomy:
       id: 'NCBITaxon:9606'
       label: 'Homo sapiens'
-    histological_diagnosis:
+    histologicalDiagnosis:
       id: 'EFO:0000221'
       label: 'Acute Monocytic Leukemia'
-    age_of_individual_at_collection:
+    ageOfIndividualAtCollection:
       age: 'P1Y'
   - id: 'SAMN05324083'
-    individual_id: 'SAMN05324083-individual'
-    age_of_individual_at_collection:
+    individualId: 'SAMN05324083-individual'
+    ageOfIndividualAtCollection:
       age: 'P1Y'
-    sampled_tissue:
+    sampledTissue:
       id: 'NCIT:C139196'
       label: 'Esophageal Lymph Node'
-    tumor_progression:
+    tumorProgression:
       id: 'NCIT:C84509'
       label: 'Primary Malignant Neoplasm'
-    histological_diagnosis:
+    histologicalDiagnosis:
       id: 'EFO:0000221'
       label: 'Acute Monocytic Leukemia'
-    tumor_stage:
+    tumorStage:
       - id: 'NCIT:C48724'
         label: 'T2 Stage Finding'
       - id: 'NCIT:C48706'
         label: 'N1 Stage Finding'
       - id: 'NCIT:C48699'
         label: 'M0 Stage Finding'
-    diagnostic_markers:
+    diagnosticMarkers:
       - id: 'NCIT:C131711'
         label: 'Human Papillomavirus-18 Positive'
     procedure:

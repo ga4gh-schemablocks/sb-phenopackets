@@ -10,12 +10,12 @@ properties:
     type: string
     examples:
       - '2018-03-01T00:00:00Z'
-  created_by:
+  createdBy:
     description: some kind of identifier for the contributor/ program
     type: string
     examples:
       - 'samuel_jackson'
-  submitted_by:
+  submittedBy:
     description: |
       Information about the person/organisation/network that has submitted this phenopacket
     type: string
@@ -44,7 +44,7 @@ properties:
     examples:
       - - '2007-12-03T10:15:30.00Z'
         - '2008-12-03T10:15:30.00Z'
-  external_references:
+  externalReferences:
     description: |
       External identifiers for this message. These are considered different representation of the same record, not
       records which are in some other relation with the record at hand. For example this might be a PubMed reference
@@ -63,14 +63,14 @@ examples:
     updated:
       - '2018-06-10T10:59:06.784Z'
   - created: '2016-06-29T12:03:03.240Z'
-    created_by: 'samuel_jackson'
+    createdBy: 'samuel_jackson'
     updated:
       - '2018-06-10T10:59:06.784Z'
     resources:
       - id: 'geno'
         name: 'Genotype Ontology'
-        namespace_prefix: 'GENO'
-        iri_prefix: 'http://purl.obolibrary.org/obo/GENO_'
+        namespacePrefix: 'GENO'
+        iriPrefix: 'http://purl.obolibrary.org/obo/GENO_'
         url: 'http://purl.obolibrary.org/obo/geno.owl'
         version: '19-03-2018'
 

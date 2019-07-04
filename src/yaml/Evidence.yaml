@@ -5,7 +5,7 @@ description: |
   Evidence, FHIR mapping: Condition.evidence (https://www.hl7.org/fhir/condition-definitions.html#Condition.evidence)
 type: object
 properties:
-  evidence_code:
+  evidenceCode:
     description: |
       The encoded evidence type using, for example the Evidence & Conclusion Ontology
       (ECO - http://purl.obolibrary.org/obo/eco.owl)
@@ -22,9 +22,9 @@ properties:
       - id: 'PMID:30808312'
         description: 'COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.'
 #required:
-#  - evidence_code
+#  - evidenceCode
 examples:
-  - evidence_code:
+  - evidenceCode:
       id: 'add example'
       label: 'add example'
     reference:

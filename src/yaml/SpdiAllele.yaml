@@ -22,7 +22,7 @@ properties:
     type: string
     examples:
       - 'add example'
-  seq_id:
+  seqId:
     description: add description
     type: string
     examples:
@@ -32,12 +32,12 @@ properties:
     type: integer
     examples:
       - 123256214
-  deleted_sequence:
+  deletedSequence:
     description: add description
     type: string
     examples:
       - 'T'
-  inserted_sequence:
+  insertedSequence:
     description: add description
     type: string
     examples:
@@ -46,7 +46,7 @@ required:
   - id
 examples:
   - id: 'id_abc_123'
-    seq_id: 'NC_000010.10'
+    seqId: 'NC_000010.10'
     position: 123256214
-    deleted_sequence: 'T'
-    inserted_sequence: 'G'
+    deletedSequence: 'T'
+    insertedSequence: 'G'

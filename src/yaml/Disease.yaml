@@ -12,7 +12,7 @@ properties:
     "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
     examples:
       - id: 'MONDO:0007043'
-  age_of_onset:
+  ageOfOnset:
     description: |
       The onset of the disease. The values of this will come from the HPO onset hierarchy
       i.e. subclasses of HP:0003674
@@ -20,10 +20,10 @@ properties:
     "$ref": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
     examples:
       - age: 'P35Y'
-        age_class:
+        ageClass:
           id: 'HP:0003596'
           label: 'Middle age onset'
-  age_range_of_onset:
+  ageRangeOfOnset:
     description: |
       The onset of the disease. The values of this will come from the HPO onset hierarchy
       i.e. subclasses of HP:0003674
@@ -32,10 +32,10 @@ properties:
     examples:
       - start:
           age: 'P35Y'
-          age_class:
+          ageClass:
             id: 'HP:0003596'
             label: 'Middle age onset'
-  class_of_onset:
+  classOfOnset:
     description: |
       The onset of the disease. The values of this will come from the HPO onset hierarchy
       i.e. subclasses of HP:0003674
@@ -48,15 +48,15 @@ required:
   - term
 oneof:
   - properties:
-      - age_of_onset
+      - ageOfOnset
   - properties:
-      - age_range_of_onset
+      - ageRangeOfOnset
   - properties:
-      - class_of_onset
+      - classOfOnset
 examples:
   - term:
       id: 'MONDO:0007043'
       label: 'Pfeiffer syndrome'
-    class_of_onset:
+    classOfOnset:
       id: 'HP:0003596'
       label: 'Middle age onset'

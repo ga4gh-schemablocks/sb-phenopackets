@@ -5,22 +5,22 @@ description: |
   person
 type: object
 properties:
-  family_id:
+  familyId:
     description: add description
     type: string
     examples:
       - 'add example'
-  individual_id:
+  individualId:
     description: add description
     type: string
     examples:
       - 'add example'
-  paternal_id:
+  paternalId:
     description: add description
     type: string
     examples:
       - 'add example'
-  maternal_id:
+  maternalId:
     description: add description
     type: string
     examples:
@@ -34,7 +34,7 @@ properties:
       - OTHER_SEX
     examples:
       - 'FEMALE'
-  affected_status:
+  affectedStatus:
     description: one of MISSING, UNAFFECTED, AFFECTED
     enum:
       - MISSING
@@ -43,6 +43,6 @@ properties:
     examples:
       - 'MISSING'
 required:
-  - individual_id
+  - individualId
 examples:
-  - individual_id: 'add example'
+  - individualId: 'add example'

@@ -11,9 +11,9 @@ properties:
     items:
       "$ref": https://schemablocks.org/schemas/ga4gh/Person/v0.0.1
     examples:
-      - - individual_id: 'add example'
+      - - individualId: 'add example'
 required:
   - person
 examples:
   - person:
-      - individual_id: 'add example'
+      - individualId: 'add example'
