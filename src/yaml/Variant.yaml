@@ -1,6 +1,6 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1
-title: External Reference
+"$id": https://schemablocks.org/schemas/ga4gh/Variant/v0.0.1
+title: Variant
 description: |
   A variant allele. Alleles can be listed using HGVS, VCF, SPDI or ISCN notation.
   SPDI format is the exchange standard used for ClinVar, dbSNP and soon the EVA
