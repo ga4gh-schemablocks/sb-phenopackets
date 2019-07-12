@@ -21,11 +21,11 @@ properties:
     items:
       "$ref": https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1
     examples:
-      - - id: 'phenopacketid-123'
-          metaData:
-            created: '2016-06-29T12:03:03.240Z'
-            updated:
-              - '2018-06-10T10:59:06.784Z'
+      - id: 'phenopacketid-123'
+        metaData:
+          created: '2016-06-29T12:03:03.240Z'
+          updated:
+            - '2018-06-10T10:59:06.784Z'
   htsFiles:
     description: |
       Pointer to the relevant HTS file(s) for the cohort
@@ -33,10 +33,10 @@ properties:
     items:
       "$ref": https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1
     examples:
-      - - htsFormat: 'GVCF'
-          file:
-            path: '/data/genomes/file1.vcf.gz'
-            uri: 'file://data/genomes/file1.vcf.gz'
+      - htsFormat: 'GVCF'
+        file:
+          path: '/data/genomes/file1.vcf.gz'
+          uri: 'file://data/genomes/file1.vcf.gz'
   metaData:
     allof:
       - "$ref": https://schemablocks.org/schemas/ga4gh/MetaData/v0.0.1
