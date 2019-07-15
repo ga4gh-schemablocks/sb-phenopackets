@@ -11,12 +11,12 @@ properties:
     examples:
       - 'add example'
   var:
-    description: An ICSN code such as del(6)(q23q24) , t(8;9;11)(q12;p24;p12), +15
+    description: "An ICSN code such as del(6)(q23q24), t(8;9;11)(q12;p24;p12), +15"
     type: string
     examples:
-      - 'add example'
+      - 'del(6)(q23q24)'
 required:
   - id
 examples:
   - id: 'add example'
-    var: 'add example'
+    var: 'del(6)(q23q24)'

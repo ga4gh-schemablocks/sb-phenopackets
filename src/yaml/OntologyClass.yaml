@@ -1,5 +1,20 @@
 "$schema": http://json-schema.org/draft-07/schema#
 "$id": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
+meta:
+  authors:
+    - "GA4GH Metadata Task Team"
+    - "@cmungall"
+    - "@mcourtot"
+    - "@mbaudis"
+  provenance:
+    - description: "Original GA4GH schema"
+      url: 'https://github.com/ga4gh/ga4gh-schemas/blob/master/src/main/proto/ga4gh/common.proto#L152'
+    - description: "additional discussions with @cmungall and phenopackets developers"
+  used_by:
+    - description: Phenopackets
+      url: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/ontologyclass.rst'
+    - description: "Progenetix database schema (Beacon+ backend)"
+      url: 'https://github.com/progenetix/schemas/tree/master/main/yaml'
 title: Ontology Class
 description: |
   OntologyClass represents the core object used to reference domain-specific
