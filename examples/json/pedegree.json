@@ -1,0 +1,20 @@
+{
+  "persons": [{
+    "familyId": "FAMILY:1",
+    "individualId": "MOTHER:1",
+    "sex": "FEMALE",
+    "affectedStatus": "UNAFFECTED"
+  }, {
+    "familyId": "FAMILY:1",
+    "individualId": "FATHER:1",
+    "sex": "MALE",
+    "affectedStatus": "UNAFFECTED"
+  }, {
+    "familyId": "FAMILY:1",
+    "individualId": "DAUGHTER:1",
+    "paternalId": "FATHER:1",
+    "maternalId": "MOTHER:1",
+    "sex": "FEMALE",
+    "affectedStatus": "AFFECTED"
+  }]
+}

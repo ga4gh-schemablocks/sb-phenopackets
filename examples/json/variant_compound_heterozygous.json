@@ -1,0 +1,51 @@
+{
+  "id": "pfeiffer_compound_heterozygous_case",
+  "variants": [{
+    "vcfAllele": {
+      "genomeAssembly": "GRCh37",
+      "chr": "10",
+      "pos": 123256215,
+      "ref": "T",
+      "alt": "G"
+    },
+    "zygosity": {
+      "id": "GENO:0000135",
+      "label": "heterozygous"
+    }
+  }, {
+    "vcfAllele": {
+      "genomeAssembly": "GRCh37",
+      "chr": "10",
+      "pos": 123247569,
+      "ref": "T",
+      "alt": "C"
+    },
+    "zygosity": {
+      "id": "GENO:0000135",
+      "label": "heterozygous"
+    }
+  }],
+  "diseases": [{
+    "term": {
+      "id": "OMIM:101600",
+      "label": "Pfeiffer syndrome"
+    }
+  }],
+  "metaData": {
+    "createdBy": "Jules J.",
+    "resources": [{
+      "id": "geno",
+      "name": "Genotype Ontology",
+      "url": "http://purl.obolibrary.org/obo/geno.owl",
+      "version": "19-03-2018",
+      "namespacePrefix": "GENO",
+      "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+    }, {
+      "id": "omim",
+      "name": "Online Mendelian Inheritance in Man",
+      "url": "https://omim.org",
+      "version": "01-04-2019",
+      "namespacePrefix": "OMIM"
+    }]
+  }
+}
