@@ -14,7 +14,7 @@ properties:
     examples:
       - id: 'NCIT:C28743'
         label: 'Funch Biopsy'
-  body_site:
+  bodySite:
     description: |
       FHIR mapping - Procedure.bodySite
     "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
@@ -27,6 +27,6 @@ examples:
   - code:
       id: 'NCIT:C28743'
       label: 'Funch Biopsy'
-    body_site:
+    bodySite:
       id: 'UBERON:0003403'
       label: 'skin of forearm'

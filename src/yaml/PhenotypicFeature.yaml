@@ -49,17 +49,17 @@ properties:
     examples:
       - - id: 'HP:0025282'
           label: 'Dull'
-  age_of_onset:
+  ageOfOnset:
     description: |
       the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
       FHIR mapping: Condition.onset
     "$ref": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
     examples:
       - age: 'P35Y'
-        age_class:
+        ageClass:
           id: 'HP:0003596'
           label: 'Middle age onset'
-  age_range_of_onset:
+  ageRangeOfOnset:
     description: |
       the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
       FHIR mapping: Condition.onset
@@ -67,10 +67,10 @@ properties:
     examples:
       - start:
           age: 'P35Y'
-          age_class:
+          ageClass:
             id: 'HP:0003596'
             label: 'Middle age onset'
-  class_of_onset:
+  classOfOnset:
     description: |
       the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
       FHIR mapping: Condition.onset
@@ -82,7 +82,7 @@ properties:
     description: Evidences for how the phenotype was determined.
     "$ref": https://schemablocks.org/schemas/ga4gh/Evidence/v0.0.1
     examples:
-      - evidence_code:
+      - evidenceCode:
           id: 'add example'
           label: 'add example'
         reference:
@@ -92,11 +92,11 @@ required:
   - type
 oneof:
   - properties:
-      - age_of_onset
+      - ageOfOnset
   - properties:
-      - age_range_of_onset
+      - ageRangeOfOnset
   - properties:
-      - class_of_onset
+      - classOfOnset
 examples:
   - description: 'add example'
     type:
@@ -109,11 +109,11 @@ examples:
     modifiers:
       - id: 'HP:0025282'
         label: 'Dull'
-    age_of_onset:
+    ageOfOnset:
       id: 'HP:0003596'
       label: 'Middle age onset'
     evidence:
-      evidence_code:
+      evidenceCode:
         id: 'add example'
         label: 'add example'
       reference:
