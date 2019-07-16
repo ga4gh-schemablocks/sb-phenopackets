@@ -5,15 +5,18 @@ description: Age range
 type: object
 properties:
   start:
-    description: Age as ISO8601 string
+    description: Age as ISO8601 string or OntologyClass
     "$ref": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
     examples:
-      - 'P12Y'
+      - age: 'P12Y'
   end:
-    description: Age as ISO8601 string
+    description: Age as ISO8601 string or OntologyClass
     "$ref": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
     examples:
-      - 'P18Y'
+      - ageClass:
+          id: 'HsapDv:0000086'
+          label: 'adolescent stage'
+      - age: 'P16Y6M'
 anyof:
   - required:
       - start
