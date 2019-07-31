@@ -13,7 +13,8 @@ description: |
 type: object
 properties:
   id:
-    description: The Biosample id This is unique in the context of the server instance.
+    description: |
+      The Biosample id as a unique identifier in the local context.
     type: string
     examples:
       - 'SAMN05324082'

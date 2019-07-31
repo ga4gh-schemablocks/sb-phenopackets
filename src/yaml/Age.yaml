@@ -1,11 +1,25 @@
 "$schema": http://json-schema.org/draft-07/schema#
 "$id": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
 title: Age
+meta:
+  contributors:
+    - description: "Jules Jacobsen"
+    - description: "Peter Robinson"
+      id: "orcid:0000-0002-0736-91998"
+    - description: "Michael Baudis"
+      id: "orcid:0000-0002-9903-4248"
+  provenance:
+    - description: Phenopackets
+      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/age.rst'
+  used_by:
+    - description: Phenopackets
+      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/age.rst'
+  sb_status: implemented
 description: Age
 type: object
 properties:
   age:
-    description: Age as ISO8601 string
+    description: Age as ISO8601 period
     type: string
     examples:
       - 'P12Y'
@@ -18,7 +32,7 @@ properties:
       since this specifically codes the "onset" of a phenotype, not just any
       age as a timepoint. So when coding onset, implementations may choose
       to either use an "age of onset" ontology or an "Age" class.
-    "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
+    "$ref": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
     examples:
       - id: 'HsapDv:0000083'
         label: 'infant stage'
