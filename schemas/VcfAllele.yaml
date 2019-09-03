@@ -74,6 +74,7 @@ properties:
       - 'add example'
 required:
   - id
+additionalProperties: false
 examples:
   - vcfVersion: 'VCFv4.1'
     genomeAssembly: 'GRCh37'

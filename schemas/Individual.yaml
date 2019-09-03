@@ -107,6 +107,7 @@ oneof:
       - ageAtCollection
   - properties:
       - ageRangeAtCollection
+additionalProperties: false
 examples:
   - id: 'SAMN05324082-individual'
     sex: 'MALE'

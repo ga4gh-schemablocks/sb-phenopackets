@@ -34,6 +34,7 @@ properties:
       - - individualId: 'add example'
 required:
   - person
+additionalProperties: false
 examples:
   - person:
       - individualId: 'add example'

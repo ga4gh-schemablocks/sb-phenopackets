@@ -201,6 +201,7 @@ oneof:
       - ageOfIndividualAtCollection
   - properties:
       - ageRangeOfIndividualAtCollection
+additionalProperties: false
 examples:
   - id: 'SAMN05324082'
     individualId: 'SAMN05324082-individual'

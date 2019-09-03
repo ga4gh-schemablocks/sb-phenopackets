@@ -38,6 +38,7 @@ properties:
       - 'NM_001848.2:c.877G>A'
 required:
   - id
+additionalProperties: false
 examples:
   - id: 'add example'
     hgvs: 'NM_001848.2:c.877G>A'

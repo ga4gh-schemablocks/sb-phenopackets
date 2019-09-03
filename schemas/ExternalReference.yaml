@@ -40,6 +40,7 @@ properties:
       Laule O, Luu VD, Gruissem W, Schraml P, Moch H. BMC Cancer 12, 2012'
 required:
   - id
+additionalProperties: false
 examples:
   - id: 'cellosaurus:CVCL_0312'
     description: 'Cellosaurus cell line identifier'

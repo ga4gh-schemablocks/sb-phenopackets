@@ -84,6 +84,7 @@ properties:
       - 'http://purl.obolibrary.org/obo/HP_'
 required:
   - id
+additionalProperties: false
 examples:
   - id: 'pato'
     name: 'PhenotypicFeature And Trait Ontology'

@@ -80,6 +80,7 @@ oneof:
       - ageRangeOfOnset
   - properties:
       - classOfOnset
+additionalProperties: false
 examples:
   - term:
       id: 'MONDO:0007043'

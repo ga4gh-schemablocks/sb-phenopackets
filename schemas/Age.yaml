@@ -24,7 +24,9 @@ properties:
     description: Age as ISO8601 period
     examples:
       - 'P12Y'
+
 required:
   - age
+additionalProperties: false
 examples:
   - age: 'P14Y'

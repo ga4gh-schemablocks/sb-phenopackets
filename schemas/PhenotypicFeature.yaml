@@ -116,6 +116,7 @@ oneof:
       - ageRangeOfOnset
   - properties:
       - classOfOnset
+additionalProperties: false
 examples:
   - description: 'add example'
     type:

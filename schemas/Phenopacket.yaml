@@ -128,6 +128,7 @@ properties:
 required:
   - id
   - metaData
+additionalProperties: false
 examples:
   - id: 'phenopacketid-123'
     subject:

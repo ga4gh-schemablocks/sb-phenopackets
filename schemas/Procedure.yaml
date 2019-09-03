@@ -44,6 +44,7 @@ properties:
             label: 'skin of forearm'
 required:
   - code
+additionalProperties: false
 examples:
   - code:
       id: 'NCIT:C28743'

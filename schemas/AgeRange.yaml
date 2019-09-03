@@ -38,6 +38,7 @@ anyof:
       - start
   - required:
       - end
+additionalProperties: false
 examples:
   - start:
       age: 'P12Y'

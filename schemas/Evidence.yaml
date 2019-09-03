@@ -44,6 +44,7 @@ properties:
             description: 'COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.'
 required:
   - evidenceCode
+additionalProperties: false
 examples:
   - evidenceCode:
       id: 'add example'

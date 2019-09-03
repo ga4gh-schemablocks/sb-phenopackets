@@ -62,6 +62,7 @@ properties:
 required:
   - uri
   - htsFormat
+additionalProperties: false
 examples:
   - uri: 'file://data/genomes/file1.vcf.gz'
     htsFormat: 'GVCF'

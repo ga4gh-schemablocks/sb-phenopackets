@@ -49,6 +49,7 @@ properties:
       - 'ETF1'
 required:
   - id
+additionalProperties: false
 examples:
   - id: 'HGNC:3477'
     symbol: 'ETF1'

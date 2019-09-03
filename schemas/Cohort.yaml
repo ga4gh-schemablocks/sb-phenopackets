@@ -67,6 +67,7 @@ properties:
 required:
   - id
   - metaData
+additionalProperties: false
 examples:
   - id: 'cohort-id-123'
     metaData:

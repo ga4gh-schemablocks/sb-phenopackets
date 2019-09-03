@@ -90,6 +90,7 @@ properties:
 required:
   - id
   - metaData
+additionalProperties: false
 examples:
   - id: 'family-id-123'
     proband:

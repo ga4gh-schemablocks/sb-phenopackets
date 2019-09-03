@@ -41,6 +41,7 @@ properties:
       - 'Pancreatic Adenocarcinoma'
 required:
   - id
+additionalProperties: false
 examples:
   - id: 'DUO:0000004'
     label: 'no restriction'

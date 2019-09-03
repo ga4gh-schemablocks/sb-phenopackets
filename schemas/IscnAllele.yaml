@@ -36,6 +36,7 @@ properties:
       - 'del(6)(q23q24)'
 required:
   - id
+additionalProperties: false
 examples:
   - id: 'add example'
     iscn: 'del(6)(q23q24)'

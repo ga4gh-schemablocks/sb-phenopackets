@@ -63,5 +63,6 @@ properties:
       - 'MISSING'
 required:
   - individualId
+additionalProperties: false
 examples:
   - individualId: 'add example'

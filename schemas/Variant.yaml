@@ -78,6 +78,7 @@ oneof:
       - iscnAllele
   - properties:
       - murineAllele
+additionalProperties: false
 examples:
   - id: 'ID_12345'
     description: 'description of variant'
