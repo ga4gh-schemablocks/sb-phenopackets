@@ -1,28 +1,49 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Evidence/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/Evidence.json
 title: Evidence
 description: |
   Evidence, FHIR mapping: Condition.evidence (https://www.hl7.org/fhir/condition-definitions.html#Condition.evidence)
 type: object
+meta:
+  contributors:
+    - description: "Jules Jacobsen"
+      id: "orcid:0000-0002-3265-15918"
+    - description: "Peter Robinson"
+      id: "orcid:0000-0002-0736-91998"
+    - description: "Michael Baudis"
+      id: "orcid:0000-0002-9903-4248"
+    - description: "Melanie Courtot"
+      id: "orcid:0000-0002-9551-6370"
+    - description: "Isuru Liyanage"
+      id: "orcid:0000-0002-4839-5158"
+  provenance:
+    - description: Phenopackets
+      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/evidence.rst'
+  used_by:
+    - description: Phenopackets
+      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/evidence.rst'
+  sb_status: implemented
 properties:
   evidenceCode:
-    description: |
-      The encoded evidence type using, for example the Evidence & Conclusion Ontology
-      (ECO - http://purl.obolibrary.org/obo/eco.owl)
-      FHIR mapping - Condition.evidence.code
-    "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
-    examples:
-      - id: 'add example'
-        label: 'add example'
+    allof:
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - description: |
+          The encoded evidence type using, for example the Evidence & Conclusion Ontology
+          (ECO - http://purl.obolibrary.org/obo/eco.owl)
+          FHIR mapping - Condition.evidence.code
+        examples:
+          - id: 'add example'
+            label: 'add example'
   reference:
-    description: |
-      FHIR mapping - Condition.evidence.detail
-    "$ref": https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1
-    examples:
-      - id: 'PMID:30808312'
-        description: 'COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.'
-#required:
-#  - evidenceCode
+    allof:
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json
+      - description: |
+          FHIR mapping - Condition.evidence.detail
+      - examples:
+          - id: 'PMID:30808312'
+            description: 'COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.'
+required:
+  - evidenceCode
 examples:
   - evidenceCode:
       id: 'add example'

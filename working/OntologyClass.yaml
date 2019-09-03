@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
 meta:
   contributors:
     - description: "GA4GH Metadata Task Team"
@@ -11,7 +11,7 @@ meta:
       id: "orcid:0000-0002-9551-6370"
   provenance:
     - description: "Original GA4GH schema"
-      url: 'https://github.com/ga4gh/ga4gh-schemas/blob/master/src/main/proto/ga4gh/common.proto'
+      url: 'https://github.com/ga4gh/ga4gh-schemas/blob/master/src/main/proto/ga4gh/common.proto#L152'
     - description: "additional discussions with @cmungall and phenopackets developers"
     - description: "Phenopackets alignment"
   used_by:
@@ -30,13 +30,13 @@ description: |
 type: object
 properties:
   id:
-    description: CURIE of the ontology class
     type: string
+    description: CURIE of the ontology class
     examples:
       - 'ncit:C8294'
   label:
-    description: the text label associated with the ontology class
     type: string
+    description: the text label associated with the ontology class
     examples:
       - 'Pancreatic Adenocarcinoma'
 required:

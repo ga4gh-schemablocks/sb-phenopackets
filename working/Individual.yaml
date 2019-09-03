@@ -1,20 +1,44 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Individual/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/Individual.json
 title: Individual
 description: |
   An individual is a single organism (here typically a human).
 type: object
+meta:
+  contributors:
+    - description: "GA4GH Data Working Group"
+    - description: "Jules Jacobsen"
+      id: "orcid:0000-0002-3265-15918"
+    - description: "Peter Robinson"
+      id: "orcid:0000-0002-0736-91998"
+    - description: "Michael Baudis"
+      id: "orcid:0000-0002-9903-4248"
+    - description: "Melanie Courtot"
+      id: "orcid:0000-0002-9551-6370"
+    - description: "Isuru Liyanage"
+      id: "orcid:0000-0002-4839-5158"
+  provenance:
+    - description: Phenopackets
+      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/individual.rst'
+  used_by:
+    - description: Phenopackets
+      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/individual.rst'
+  sb_status: implemented
 properties:
   id:
     description: The local-unique identifier of this individual
     type: string
     examples:
       - 'AM_BS__NCBISKYCGH-1993'
-  datasetId:
-    description: The ID of the dataset this Individual belongs to.
-    type: string
+  alternateIds:
+    description: |
+      An optional list of alternative identifiers for this individual. This field is provided
+      for the convenience of users who may have multiple mappings to an individual which they need to track.
+    type: array
+    items:
+      type: string
     examples:
-      - 'ABCD1234'
+      - - 'another_id'
   dateOfBirth:
     description: |
       The date of birth of the individual as an ISO8601 UTC timestamp - rounded down to the closest known
@@ -23,22 +47,24 @@ properties:
     examples:
       - '2018-03-01T00:00:00Z'
   ageAtCollection:
-    description: |
-      An age object describing the age of the individual at the time of collection.
-      The Age object allows the encoding of the age either as ISO8601 duration or
-      time interval (preferred), or as ontology term object.
-    "$ref": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
-    examples:
-      - age: 'P14Y'
+    allof:
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
+      - description: |
+          An age object describing the age of the individual at the time of collection.
+          The Age object allows the encoding of the age either as ISO8601 duration or
+          time interval (preferred), or as ontology term object.
+        examples:
+          - age: 'P14Y'
   ageRangeAtCollection:
-    description: |
-      An age object describing the age of the individual at the time of collection.
-      The Age object allows the encoding of the age either as ISO8601 duration or
-      time interval (preferred), or as ontology term object.
-    "$ref": https://schemablocks.org/schemas/ga4gh/AgeRange/v0.0.1
-    examples:
-      - start:
-          age: 'P14Y'
+    allof:
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
+      - description: |
+          An age object describing the age of the individual at the time of collection.
+          The Age object allows the encoding of the age either as ISO8601 duration or
+          time interval (preferred), or as ontology term object.
+        examples:
+          - start:
+              age: 'P14Y'
   sex:
     description: The phenotypic/ administrative sex of the individual, one of UNKNOWN_SEX, FEMALE, MALE, OTHER_SEX
     enum:
@@ -52,17 +78,28 @@ properties:
     description: |
       Karyotypic sex of the individual,
       one of UNKNOWN_KARYOTYPE, XX, XY, XO, XXY, XXX, XXYY, XXXY, XXXX, XYY, OTHER_KARYO,
-    "$ref": https://schemablocks.org/schemas/ga4gh/KaryotypicSex/v0.0.1
+    enum:
+      - XX
+      - XY
+      - XO
+      - XXY
+      - XXX
+      - XXYY
+      - XXXY
+      - XXXX
+      - XYY
+      - OTHER_KARYO
     examples:
       - 'XX'
   taxonomy:
-    description: |
-      NCBI taxonomic identifier. For resources where there may be more than one organism being studied
-      it is advisable to indicate the taxonomic identifier of that organism, to its most specific level
-    "$ref": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
-    examples:
-      - id: 'NCBITaxon:9606'
-        label: 'Homo sapiens'
+    allof:
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - description: |
+          NCBI taxonomic identifier. For resources where there may be more than one organism being studied
+          it is advisable to indicate the taxonomic identifier of that organism, to its most specific level
+        examples:
+          - id: 'NCBITaxon:9606'
+            label: 'Homo sapiens'
 required:
   - id
 oneof:
