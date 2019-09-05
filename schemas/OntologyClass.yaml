@@ -20,7 +20,7 @@ meta:
     - description: "Progenetix database schema (Beacon+ backend)"
       url: 'https://github.com/progenetix/schemas/tree/master/main/yaml'
   sb_status: implemented
-title: Ontology Class
+title: OntologyClass
 description: |
   OntologyClass represents the core object used to reference domain-specific
   entities, as well as to identify their domains through the appropriate

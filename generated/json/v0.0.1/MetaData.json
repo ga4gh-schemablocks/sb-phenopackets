@@ -1,0 +1,109 @@
+{
+   "$id" : "https://schemablocks.org/schemas/ga4gh/MetaData/v0.0.1",
+   "$schema" : "http://json-schema.org/draft-07/schema#",
+   "description" : "metadata\n",
+   "examples" : [
+      {
+         "created" : "2016-06-29T12:03:03.240Z",
+         "updated" : [
+            "2018-06-10T10:59:06.784Z"
+         ]
+      },
+      {
+         "created" : "2016-06-29T12:03:03.240Z",
+         "createdBy" : "samuel_jackson",
+         "resources" : [
+            {
+               "id" : "geno",
+               "iriPrefix" : "http://purl.obolibrary.org/obo/GENO_",
+               "name" : "Genotype Ontology",
+               "namespacePrefix" : "GENO",
+               "url" : "http://purl.obolibrary.org/obo/geno.owl",
+               "version" : "19-03-2018"
+            }
+         ],
+         "updated" : [
+            "2018-06-10T10:59:06.784Z"
+         ]
+      }
+   ],
+   "properties" : {
+      "created" : {
+         "description" : "ISO8601 UTC timestamp for when this phenopacket was created in ISO \"2018-03-01T00:00:00Z\"",
+         "examples" : [
+            "2018-03-01T00:00:00Z"
+         ],
+         "type" : "string"
+      },
+      "createdBy" : {
+         "description" : "some kind of identifier for the contributor/ program",
+         "examples" : [
+            "samuel_jackson"
+         ],
+         "type" : "string"
+      },
+      "externalReferences" : {
+         "description" : "External identifiers for this message. These are considered different representation of the same record, not\nrecords which are in some other relation with the record at hand. For example this might be a PubMed reference\nto a study in which the individuals are reported.\n",
+         "examples" : [
+            [
+               {
+                  "description" : "Cellosaurus cell line identifier",
+                  "id" : "cellosaurus:CVCL_0312"
+               }
+            ]
+         ],
+         "items" : {
+            "$ref" : "https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1"
+         },
+         "type" : "array"
+      },
+      "resources" : {
+         "description" : "A listing of the ontologies/resources referenced in the phenopacket\n",
+         "examples" : [
+            [
+               {
+                  "id" : "12345",
+                  "name" : "The Human Phenotype Ontology",
+                  "url" : "http://purl.obolibrary.org/obo/hp.owl"
+               },
+               {
+                  "id" : "12345",
+                  "name" : "The Human Phenotype Ontology",
+                  "url" : "http://purl.obolibrary.org/obo/hp.owl"
+               }
+            ]
+         ],
+         "items" : {
+            "$ref" : "https://schemablocks.org/schemas/ga4gh/Resource/v0.0.1"
+         },
+         "type" : "array"
+      },
+      "submittedBy" : {
+         "description" : "Information about the person/organisation/network that has submitted this phenopacket\n",
+         "examples" : [
+            "add example"
+         ],
+         "type" : "string"
+      },
+      "updated" : {
+         "description" : "ISO8601 UTC timestamps at which this record was updated,\nin the format YYYY-MM-DDTHH:MM:SS.SSSZ e.g. 2007-12-03T10:15:30.00Z\n",
+         "examples" : [
+            [
+               "2007-12-03T10:15:30.00Z",
+               "2008-12-03T10:15:30.00Z"
+            ]
+         ],
+         "items" : {
+            "type" : "string"
+         },
+         "type" : "array"
+      }
+   },
+   "required" : [
+      "created",
+      "updated"
+   ],
+   "title" : "Metadata",
+   "type" : "object"
+}
+

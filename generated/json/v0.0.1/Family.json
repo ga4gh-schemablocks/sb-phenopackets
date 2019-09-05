@@ -1,0 +1,146 @@
+{
+   "$id" : "https://schemablocks.org/schemas/ga4gh/Family/v0.0.1",
+   "$schema" : "http://json-schema.org/draft-07/schema#",
+   "description" : "Phenotype, sample and pedigree data required for a genomic diagnosis.\nEquivalent to the Genomics England InterpretationRequestRD\nhttps://github.com/genomicsengland/GelReportModels/blob/master/schemas/IDLs/org.gel.models.report.avro/5.0.0/InterpretationRequestRD.avdl\n",
+   "examples" : [
+      {
+         "htsFiles" : [
+            {
+               "file" : {
+                  "path" : "/data/genomes/file1.vcf.gz",
+                  "uri" : "file://data/genomes/file1.vcf.gz"
+               },
+               "tsFormat" : "GVCF"
+            }
+         ],
+         "id" : "family-id-123",
+         "metaData" : {
+            "created" : "2016-06-29T12:03:03.240Z",
+            "updated" : [
+               "2018-06-10T10:59:06.784Z"
+            ]
+         },
+         "proband" : {
+            "id" : "phenopacketid-123",
+            "metaData" : {
+               "created" : "2016-06-29T12:03:03.240Z",
+               "updated" : [
+                  "2018-06-10T10:59:06.784Z"
+               ]
+            }
+         }
+      }
+   ],
+   "properties" : {
+      "htsFiles" : {
+         "description" : "Pointer to the relevant HTS file(s) for the family. These should be files relating to one or more of the family\nmembers e.g a multi-sample VCF\n",
+         "examples" : [
+            [
+               {
+                  "file" : {
+                     "path" : "/data/genomes/file1.vcf.gz",
+                     "uri" : "file://data/genomes/file1.vcf.gz"
+                  },
+                  "htsFormat" : "GVCF"
+               }
+            ]
+         ],
+         "items" : {
+            "$ref" : "https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1"
+         },
+         "type" : "array"
+      },
+      "id" : {
+         "description" : "An identifier specific for this family",
+         "examples" : [
+            "family-id-123"
+         ],
+         "type" : "string"
+      },
+      "metaData" : {
+         "allof" : [
+            {
+               "$ref" : "https://schemablocks.org/schemas/ga4gh/MetaData/v0.0.1"
+            },
+            {
+               "description" : "Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED\n",
+               "examples" : [
+                  {
+                     "created" : "2016-06-29T12:03:03.240Z",
+                     "updated" : [
+                        "2018-06-10T10:59:06.784Z"
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      "pedigree" : {
+         "allof" : [
+            {
+               "$ref" : "https://schemablocks.org/schemas/ga4gh/Pedigree/v0.0.1"
+            },
+            {
+               "description" : "The pedigree defining the relations between the proband and their relatives. Pedigree.individual_id should\nmap to the PhenoPacket.Individual.id\n",
+               "examples" : [
+                  {
+                     "person" : [
+                        {
+                           "individualId" : "add example"
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      "proband" : {
+         "allof" : [
+            {
+               "$ref" : "https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1"
+            },
+            {
+               "description" : "The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient\n",
+               "examples" : [
+                  {
+                     "id" : "phenopacketid-123",
+                     "metaData" : {
+                        "created" : "2016-06-29T12:03:03.240Z",
+                        "updated" : [
+                           "2018-06-10T10:59:06.784Z"
+                        ]
+                     }
+                  }
+               ]
+            }
+         ]
+      },
+      "relatives" : {
+         "description" : "Individuals related in some way to the patient. For instance, the individuals may be genetically related or may\nbe members of a cohort. If this field is used, then  it is expected that a pedigree will be included for\ngenetically related individuals for use cases such as genomic diagnostics. If a phenopacket is being used to\ndescribe one member of a cohort, then in general one phenopacket will be created for each of the individuals in\nthe cohort.\n",
+         "examples" : [
+            [
+               {
+                  "id" : "phenopacketid-123",
+                  "metaData" : {
+                     "created" : "2016-06-29T12:03:03.240Z",
+                     "updated" : [
+                        "2018-06-10T10:59:06.784Z"
+                     ]
+                  }
+               }
+            ]
+         ],
+         "items" : {
+            "$ref" : "https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1"
+         },
+         "type" : "array"
+      }
+   },
+   "required" : [
+      "id",
+      "metaData"
+   ],
+   "title" : "Family",
+   "type" : "object"
+}
+

@@ -1,0 +1,30 @@
+[
+   {
+      "htsFiles" : [
+         {
+            "file" : {
+               "path" : "/data/genomes/file1.vcf.gz",
+               "uri" : "file://data/genomes/file1.vcf.gz"
+            },
+            "tsFormat" : "GVCF"
+         }
+      ],
+      "id" : "family-id-123",
+      "metaData" : {
+         "created" : "2016-06-29T12:03:03.240Z",
+         "updated" : [
+            "2018-06-10T10:59:06.784Z"
+         ]
+      },
+      "proband" : {
+         "id" : "phenopacketid-123",
+         "metaData" : {
+            "created" : "2016-06-29T12:03:03.240Z",
+            "updated" : [
+               "2018-06-10T10:59:06.784Z"
+            ]
+         }
+      }
+   }
+]
+

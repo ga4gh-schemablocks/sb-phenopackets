@@ -1,0 +1,105 @@
+{
+   "$id" : "https://schemablocks.org/schemas/ga4gh/Individual/v0.0.1",
+   "$schema" : "http://json-schema.org/draft-07/schema#",
+   "description" : "An individual is a single organism (here typically a human).\n",
+   "examples" : [
+      {
+         "id" : "SAMN05324082-individual",
+         "sex" : "MALE",
+         "taxonomy" : {
+            "id" : "NCBITaxon:9606",
+            "label" : "Homo sapiens"
+         }
+      }
+   ],
+   "oneof" : [
+      {
+         "properties" : [
+            "ageAtCollection"
+         ]
+      },
+      {
+         "properties" : [
+            "ageRangeAtCollection"
+         ]
+      }
+   ],
+   "properties" : {
+      "ageAtCollection" : {
+         "$ref" : "https://schemablocks.org/schemas/ga4gh/Age/v0.0.1",
+         "description" : "An age object describing the age of the individual at the time of collection.\nThe Age object allows the encoding of the age either as ISO8601 duration or\ntime interval (preferred), or as ontology term object.\n",
+         "examples" : [
+            {
+               "age" : "P14Y"
+            }
+         ]
+      },
+      "ageRangeAtCollection" : {
+         "$ref" : "https://schemablocks.org/schemas/ga4gh/AgeRange/v0.0.1",
+         "description" : "An age object describing the age of the individual at the time of collection.\nThe Age object allows the encoding of the age either as ISO8601 duration or\ntime interval (preferred), or as ontology term object.\n",
+         "examples" : [
+            {
+               "start" : {
+                  "age" : "P14Y"
+               }
+            }
+         ]
+      },
+      "datasetId" : {
+         "description" : "The ID of the dataset this Individual belongs to.",
+         "examples" : [
+            "ABCD1234"
+         ],
+         "type" : "string"
+      },
+      "dateOfBirth" : {
+         "description" : "The date of birth of the individual as an ISO8601 UTC timestamp - rounded down to the closest known\nyear/month/day/hour/minute\n",
+         "examples" : [
+            "2018-03-01T00:00:00Z"
+         ],
+         "type" : "string"
+      },
+      "id" : {
+         "description" : "The local-unique identifier of this individual",
+         "examples" : [
+            "AM_BS__NCBISKYCGH-1993"
+         ],
+         "type" : "string"
+      },
+      "karyotypicSex" : {
+         "$ref" : "https://schemablocks.org/schemas/ga4gh/KaryotypicSex/v0.0.1",
+         "description" : "Karyotypic sex of the individual,\none of UNKNOWN_KARYOTYPE, XX, XY, XO, XXY, XXX, XXYY, XXXY, XXXX, XYY, OTHER_KARYO,\n",
+         "examples" : [
+            "XX"
+         ]
+      },
+      "sex" : {
+         "description" : "The phenotypic/ administrative sex of the individual, one of UNKNOWN_SEX, FEMALE, MALE, OTHER_SEX",
+         "enum" : [
+            "UNKNOWN_SEX",
+            "FEMALE",
+            "MALE",
+            "OTHER_SEX"
+         ],
+         "examples" : [
+            "FEMALE"
+         ]
+      },
+      "taxonomy" : {
+         "$ref" : "https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1",
+         "description" : "NCBI taxonomic identifier. For resources where there may be more than one organism being studied\nit is advisable to indicate the taxonomic identifier of that organism, to its most specific level\n",
+         "examples" : [
+            {
+               "id" : "NCBITaxon:9606",
+               "label" : "Homo sapiens"
+            }
+         ]
+      }
+   },
+   "required" : [
+      "id"
+   ],
+   "title" : "Individual",
+   "type" : "object"
+}
+

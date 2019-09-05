@@ -1,0 +1,32 @@
+[
+   {
+      "id" : "pato",
+      "name" : "PhenotypicFeature And Trait Ontology",
+      "namespacePrefix" : "PATO",
+      "url" : "http://purl.obolibrary.org/obo/pato.owl",
+      "version" : "2018-03-28"
+   },
+   {
+      "id" : "efo",
+      "name" : "Experimental Factor Ontology",
+      "namespacePrefix" : "EFO",
+      "url" : "http://purl.obolibrary.org/obo/pato.owl",
+      "version" : "2.97"
+   },
+   {
+      "id" : "ncbitaxon",
+      "name" : "NCBI organismal classification",
+      "namespacePrefix" : "NCBITaxon",
+      "url" : "http://purl.obolibrary.org/obo/ncbitaxon.owl",
+      "version" : "2018-03-02"
+   },
+   {
+      "id" : "hp",
+      "iriPrefix" : "http://purl.obolibrary.org/obo/HP_",
+      "name" : "human phenotype ontology",
+      "namespacePrefix" : "HP",
+      "url" : "http://purl.obolibrary.org/obo/hp.owl",
+      "version" : "2018-03-08"
+   }
+]
+

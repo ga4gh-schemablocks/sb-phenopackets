@@ -1,0 +1,76 @@
+[
+   {
+      "ageOfIndividualAtCollection" : {
+         "age" : "P1Y"
+      },
+      "description" : "THP-1; 6 hours; DMSO; Replicate 1",
+      "histologicalDiagnosis" : {
+         "id" : "EFO:0000221",
+         "label" : "Acute Monocytic Leukemia"
+      },
+      "id" : "SAMN05324082",
+      "individualId" : "SAMN05324082-individual",
+      "phenotypicFeature" : [
+         {
+            "type" : {
+               "id" : "EFO:0001253",
+               "label" : "THP-1"
+            }
+         }
+      ],
+      "sampledTissue" : {
+         "id" : "UBERON:0000178",
+         "label" : "peripheral blood"
+      },
+      "taxonomy" : {
+         "id" : "NCBITaxon:9606",
+         "label" : "Homo sapiens"
+      }
+   },
+   {
+      "ageOfIndividualAtCollection" : {
+         "age" : "P1Y"
+      },
+      "diagnosticMarkers" : [
+         {
+            "id" : "NCIT:C131711",
+            "label" : "Human Papillomavirus-18 Positive"
+         }
+      ],
+      "histologicalDiagnosis" : {
+         "id" : "EFO:0000221",
+         "label" : "Acute Monocytic Leukemia"
+      },
+      "id" : "SAMN05324083",
+      "individualId" : "SAMN05324083-individual",
+      "procedure" : {
+         "code" : {
+            "id" : "NCIT:C15189",
+            "label" : "Biopsy"
+         }
+      },
+      "sampledTissue" : {
+         "id" : "NCIT:C139196",
+         "label" : "Esophageal Lymph Node"
+      },
+      "tumorProgression" : {
+         "id" : "NCIT:C84509",
+         "label" : "Primary Malignant Neoplasm"
+      },
+      "tumorStage" : [
+         {
+            "id" : "NCIT:C48724",
+            "label" : "T2 Stage Finding"
+         },
+         {
+            "id" : "NCIT:C48706",
+            "label" : "N1 Stage Finding"
+         },
+         {
+            "id" : "NCIT:C48699",
+            "label" : "M0 Stage Finding"
+         }
+      ]
+   }
+]
+

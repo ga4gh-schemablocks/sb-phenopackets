@@ -1,0 +1,35 @@
+[
+   {
+      "ageOfOnset" : {
+         "id" : "HP:0003596",
+         "label" : "Middle age onset"
+      },
+      "description" : "add example",
+      "evidence" : {
+         "evidenceCode" : {
+            "id" : "add example",
+            "label" : "add example"
+         },
+         "reference" : {
+            "description" : "add example",
+            "id" : "add example"
+         }
+      },
+      "modifiers" : [
+         {
+            "id" : "HP:0025282",
+            "label" : "Dull"
+         }
+      ],
+      "negated" : "",
+      "severity" : {
+         "id" : "HP:0012825",
+         "label" : "Mild"
+      },
+      "type" : {
+         "id" : "add example",
+         "label" : "add example"
+      }
+   }
+]
+
