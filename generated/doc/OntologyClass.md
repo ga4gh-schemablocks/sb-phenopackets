@@ -21,9 +21,9 @@
     - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
 <!--more-->
 
-### Source
+### Source (v0.0.1)
 
-* raw source [[JSON](./OntologyClass.json)]
+* raw source [[JSON](./current/OntologyClass.json)]
 * [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/OntologyClass.yaml)
 
 ### Attributes

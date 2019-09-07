@@ -17,9 +17,9 @@
     - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
 <!--more-->
 
-### Source
+### Source (v0.0.1)
 
-* raw source [[JSON](./Age.json)]
+* raw source [[JSON](./current/Age.json)]
 * [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/working/Age.yaml)
 
 ### Attributes
