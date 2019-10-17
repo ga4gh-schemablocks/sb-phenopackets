@@ -1,6 +1,12 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
 title: OntologyClass
+description: |
+  OntologyClass represents the core object used to reference domain-specific
+  entities, as well as to identify their domains through the appropriate
+  prefix.
+  CURIES are case sensitive, although for prefixes this practice is
+  inconsistently followed.
 meta:
   contributors:
     - description: "GA4GH Metadata Task Team"
@@ -21,26 +27,21 @@ meta:
     - description: "Progenetix database schema (Beacon+ backend)"
       url: 'https://github.com/progenetix/schemas/tree/master/main/yaml'
   sb_status: implemented
-description: |
-  OntologyClass represents the core object used to reference domain-specific
-  entities, as well as to identify their domains through the appropriate
-  prefix.
-  CURIES are case sensitive, although for prefixes this practice is
-  inconsistently followed.
 type: object
 properties:
   id:
-    description: CURIE of the ontology class
     type: string
+    description: CURIE of the ontology class
     examples:
       - 'ncit:C8294'
   label:
-    description: the text label associated with the ontology class
     type: string
+    description: the text label associated with the ontology class
     examples:
       - 'Pancreatic Adenocarcinoma'
 required:
   - id
+additionalProperties: false
 examples:
   - id: 'DUO:0000004'
     label: 'no restriction'

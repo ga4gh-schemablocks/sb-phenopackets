@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1
+"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/Phenopacket.json
 title: Phenopacket
 description: |
   An anonymous phenotypic description of an individual or biosample with potential genes of interest and/or diagnoses.
@@ -7,6 +7,26 @@ description: |
   resources sharing the phenopackets will define and enforce their own semantics and level of requirements for included
   fields.
 type: object
+meta:
+  contributors:
+    - description: "GA4GH Data Working Group"
+    - description: "Jules Jacobsen"
+      id: "orcid:0000-0002-3265-15918"
+    - description: "Peter Robinson"
+      id: "orcid:0000-0002-0736-91998"
+    - description: "Michael Baudis"
+      id: "orcid:0000-0002-9903-4248"
+    - description: "Melanie Courtot"
+      id: "orcid:0000-0002-9551-6370"
+    - description: "Isuru Liyanage"
+      id: "orcid:0000-0002-4839-5158"
+  provenance:
+    - description: Phenopackets
+      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/phenopacket.rst'
+  used_by:
+    - description: Phenopackets
+      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/phenopacket.rst'
+  sb_status: implemented
 properties:
   id:
     description: An identifier specific for this phenopacket
@@ -15,7 +35,7 @@ properties:
       - 'phenopacketid123'
   subject:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/Individual/v0.0.1
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Individual.json
       - description: |
           The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
         examples:
@@ -29,7 +49,7 @@ properties:
       Phenotypic features relating to the subject of the phenopacket
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/PhenotypicFeature/v0.0.1
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/PhenotypicFeature.json
     examples:
       - - description: 'add example'
           type:
@@ -40,7 +60,7 @@ properties:
       Biosample(s) derived from the patient or a collection of biosamples in isolation
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Biosample/v0.0.1
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Biosample.json
     examples:
       - - id: 'SAMN05324082'
           individualId: 'SAMN05324082-individual'
@@ -55,7 +75,7 @@ properties:
       obfuscate the specific causative/candidate variant.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Gene/v0.0.1
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Gene.json
     examples:
       - - id: 'HGNC:3477'
           symbol: 'ETF1'
@@ -65,7 +85,7 @@ properties:
       variants. The resources using these fields should define what this represents in their context.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Variant/v0.0.1
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Variant.json
     examples:
       - - id: 'ID_12345'
           description: 'description of variant'
@@ -79,11 +99,11 @@ properties:
       resources using these fields should define what this represents in their context.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/Disease/v0.0.1
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Disease.json
     examples:
       - - term:
-          id: 'MONDO:0007043'
-          label: 'Pfeiffer syndrome'
+            id: 'MONDO:0007043'
+            label: 'Pfeiffer syndrome'
           classOfOnset:
             id: 'HP:0003596'
             label: 'Middle age onset'
@@ -92,24 +112,23 @@ properties:
       Pointer to the relevant HTS file(s) for the patient
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json
     examples:
       - - htsFormat: 'GVCF'
-          file:
-            path: '/data/genomes/file1.vcf.gz'
-            uri: 'file://data/genomes/file1.vcf.gz'
+          uri: 'file://data/genomes/file1.vcf.gz'
   metaData:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/MetaData/v0.0.1
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json
       - description: |
           Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
         examples:
           - created: '2016-06-29T12:03:03.240Z'
-            updated:
-              - '2018-06-10T10:59:06.784Z'
+            updates:
+              - timestamp: '2007-12-03T10:15:30.00Z'
 required:
   - id
   - metaData
+additionalProperties: false
 examples:
   - id: 'phenopacketid-123'
     subject:
@@ -127,6 +146,6 @@ examples:
           label: 'peripheral blood'
     metaData:
       created: '2016-06-29T12:03:03.240Z'
-      updated:
-        - '2018-06-10T10:59:06.784Z'
+      updates:
+        - timestamp: '2007-12-03T10:15:30.00Z'
 

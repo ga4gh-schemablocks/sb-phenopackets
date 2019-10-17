@@ -1,4 +1,4 @@
-# blocks-json-schema
+# sb-phenopackets
 
 This repository is for __drafting__ schema blocks using [JSON Schema](https://json-schema.org) and to develop an automated setup to convert the block code and inline documentation into Markdown, for readability and web representation. 
 
