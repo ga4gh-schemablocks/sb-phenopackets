@@ -1,0 +1,33 @@
+{
+   "$id" : "https://schemablocks.org/schemas/ga4gh/IscnAllele/v0.0.1",
+   "$schema" : "http://json-schema.org/draft-07/schema#",
+   "description" : "See https://www.humpath.com/spip.php?article13862\n",
+   "examples" : [
+      {
+         "id" : "add example",
+         "var" : "del(6)(q23q24)"
+      }
+   ],
+   "properties" : {
+      "id" : {
+         "description" : "add description",
+         "examples" : [
+            "add example"
+         ],
+         "type" : "string"
+      },
+      "var" : {
+         "description" : "An ICSN code such as del(6)(q23q24), t(8;9;11)(q12;p24;p12), +15",
+         "examples" : [
+            "del(6)(q23q24)"
+         ],
+         "type" : "string"
+      }
+   },
+   "required" : [
+      "id"
+   ],
+   "title" : "IscnAllele",
+   "type" : "object"
+}
+

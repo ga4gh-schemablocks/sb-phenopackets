@@ -1,0 +1,13 @@
+[
+   {
+      "classOfOnset" : {
+         "id" : "HP:0003596",
+         "label" : "Middle age onset"
+      },
+      "term" : {
+         "id" : "MONDO:0007043",
+         "label" : "Pfeiffer syndrome"
+      }
+   }
+]
+

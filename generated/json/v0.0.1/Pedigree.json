@@ -1,0 +1,36 @@
+{
+   "$id" : "https://schemablocks.org/schemas/ga4gh/Pedigree/v0.0.1",
+   "$schema" : "http://json-schema.org/draft-07/schema#",
+   "description" : "https://software.broadinstitute.org/gatk/documentation/article?id=11016\n",
+   "examples" : [
+      {
+         "person" : [
+            {
+               "individualId" : "add example"
+            }
+         ]
+      }
+   ],
+   "properties" : {
+      "person" : {
+         "description" : "add description",
+         "examples" : [
+            [
+               {
+                  "individualId" : "add example"
+               }
+            ]
+         ],
+         "items" : {
+            "$ref" : "https://schemablocks.org/schemas/ga4gh/Person/v0.0.1"
+         },
+         "type" : "array"
+      }
+   },
+   "required" : [
+      "person"
+   ],
+   "title" : "Pedigree",
+   "type" : "object"
+}
+

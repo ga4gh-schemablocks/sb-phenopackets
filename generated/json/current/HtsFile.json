@@ -1,0 +1,64 @@
+{
+   "$id" : "https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1",
+   "$schema" : "http://json-schema.org/draft-07/schema#",
+   "description" : "A file in one of the HTS formats (https://samtools.github.io/hts-specs)\n",
+   "examples" : [
+      {
+         "file" : {
+            "path" : "/data/genomes/file1.vcf.gz",
+            "uri" : "file://data/genomes/file1.vcf.gz"
+         },
+         "htsFormat" : "GVCF"
+      }
+   ],
+   "properties" : {
+      "file" : {
+         "$ref\"" : "https://schemablocks.org/schemas/ga4gh/File/v0.0.1",
+         "description" : "the actual hts file\n",
+         "examples" : [
+            {
+               "path" : "/data/genomes/file1.vcf.gz",
+               "uri" : "file://data/genomes/file1.vcf.gz"
+            }
+         ]
+      },
+      "genomeAssembly" : {
+         "description" : "Genome assembly the contents of this file was called against. We recommend using the Genome Reference Consortium\nnomenclature e.g. GRCh37, GRCh38\n",
+         "examples" : [
+            "GRCh37"
+         ],
+         "type" : "string"
+      },
+      "htsFormat" : {
+         "description" : "one of UNKNOWN, SAM, BAM, CRAM, VCF, BCF, GVCF\n",
+         "enum" : [
+            "UNKNOWN",
+            "SAM",
+            "BAM",
+            "CRAM",
+            "VCF",
+            "BCF",
+            "GVCF"
+         ],
+         "examples" : [
+            "SAM"
+         ]
+      },
+      "individualToSampleIdentifiers" : {
+         "description" : "A map of identifiers mapping an individual to a sample in the file. The key values must correspond to the\nIndividual::id for the individuals in the message, the values must map to the samples in the file.\n",
+         "examples" : [
+            {
+               "individual1" : "add example"
+            }
+         ],
+         "type" : "object"
+      }
+   },
+   "required" : [
+      "htsFormat",
+      "file"
+   ],
+   "title" : "HtsFile",
+   "type" : "object"
+}
+

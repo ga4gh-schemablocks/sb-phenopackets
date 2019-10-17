@@ -1,0 +1,89 @@
+{
+   "$id" : "https://schemablocks.org/schemas/ga4gh/Disease/v0.0.1",
+   "$schema" : "http://json-schema.org/draft-07/schema#",
+   "description" : "Message to indicate a disease (diagnosis) and its recorded onset.\n",
+   "examples" : [
+      {
+         "classOfOnset" : {
+            "id" : "HP:0003596",
+            "label" : "Middle age onset"
+         },
+         "term" : {
+            "id" : "MONDO:0007043",
+            "label" : "Pfeiffer syndrome"
+         }
+      }
+   ],
+   "oneof" : [
+      {
+         "properties" : [
+            "ageOfOnset"
+         ]
+      },
+      {
+         "properties" : [
+            "ageRangeOfOnset"
+         ]
+      },
+      {
+         "properties" : [
+            "classOfOnset"
+         ]
+      }
+   ],
+   "properties" : {
+      "ageOfOnset" : {
+         "$ref" : "https://schemablocks.org/schemas/ga4gh/Age/v0.0.1",
+         "description" : "The onset of the disease. The values of this will come from the HPO onset hierarchy\ni.e. subclasses of HP:0003674\nFHIR mapping: Condition.onset\n",
+         "examples" : [
+            {
+               "age" : "P35Y",
+               "ageClass" : {
+                  "id" : "HP:0003596",
+                  "label" : "Middle age onset"
+               }
+            }
+         ]
+      },
+      "ageRangeOfOnset" : {
+         "$ref" : "https://schemablocks.org/schemas/ga4gh/AgeRange/v0.0.1",
+         "description" : "The onset of the disease. The values of this will come from the HPO onset hierarchy\ni.e. subclasses of HP:0003674\nFHIR mapping: Condition.onset\n",
+         "examples" : [
+            {
+               "start" : {
+                  "age" : "P35Y",
+                  "ageClass" : {
+                     "id" : "HP:0003596",
+                     "label" : "Middle age onset"
+                  }
+               }
+            }
+         ]
+      },
+      "classOfOnset" : {
+         "$ref" : "https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1",
+         "description" : "The onset of the disease. The values of this will come from the HPO onset hierarchy\ni.e. subclasses of HP:0003674\nFHIR mapping: Condition.onset\n",
+         "examples" : [
+            {
+               "id" : "HP:0003596",
+               "label" : "Middle age onset"
+            }
+         ]
+      },
+      "term" : {
+         "$ref" : "https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1",
+         "description" : "The identifier of this disease\ne.g. MONDO:0007043, OMIM:101600, Orphanet:710, DOID:14705 (note these are all equivalent)\n",
+         "examples" : [
+            {
+               "id" : "MONDO:0007043"
+            }
+         ]
+      }
+   },
+   "required" : [
+      "term"
+   ],
+   "title" : "Disease",
+   "type" : "object"
+}
+

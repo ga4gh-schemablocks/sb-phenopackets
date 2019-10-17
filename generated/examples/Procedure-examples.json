@@ -1,0 +1,13 @@
+[
+   {
+      "bodySite" : {
+         "id" : "UBERON:0003403",
+         "label" : "skin of forearm"
+      },
+      "code" : {
+         "id" : "NCIT:C28743",
+         "label" : "Funch Biopsy"
+      }
+   }
+]
+

@@ -1,0 +1,13 @@
+[
+   {
+      "evidenceCode" : {
+         "id" : "add example",
+         "label" : "add example"
+      },
+      "reference" : {
+         "description" : "COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.",
+         "id" : "PMID:30808312"
+      }
+   }
+]
+

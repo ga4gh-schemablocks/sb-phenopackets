@@ -1,0 +1,91 @@
+{
+   "$id" : "https://schemablocks.org/schemas/ga4gh/Cohort/v0.0.1",
+   "$schema" : "http://json-schema.org/draft-07/schema#",
+   "description" : "A group of individuals related in some phenotypic or genotypic aspect\n",
+   "examples" : [
+      {
+         "id" : "cohort-id-123",
+         "metaData" : {
+            "created" : "2016-06-29T12:03:03.240Z",
+            "updated" : [
+               "2018-06-10T10:59:06.784Z"
+            ]
+         }
+      }
+   ],
+   "properties" : {
+      "description" : {
+         "description" : "description about the cohort",
+         "examples" : [
+            "this is a description about the cohort"
+         ],
+         "type" : "string"
+      },
+      "htsFiles" : {
+         "description" : "Pointer to the relevant HTS file(s) for the cohort\n",
+         "examples" : [
+            {
+               "file" : {
+                  "path" : "/data/genomes/file1.vcf.gz",
+                  "uri" : "file://data/genomes/file1.vcf.gz"
+               },
+               "htsFormat" : "GVCF"
+            }
+         ],
+         "items" : {
+            "$ref" : "https://schemablocks.org/schemas/ga4gh/HtsFile/v0.0.1"
+         },
+         "type" : "array"
+      },
+      "id" : {
+         "description" : "An identifier specific to the cohort",
+         "examples" : [
+            "cohort-id-123"
+         ],
+         "type" : "string"
+      },
+      "members" : {
+         "description" : "add description",
+         "examples" : [
+            {
+               "id" : "phenopacketid-123",
+               "metaData" : {
+                  "created" : "2016-06-29T12:03:03.240Z",
+                  "updated" : [
+                     "2018-06-10T10:59:06.784Z"
+                  ]
+               }
+            }
+         ],
+         "items" : {
+            "$ref" : "https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1"
+         },
+         "type" : "array"
+      },
+      "metaData" : {
+         "allof" : [
+            {
+               "$ref" : "https://schemablocks.org/schemas/ga4gh/MetaData/v0.0.1"
+            },
+            {
+               "description" : "Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED\n",
+               "examples" : [
+                  {
+                     "created" : "2016-06-29T12:03:03.240Z",
+                     "updated" : [
+                        "2018-06-10T10:59:06.784Z"
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   },
+   "required" : [
+      "id",
+      "metaData"
+   ],
+   "title" : "Cohort",
+   "type" : "object"
+}
+

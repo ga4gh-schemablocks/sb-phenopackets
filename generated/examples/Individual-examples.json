@@ -1,0 +1,11 @@
+[
+   {
+      "id" : "SAMN05324082-individual",
+      "sex" : "MALE",
+      "taxonomy" : {
+         "id" : "NCBITaxon:9606",
+         "label" : "Homo sapiens"
+      }
+   }
+]
+

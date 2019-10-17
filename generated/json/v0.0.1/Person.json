@@ -1,0 +1,69 @@
+{
+   "$id" : "https://schemablocks.org/schemas/ga4gh/Person/v0.0.1",
+   "$schema" : "http://json-schema.org/draft-07/schema#",
+   "description" : "person\n",
+   "examples" : [
+      {
+         "individualId" : "add example"
+      }
+   ],
+   "properties" : {
+      "affectedStatus" : {
+         "description" : "one of MISSING, UNAFFECTED, AFFECTED",
+         "enum" : [
+            "MISSING",
+            "UNAFFECTED",
+            "AFFECTED"
+         ],
+         "examples" : [
+            "MISSING"
+         ]
+      },
+      "familyId" : {
+         "description" : "add description",
+         "examples" : [
+            "add example"
+         ],
+         "type" : "string"
+      },
+      "individualId" : {
+         "description" : "add description",
+         "examples" : [
+            "add example"
+         ],
+         "type" : "string"
+      },
+      "maternalId" : {
+         "description" : "add description",
+         "examples" : [
+            "add example"
+         ],
+         "type" : "string"
+      },
+      "paternalId" : {
+         "description" : "add description",
+         "examples" : [
+            "add example"
+         ],
+         "type" : "string"
+      },
+      "sex" : {
+         "description" : "one of UNKNOWN_SEX, FEMALE, MALE, OTHER_SEX",
+         "enum" : [
+            "UNKNOWN_SEX",
+            "FEMALE",
+            "MALE",
+            "OTHER_SEX"
+         ],
+         "examples" : [
+            "FEMALE"
+         ]
+      }
+   },
+   "required" : [
+      "individualId"
+   ],
+   "title" : "Person",
+   "type" : "object"
+}
+

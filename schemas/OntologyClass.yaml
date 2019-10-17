@@ -18,7 +18,7 @@ meta:
       id: "orcid:0000-0002-9551-6370"
   provenance:
     - description: "Original GA4GH schema"
-      url: 'https://github.com/ga4gh/ga4gh-schemas/blob/master/src/main/proto/ga4gh/common.proto#L152'
+      url: 'https://github.com/ga4gh/ga4gh-schemas/blob/master/src/main/proto/ga4gh/common.proto'
     - description: "additional discussions with @cmungall and phenopackets developers"
     - description: "Phenopackets alignment"
   used_by:

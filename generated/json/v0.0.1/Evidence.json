@@ -1,0 +1,42 @@
+{
+   "$id" : "https://schemablocks.org/schemas/ga4gh/Evidence/v0.0.1",
+   "$schema" : "http://json-schema.org/draft-07/schema#",
+   "description" : "Evidence, FHIR mapping: Condition.evidence (https://www.hl7.org/fhir/condition-definitions.html#Condition.evidence)\n",
+   "examples" : [
+      {
+         "evidenceCode" : {
+            "id" : "add example",
+            "label" : "add example"
+         },
+         "reference" : {
+            "description" : "COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.",
+            "id" : "PMID:30808312"
+         }
+      }
+   ],
+   "properties" : {
+      "evidenceCode" : {
+         "$ref" : "https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1",
+         "description" : "The encoded evidence type using, for example the Evidence & Conclusion Ontology\n(ECO - http://purl.obolibrary.org/obo/eco.owl)\nFHIR mapping - Condition.evidence.code\n",
+         "examples" : [
+            {
+               "id" : "add example",
+               "label" : "add example"
+            }
+         ]
+      },
+      "reference" : {
+         "$ref" : "https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1",
+         "description" : "FHIR mapping - Condition.evidence.detail\n",
+         "examples" : [
+            {
+               "description" : "COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.",
+               "id" : "PMID:30808312"
+            }
+         ]
+      }
+   },
+   "title" : "Evidence",
+   "type" : "object"
+}
+
