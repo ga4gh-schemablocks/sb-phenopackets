@@ -2,14 +2,28 @@
 ## Metadata
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
-    - ____
+    - __implemented__
 
+* Provenance  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/metadata.rst)  
+* Used by  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/metadata.rst)  
+* Contributors  
+
+    - GA4GH Data Working Group  
+    - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
+    - [Peter Robinson](https://orcid.org/0000-0002-0736-91998)  
+    - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
+    - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
+    - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 <!--more-->
 
-### Source
+### Source (v0.0.1)
 
-* raw source [[JSON](./MetaData.json)]
-* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/working/MetaData.yaml)
+* raw source [[JSON](./current/MetaData.json)]
+* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/MetaData.yaml)
 
 ### Attributes
   
@@ -34,19 +48,23 @@ __Description:__ metadata
   </tr>
   <tr>
     <td>externalReferences</td>
-    <td>array of https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1</td>
+    <td>array of https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/ExternalReference.html" target="_BLANK">HTML</a>]</td>
+  </tr>
+  <tr>
+    <td>phenopacketSchemaVersion</td>
+    <td>string</td>
   </tr>
   <tr>
     <td>resources</td>
-    <td>array of https://schemablocks.org/schemas/ga4gh/Resource/v0.0.1</td>
+    <td>array of https://schemablocks.org/schemas/ga4gh/v0.0.1/Resource.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Resource.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Resource.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>submittedBy</td>
     <td>string</td>
   </tr>
   <tr>
-    <td>updated</td>
-    <td>array of array</td>
+    <td>updates</td>
+    <td>array of https://schemablocks.org/schemas/ga4gh/v0.0.1/Update.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Update.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Update.html" target="_BLANK">HTML</a>]</td>
   </tr>
 
 </table>
@@ -78,7 +96,7 @@ some kind of identifier for the contributor/ program
 
 #### externalReferences
 
-* type: array of https://schemablocks.org/schemas/ga4gh/ExternalReference/v0.0.1
+* type: array of https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/ExternalReference.html" target="_BLANK">HTML</a>]
 
 External identifiers for this message. These are considered different representation of the same record, not
 records which are in some other relation with the record at hand. For example this might be a PubMed reference
@@ -96,9 +114,21 @@ to a study in which the individuals are reported.
 ]
 ```
 
+#### phenopacketSchemaVersion
+
+* type: string
+
+Used to create this phenopacket
+
+##### `phenopacketSchemaVersion` Value Example  
+
+```
+"1.0.2"
+```
+
 #### resources
 
-* type: array of https://schemablocks.org/schemas/ga4gh/Resource/v0.0.1
+* type: array of https://schemablocks.org/schemas/ga4gh/v0.0.1/Resource.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Resource.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Resource.html" target="_BLANK">HTML</a>]
 
 A listing of the ontologies/resources referenced in the phenopacket
 
@@ -133,20 +163,21 @@ Information about the person/organisation/network that has submitted this phenop
 "add example"
 ```
 
-#### updated
+#### updates
 
-* type: array of array
+* type: array of https://schemablocks.org/schemas/ga4gh/v0.0.1/Update.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Update.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Update.html" target="_BLANK">HTML</a>]
 
 ISO8601 UTC timestamps at which this record was updated,
 in the format YYYY-MM-DDTHH:MM:SS.SSSZ e.g. 2007-12-03T10:15:30.00Z
 
 
-##### `updated` Value Example  
+##### `updates` Value Example  
 
 ```
 [
-   "2007-12-03T10:15:30.00Z",
-   "2008-12-03T10:15:30.00Z"
+   {
+      "timestamp" : "2007-12-03T10:15:30.00Z"
+   }
 ]
 ```
 
@@ -156,8 +187,10 @@ in the format YYYY-MM-DDTHH:MM:SS.SSSZ e.g. 2007-12-03T10:15:30.00Z
 ```
 {
    "created" : "2016-06-29T12:03:03.240Z",
-   "updated" : [
-      "2018-06-10T10:59:06.784Z"
+   "updates" : [
+      {
+         "timestamp" : "2007-12-03T10:15:30.00Z"
+      }
    ]
 }
 ```
@@ -175,8 +208,10 @@ in the format YYYY-MM-DDTHH:MM:SS.SSSZ e.g. 2007-12-03T10:15:30.00Z
          "version" : "19-03-2018"
       }
    ],
-   "updated" : [
-      "2018-06-10T10:59:06.784Z"
+   "updates" : [
+      {
+         "timestamp" : "2007-12-03T10:15:30.00Z"
+      }
    ]
 }
 ```

@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/Individual.json
+"$id": https://schemablocks.org/schemas/ga4gh/Individual/v0.0.1
 title: Individual
 description: |
   An individual is a single organism (here typically a human).
@@ -48,23 +48,23 @@ properties:
       - '2018-03-01T00:00:00Z'
   ageAtCollection:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
-      - description: |
-          An age object describing the age of the individual at the time of collection.
-          The Age object allows the encoding of the age either as ISO8601 duration or
-          time interval (preferred), or as ontology term object.
-        examples:
-          - age: 'P14Y'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
+      description: |
+        An age object describing the age of the individual at the time of collection.
+        The Age object allows the encoding of the age either as ISO8601 duration or
+        time interval (preferred), or as ontology term object.
+      examples:
+        - age: 'P14Y'
   ageRangeAtCollection:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
-      - description: |
-          An age object describing the age of the individual at the time of collection.
-          The Age object allows the encoding of the age either as ISO8601 duration or
-          time interval (preferred), or as ontology term object.
-        examples:
-          - start:
-              age: 'P14Y'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
+      description: |
+        An age object describing the age of the individual at the time of collection.
+        The Age object allows the encoding of the age either as ISO8601 duration or
+        time interval (preferred), or as ontology term object.
+      examples:
+        - start:
+            age: 'P14Y'
   sex:
     description: The phenotypic/ administrative sex of the individual, one of UNKNOWN_SEX, FEMALE, MALE, OTHER_SEX
     enum:
@@ -93,13 +93,13 @@ properties:
       - 'XX'
   taxonomy:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: |
-          NCBI taxonomic identifier. For resources where there may be more than one organism being studied
-          it is advisable to indicate the taxonomic identifier of that organism, to its most specific level
-        examples:
-          - id: 'NCBITaxon:9606'
-            label: 'Homo sapiens'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: |
+        NCBI taxonomic identifier. For resources where there may be more than one organism being studied
+        it is advisable to indicate the taxonomic identifier of that organism, to its most specific level
+      examples:
+        - id: 'NCBITaxon:9606'
+          label: 'Homo sapiens'
 required:
   - id
 oneof:

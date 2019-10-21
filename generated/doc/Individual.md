@@ -2,14 +2,28 @@
 ## Individual
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
-    - ____
+    - __implemented__
 
+* Provenance  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/individual.rst)  
+* Used by  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/individual.rst)  
+* Contributors  
+
+    - GA4GH Data Working Group  
+    - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
+    - [Peter Robinson](https://orcid.org/0000-0002-0736-91998)  
+    - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
+    - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
+    - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 <!--more-->
 
-### Source
+### Source (v0.0.1)
 
-* raw source [[JSON](./Individual.json)]
-* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/working/Individual.yaml)
+* raw source [[JSON](./current/Individual.json)]
+* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Individual.yaml)
 
 ### Attributes
   
@@ -26,15 +40,15 @@ __Description:__ An individual is a single organism (here typically a human).
   </tr>
   <tr>
     <td>ageAtCollection</td>
-    <td>https://schemablocks.org/schemas/ga4gh/Age/v0.0.1</td>
+    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Age.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>ageRangeAtCollection</td>
-    <td>https://schemablocks.org/schemas/ga4gh/AgeRange/v0.0.1</td>
+    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/AgeRange.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
-    <td>datasetId</td>
-    <td>string</td>
+    <td>alternateIds</td>
+    <td>array of string</td>
   </tr>
   <tr>
     <td>dateOfBirth</td>
@@ -46,7 +60,7 @@ __Description:__ An individual is a single organism (here typically a human).
   </tr>
   <tr>
     <td>karyotypicSex</td>
-    <td>https://schemablocks.org/schemas/ga4gh/KaryotypicSex/v0.0.1</td>
+    <td></td>
   </tr>
   <tr>
     <td>sex</td>
@@ -54,7 +68,7 @@ __Description:__ An individual is a single organism (here typically a human).
   </tr>
   <tr>
     <td>taxonomy</td>
-    <td>https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1</td>
+    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
 
 </table>
@@ -62,7 +76,7 @@ __Description:__ An individual is a single organism (here typically a human).
 
 #### ageAtCollection
 
-* type: https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
+* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Age.html" target="_BLANK">HTML</a>]
 
 An age object describing the age of the individual at the time of collection.
 The Age object allows the encoding of the age either as ISO8601 duration or
@@ -79,7 +93,7 @@ time interval (preferred), or as ontology term object.
 
 #### ageRangeAtCollection
 
-* type: https://schemablocks.org/schemas/ga4gh/AgeRange/v0.0.1
+* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/AgeRange.html" target="_BLANK">HTML</a>]
 
 An age object describing the age of the individual at the time of collection.
 The Age object allows the encoding of the age either as ISO8601 duration or
@@ -96,16 +110,20 @@ time interval (preferred), or as ontology term object.
 }
 ```
 
-#### datasetId
+#### alternateIds
 
-* type: string
+* type: array of string
 
-The ID of the dataset this Individual belongs to.
+An optional list of alternative identifiers for this individual. This field is provided
+for the convenience of users who may have multiple mappings to an individual which they need to track.
 
-##### `datasetId` Value Example  
+
+##### `alternateIds` Value Example  
 
 ```
-"ABCD1234"
+[
+   "another_id"
+]
 ```
 
 #### dateOfBirth
@@ -136,7 +154,7 @@ The local-unique identifier of this individual
 
 #### karyotypicSex
 
-* type: https://schemablocks.org/schemas/ga4gh/KaryotypicSex/v0.0.1
+* type: 
 
 Karyotypic sex of the individual,
 one of UNKNOWN_KARYOTYPE, XX, XY, XO, XXY, XXX, XXYY, XXXY, XXXX, XYY, OTHER_KARYO,
@@ -162,7 +180,7 @@ The phenotypic/ administrative sex of the individual, one of UNKNOWN_SEX, FEMALE
 
 #### taxonomy
 
-* type: https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
+* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
 NCBI taxonomic identifier. For resources where there may be more than one organism being studied
 it is advisable to indicate the taxonomic identifier of that organism, to its most specific level

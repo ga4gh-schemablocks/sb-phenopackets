@@ -2,14 +2,27 @@
 ## IscnAllele
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
-    - ____
+    - __implemented__
 
+* Provenance  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/variant.rst)  
+* Used by  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/variant.rst)  
+* Contributors  
+
+    - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
+    - [Peter Robinson](https://orcid.org/0000-0002-0736-91998)  
+    - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
+    - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
+    - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 <!--more-->
 
-### Source
+### Source (v0.0.1)
 
-* raw source [[JSON](./IscnAllele.json)]
-* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/working/IscnAllele.yaml)
+* raw source [[JSON](./current/IscnAllele.json)]
+* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/IscnAllele.yaml)
 
 ### Attributes
   
@@ -29,7 +42,7 @@ __Description:__ See https://www.humpath.com/spip.php?article13862
     <td>string</td>
   </tr>
   <tr>
-    <td>var</td>
+    <td>iscn</td>
     <td>string</td>
   </tr>
 
@@ -48,13 +61,13 @@ add description
 "add example"
 ```
 
-#### var
+#### iscn
 
 * type: string
 
 An ICSN code such as del(6)(q23q24), t(8;9;11)(q12;p24;p12), +15
 
-##### `var` Value Example  
+##### `iscn` Value Example  
 
 ```
 "del(6)(q23q24)"
@@ -66,7 +79,7 @@ An ICSN code such as del(6)(q23q24), t(8;9;11)(q12;p24;p12), +15
 ```
 {
    "id" : "add example",
-   "var" : "del(6)(q23q24)"
+   "iscn" : "del(6)(q23q24)"
 }
 ```
 

@@ -1,10 +1,7 @@
 [
    {
-      "file" : {
-         "path" : "/data/genomes/file1.vcf.gz",
-         "uri" : "file://data/genomes/file1.vcf.gz"
-      },
-      "htsFormat" : "GVCF"
+      "htsFormat" : "GVCF",
+      "uri" : "file://data/genomes/file1.vcf.gz"
    }
 ]
 

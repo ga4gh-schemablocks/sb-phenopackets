@@ -2,14 +2,28 @@
 ## Gene
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
-    - ____
+    - __implemented__
 
+* Provenance  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/gene.rst)  
+* Used by  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/gene.rst)  
+* Contributors  
+
+    - GA4GH Data Working Group  
+    - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
+    - [Peter Robinson](https://orcid.org/0000-0002-0736-91998)  
+    - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
+    - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
+    - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 <!--more-->
 
-### Source
+### Source (v0.0.1)
 
-* raw source [[JSON](./Gene.json)]
-* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/working/Gene.yaml)
+* raw source [[JSON](./current/Gene.json)]
+* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Gene.yaml)
 
 ### Attributes
   
@@ -25,6 +39,10 @@ __Description:__ Gene identifier
     <th>Type</th>
   </tr>
   <tr>
+    <td>alternateIds</td>
+    <td>array of string</td>
+  </tr>
+  <tr>
     <td>id</td>
     <td>string</td>
   </tr>
@@ -35,6 +53,20 @@ __Description:__ Gene identifier
 
 </table>
 
+
+#### alternateIds
+
+* type: array of string
+
+alternate identifiers
+
+##### `alternateIds` Value Example  
+
+```
+[
+   "HGNC:3477"
+]
+```
 
 #### id
 

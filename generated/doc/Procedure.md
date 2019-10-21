@@ -2,14 +2,27 @@
 ## Procedure
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
-    - ____
+    - __implemented__
 
+* Provenance  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/procedure.rst)  
+* Used by  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/procedure.rst)  
+* Contributors  
+
+    - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
+    - [Peter Robinson](https://orcid.org/0000-0002-0736-91998)  
+    - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
+    - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
+    - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 <!--more-->
 
-### Source
+### Source (v0.0.1)
 
-* raw source [[JSON](./Procedure.json)]
-* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/working/Procedure.yaml)
+* raw source [[JSON](./current/Procedure.json)]
+* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Procedure.yaml)
 
 ### Attributes
   
@@ -28,11 +41,11 @@ ontology class.
   </tr>
   <tr>
     <td>bodySite</td>
-    <td>https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1</td>
+    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>code</td>
-    <td>https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1</td>
+    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
 
 </table>
@@ -40,7 +53,7 @@ ontology class.
 
 #### bodySite
 
-* type: https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
+* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
 FHIR mapping - Procedure.bodySite
 
@@ -56,7 +69,7 @@ FHIR mapping - Procedure.bodySite
 
 #### code
 
-* type: https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
+* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
 FHIR mapping - Procedure.code
 

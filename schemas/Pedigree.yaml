@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/Pedigree.json
+"$id": https://schemablocks.org/schemas/ga4gh/Pedigree/v0.0.1
 title: Pedigree
 description: |
   https://software.broadinstitute.org/gatk/documentation/article?id=11016

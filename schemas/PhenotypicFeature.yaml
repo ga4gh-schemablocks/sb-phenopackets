@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/PhenotypicFeature.json
+"$id": https://schemablocks.org/schemas/ga4gh/PhenotypicFeature/v0.0.1
 title: PhenotypicFeature
 description: |
   An individual phenotypic feature, observed as either present or absent (negated),
@@ -36,13 +36,13 @@ properties:
       - 'Pancreatic Adenocarcinoma'
   type:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: |
-          The primary ontology class which describes the phenotype.
-          FHIR mapping: Condition.identifier
-        examples:
-          - id: 'add example'
-            label: 'Craniosynostosis'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: |
+        The primary ontology class which describes the phenotype.
+        FHIR mapping: Condition.identifier
+      examples:
+        - id: 'add example'
+          label: 'Craniosynostosis'
   negated:
     type: boolean
     description: |
@@ -55,13 +55,13 @@ properties:
       - 'false'
   severity:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: |
-          Severity of the condition e.g. subclasses of HP:0012824-Severity or SNOMED:272141005-Severities
-          FHIR mapping: Condition.severity
-        examples:
-          - id: 'HP:0012825'
-            label: 'Mild'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: |
+        Severity of the condition e.g. subclasses of HP:0012824-Severity or SNOMED:272141005-Severities
+        FHIR mapping: Condition.severity
+      examples:
+        - id: 'HP:0012825'
+          label: 'Mild'
   modifiers:
     type: array
     description: subclasses of HP:0012823 ! Clinical modifier apart from Severity HP:0012824 - Severity
@@ -72,41 +72,41 @@ properties:
           label: 'Dull'
   ageOfOnset:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
-      - description: |
-          the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
-          FHIR mapping: Condition.onset
-        examples:
-          - age: 'P35Y'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
+      description: |
+        the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
+        FHIR mapping: Condition.onset
+      examples:
+        - age: 'P35Y'
   ageRangeOfOnset:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
-      - description: |
-          the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
-          FHIR mapping: Condition.onset
-        examples:
-          - start:
-              age: 'P35Y'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
+      description: |
+        the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
+        FHIR mapping: Condition.onset
+      examples:
+        - start:
+            age: 'P35Y'
   classOfOnset:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: |
-          the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
-          FHIR mapping: Condition.onset
-        examples:
-          - id: 'HP:0003596'
-            label: 'Middle age onset'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: |
+        the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
+        FHIR mapping: Condition.onset
+      examples:
+        - id: 'HP:0003596'
+          label: 'Middle age onset'
   evidence:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Evidence.json
-      - description: Evidences for how the phenotype was determined.
-        examples:
-          - evidenceCode:
-              id: 'add example'
-              label: 'add example'
-            reference:
-              id: 'add example'
-              description: 'add example'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Evidence.json
+      description: Evidences for how the phenotype was determined.
+      examples:
+        - evidenceCode:
+            id: 'add example'
+            label: 'add example'
+          reference:
+            id: 'add example'
+            description: 'add example'
 required:
   - type
 oneof:

@@ -2,14 +2,24 @@
 ## HtsFile
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
-    - ____
+    - __implemented__
 
+* Provenance  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/file.rst)  
+* Used by  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/file.rst)  
+* Contributors  
+
+    - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
+    - [Peter Robinson](https://orcid.org/0000-0002-0736-91998)  
 <!--more-->
 
-### Source
+### Source (v0.0.1)
 
-* raw source [[JSON](./HtsFile.json)]
-* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/working/HtsFile.yaml)
+* raw source [[JSON](./current/HtsFile.json)]
+* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/HtsFile.yaml)
 
 ### Attributes
   
@@ -25,8 +35,8 @@ __Description:__ A file in one of the HTS formats (https://samtools.github.io/ht
     <th>Type</th>
   </tr>
   <tr>
-    <td>file</td>
-    <td></td>
+    <td>description</td>
+    <td>string</td>
   </tr>
   <tr>
     <td>genomeAssembly</td>
@@ -40,24 +50,25 @@ __Description:__ A file in one of the HTS formats (https://samtools.github.io/ht
     <td>individualToSampleIdentifiers</td>
     <td>object</td>
   </tr>
+  <tr>
+    <td>uri</td>
+    <td>string</td>
+  </tr>
 
 </table>
 
 
-#### file
+#### description
 
-* type: 
+* type: string
 
-the actual hts file
+description of the file contents
 
 
-##### `file` Value Example  
+##### `description` Value Example  
 
 ```
-{
-   "path" : "/data/genomes/file1.vcf.gz",
-   "uri" : "file://data/genomes/file1.vcf.gz"
-}
+"this is the description for the file"
 ```
 
 #### genomeAssembly
@@ -99,8 +110,25 @@ Individual::id for the individuals in the message, the values must map to the sa
 
 ```
 {
-   "individual1" : "add example"
+   "individual1" : "add example",
+   "individual2" : "add example"
 }
+```
+
+#### uri
+
+* type: string
+
+URI for the file
+
+
+##### `uri` Value Examples  
+
+```
+"file://data/genomes/file1.vcf.gz"
+```
+```
+"https://opensnp.org/data/60.23andme-exome-vcf.231?1341012444"
 ```
 
 
@@ -108,11 +136,8 @@ Individual::id for the individuals in the message, the values must map to the sa
 
 ```
 {
-   "file" : {
-      "path" : "/data/genomes/file1.vcf.gz",
-      "uri" : "file://data/genomes/file1.vcf.gz"
-   },
-   "htsFormat" : "GVCF"
+   "htsFormat" : "GVCF",
+   "uri" : "file://data/genomes/file1.vcf.gz"
 }
 ```
 

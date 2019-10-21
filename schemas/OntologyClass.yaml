@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+"$id": https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
 title: OntologyClass
 description: |
   OntologyClass represents the core object used to reference domain-specific
@@ -26,7 +26,7 @@ meta:
       url: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/ontologyclass.rst'
     - description: "Progenetix database schema (Beacon+ backend)"
       url: 'https://github.com/progenetix/schemas/tree/master/main/yaml'
-  sb_status: implemented
+  sb_status: core
 type: object
 properties:
   id:

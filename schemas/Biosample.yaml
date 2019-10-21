@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/Biosamples.json
+"$id": https://schemablocks.org/schemas/ga4gh/Biosample/v0.0.1
 title: Biosample
 description: |
   A Biosample refers to a unit of biological material from which the substrate
@@ -62,14 +62,14 @@ properties:
       - 'THP-1; 6 hours; DMSO; Replicate 1'
   sampledTissue:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: |
-          UBERON class describing the tissue from which the specimen was collected.
-          PDX-MI mapping: 'Specimen tumor tissue'
-          FHIR mapping: Specimen.type
-        examples:
-          - id: 'UBERON:0000178'
-            label: 'peripheral blood'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: |
+        UBERON class describing the tissue from which the specimen was collected.
+        PDX-MI mapping: 'Specimen tumor tissue'
+        FHIR mapping: Specimen.type
+      examples:
+        - id: 'UBERON:0000178'
+          label: 'peripheral blood'
   phenotypicFeature:
     description: Phenotypic characteristics of the BioSample, for example histological findings of a biopsy
     type: array
@@ -81,69 +81,69 @@ properties:
             label: 'THP-1'
   taxonomy:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: NCBI taxonomic identifier (NCBITaxon) of the sample e.g. NCBITaxon:9606
-        examples:
-          - type: 'NCBITaxon:9606'
-            description: 'Homo sapiens'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: NCBI taxonomic identifier (NCBITaxon) of the sample e.g. NCBITaxon:9606
+      examples:
+        - type: 'NCBITaxon:9606'
+          description: 'Homo sapiens'
   ageOfIndividualAtCollection:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
-      - description: |
-          An age object describing the age of the individual this biosample was
-          derived from at the time of collection. The Age object allows the encoding
-          of the age either as ISO8601 duration or time interval (preferred), or
-          as ontology term object.
-          See http://build.fhir.org/datatypes
-        examples:
-          - age: 'P48Y3M'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
+      description: |
+        An age object describing the age of the individual this biosample was
+        derived from at the time of collection. The Age object allows the encoding
+        of the age either as ISO8601 duration or time interval (preferred), or
+        as ontology term object.
+        See http://build.fhir.org/datatypes
+      examples:
+        - age: 'P48Y3M'
   ageRangeOfIndividualAtCollection:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
-      - description: |
-          An age range object describing the age of the individual this biosample was
-          derived from at the time of collection. The Age object allows the encoding
-          of the age either as ISO8601 duration or time interval (preferred), or
-          as ontology term object.
-          See http://build.fhir.org/datatypes
-        examples:
-          - start:
-              age: 'P12Y'
-            end:
-              age: 'P18Y'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
+      description: |
+        An age range object describing the age of the individual this biosample was
+        derived from at the time of collection. The Age object allows the encoding
+        of the age either as ISO8601 duration or time interval (preferred), or
+        as ontology term object.
+        See http://build.fhir.org/datatypes
+      examples:
+        - start:
+            age: 'P12Y'
+          end:
+            age: 'P18Y'
   histologicalDiagnosis:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: |
-          This is the pathologist’s diagnosis and may often represent a refinement of the clinical diagnosis given in the
-          Patient/Clinical module. Should use the same terminology as diagnosis, but represent the pathologist’s findings.
-          Normal samples would be tagged with the term "NCIT:C38757", "Negative Finding"
-        examples:
-          - id: 'EFO:0000221'
-            label: 'Acute Monocytic Leukemia'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: |
+        This is the pathologist’s diagnosis and may often represent a refinement of the clinical diagnosis given in the
+        Patient/Clinical module. Should use the same terminology as diagnosis, but represent the pathologist’s findings.
+        Normal samples would be tagged with the term "NCIT:C38757", "Negative Finding"
+      examples:
+        - id: 'EFO:0000221'
+          label: 'Acute Monocytic Leukemia'
   tumorProgression:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: |
-          Is the specimen tissue from the primary tumor, a metastasis or a recurrence?
-          Most likely a child term of NCIT:C7062 (Neoplasm by Special Category)
-          NCIT:C3677 (Benign Neoplasm)
-          NCIT:C84509 (Primary Malignant Neoplasm)
-          NCIT:C95606 (Second Primary Malignant Neoplasm)
-          NCIT:C3261 (Metastatic Neoplasm)
-          NCIT:C4813 (Recurrent Malignant Neoplasm)
-        examples:
-          - id: 'NCIT:C84509'
-            label: 'Primary Malignant Neoplasm'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: |
+        Is the specimen tissue from the primary tumor, a metastasis or a recurrence?
+        Most likely a child term of NCIT:C7062 (Neoplasm by Special Category)
+        NCIT:C3677 (Benign Neoplasm)
+        NCIT:C84509 (Primary Malignant Neoplasm)
+        NCIT:C95606 (Second Primary Malignant Neoplasm)
+        NCIT:C3261 (Metastatic Neoplasm)
+        NCIT:C4813 (Recurrent Malignant Neoplasm)
+      examples:
+        - id: 'NCIT:C84509'
+          label: 'Primary Malignant Neoplasm'
   tumorGrade:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: |
-          Potentially a child term of NCIT:C28076 (Disease Grade Qualifier) or equivalent
-          See https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis/tumor-grade-fact-sheet
-        examples:
-          - id: 'NCIT:C28091'
-            label: 'Gleason Score 7'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: |
+        Potentially a child term of NCIT:C28076 (Disease Grade Qualifier) or equivalent
+        See https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis/tumor-grade-fact-sheet
+      examples:
+        - id: 'NCIT:C28091'
+          label: 'Gleason Score 7'
   diagnosticMarkers:
     description: |
       Clinically relevant bio markers. Most of the assays such as IHC are covered by the NCIT under the sub-hierarchy
@@ -157,16 +157,16 @@ properties:
           label: 'Human Papillomavirus-18 Positive'
   procedure:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Procedure.json
-      - description: |
-          Clinical procedure performed on the subject in order to extract the biosample.
-        examples:
-          - code:
-              id: 'NCIT:C28743'
-              label: 'Funch Biopsy'
-            bodySite:
-              id: 'UBERON:0003403'
-              label: 'skin of forearm'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Procedure.json
+      description: |
+        Clinical procedure performed on the subject in order to extract the biosample.
+      examples:
+        - code:
+            id: 'NCIT:C28743'
+            label: 'Funch Biopsy'
+          bodySite:
+            id: 'UBERON:0003403'
+            label: 'skin of forearm'
   htsFiles:
     description: |
       Pointer to the relevant HTS file(s) for the biosample

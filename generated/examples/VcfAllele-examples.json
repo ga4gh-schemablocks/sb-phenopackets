@@ -4,7 +4,8 @@
       "chr" : "10",
       "genomeAssembly" : "GRCh37",
       "pos" : "123256215",
-      "ref" : "T"
+      "ref" : "T",
+      "vcfVersion" : "VCFv4.1"
    }
 ]
 

@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/Resource.json
+"$id": https://schemablocks.org/schemas/ga4gh/Resource/v0.0.1
 title: Resource
 description: |
   Description of an external resource used for referencing an object. For example the resource may be an ontology such

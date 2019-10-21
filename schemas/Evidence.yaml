@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/Evidence.json
+"$id": https://schemablocks.org/schemas/ga4gh/Evidence/v0.0.1
 title: Evidence
 description: |
   Evidence, FHIR mapping: Condition.evidence (https://www.hl7.org/fhir/condition-definitions.html#Condition.evidence)
@@ -26,22 +26,22 @@ meta:
 properties:
   evidenceCode:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: |
-          The encoded evidence type using, for example the Evidence & Conclusion Ontology
-          (ECO - http://purl.obolibrary.org/obo/eco.owl)
-          FHIR mapping - Condition.evidence.code
-        examples:
-          - id: 'add example'
-            label: 'add example'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: |
+        The encoded evidence type using, for example the Evidence & Conclusion Ontology
+        (ECO - http://purl.obolibrary.org/obo/eco.owl)
+        FHIR mapping - Condition.evidence.code
+      examples:
+        - id: 'add example'
+          label: 'add example'
   reference:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json
-      - description: |
-          FHIR mapping - Condition.evidence.detail
-      - examples:
-          - id: 'PMID:30808312'
-            description: 'COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json
+      description: |
+        FHIR mapping - Condition.evidence.detail
+      examples:
+        - id: 'PMID:30808312'
+          description: 'COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report.'
 required:
   - evidenceCode
 additionalProperties: false

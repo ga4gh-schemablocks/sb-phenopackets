@@ -2,14 +2,27 @@
 ## VcfAllele
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
-    - ____
+    - __implemented__
 
+* Provenance  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/variant.rst)  
+* Used by  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/variant.rst)  
+* Contributors  
+
+    - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
+    - [Peter Robinson](https://orcid.org/0000-0002-0736-91998)  
+    - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
+    - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
+    - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 <!--more-->
 
-### Source
+### Source (v0.0.1)
 
-* raw source [[JSON](./VcfAllele.json)]
-* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/working/VcfAllele.yaml)
+* raw source [[JSON](./current/VcfAllele.json)]
+* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/VcfAllele.yaml)
 
 ### Attributes
   
@@ -55,6 +68,10 @@ See https://samtools.github.io/hts-specs/VCFv4.3.pdf
     <td>ref</td>
     <td>string</td>
   </tr>
+  <tr>
+    <td>vcfVersion</td>
+    <td>string</td>
+  </tr>
 
 </table>
 
@@ -88,13 +105,16 @@ add description
 * type: string
 
 Genome assembly the allele was called against. We recommend using the Genome Reference Consortium
-nomenclature e.g. GRCh37, GRCh38
+nomenclature
 
 
-##### `genomeAssembly` Value Example  
+##### `genomeAssembly` Value Examples  
 
 ```
 "GRCh37"
+```
+```
+"GRCh38"
 ```
 
 #### id
@@ -145,6 +165,22 @@ add description
 "T"
 ```
 
+#### vcfVersion
+
+* type: string
+
+The value of the VCF spec fileformat field
+
+
+##### `vcfVersion` Value Examples  
+
+```
+"VCFv4.1"
+```
+```
+"VCFv4.2"
+```
+
 
 ### `VcfAllele` Value Example  
 
@@ -154,7 +190,8 @@ add description
    "chr" : "10",
    "genomeAssembly" : "GRCh37",
    "pos" : "123256215",
-   "ref" : "T"
+   "ref" : "T",
+   "vcfVersion" : "VCFv4.1"
 }
 ```
 

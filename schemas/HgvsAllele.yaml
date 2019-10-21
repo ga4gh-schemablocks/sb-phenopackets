@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json
+"$id": https://schemablocks.org/schemas/ga4gh/HgvsAllele/v0.0.1
 title: HgvsAllele
 description: |
   A single HGVS allele.

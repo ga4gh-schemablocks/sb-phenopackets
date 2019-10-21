@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/Variant.json
+"$id": https://schemablocks.org/schemas/ga4gh/Variant/v0.0.1
 title: Variant
 description: |
   A variant allele. Alleles can be listed using HGVS, VCF, SPDI or ISCN notation.
@@ -28,43 +28,43 @@ meta:
 properties:
   hgvsAllele:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json
-      - description: add description
-        examples:
-          - 'add example'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json
+      description: add description
+      examples:
+        - 'add example'
   vcfAllele:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json
-      - description: add description
-        examples:
-          - genomeAssembly: 'GRCh37'
-            chr: '10'
-            pos: 123256215
-            ref: 'T'
-            alt: 'G'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json
+      description: add description
+      examples:
+        - genomeAssembly: 'GRCh37'
+          chr: '10'
+          pos: 123256215
+          ref: 'T'
+          alt: 'G'
   spdiAllele:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json
-      - description: add description
-        examples:
-          - id: 'id_abc_123'
-            seqId: 'NC_000010.10'
-            position: 123256214
-            deletedSequence: 'T'
-            insertedSequence: 'G'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json
+      description: add description
+      examples:
+        - id: 'id_abc_123'
+          seqId: 'NC_000010.10'
+          position: 123256214
+          deletedSequence: 'T'
+          insertedSequence: 'G'
   iscnAllele:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json
-      - description: add description
-        examples:
-          - 'add example'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json
+      description: add description
+      examples:
+        - 'add example'
   zygosity:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      - description: add description
-        examples:
-          - id: 'GENO:0000135'
-            label: 'heterozygous'
+      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      description: add description
+      examples:
+        - id: 'GENO:0000135'
+          label: 'heterozygous'
 required:
   - id
 oneof:

@@ -4,11 +4,7 @@
          "age" : "P18Y"
       },
       "start" : {
-         "age" : "P12Y",
-         "ageClass" : {
-            "id" : "HsapDv:0000086",
-            "label" : "adolescent stage"
-         }
+         "age" : "P12Y"
       }
    }
 ]

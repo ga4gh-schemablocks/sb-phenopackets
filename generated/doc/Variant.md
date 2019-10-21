@@ -2,14 +2,27 @@
 ## Variant
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
-    - ____
+    - __implemented__
 
+* Provenance  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/variant.rst)  
+* Used by  
+
+    - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/variant.rst)  
+* Contributors  
+
+    - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
+    - [Peter Robinson](https://orcid.org/0000-0002-0736-91998)  
+    - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
+    - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
+    - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 <!--more-->
 
-### Source
+### Source (v0.0.1)
 
-* raw source [[JSON](./Variant.json)]
-* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/working/Variant.yaml)
+* raw source [[JSON](./current/Variant.json)]
+* [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Variant.yaml)
 
 ### Attributes
   
@@ -27,52 +40,32 @@ Tools for interconversion between SPDI, HGVS and VCF exist at https://api.ncbi.n
     <th>Type</th>
   </tr>
   <tr>
-    <td>background</td>
-    <td>string</td>
-  </tr>
-  <tr>
     <td>hgvsAllele</td>
-    <td>https://schemablocks.org/schemas/ga4gh/HgvsAllele/v0.0.1</td>
+    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HgvsAllele.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>iscnAllele</td>
-    <td>https://schemablocks.org/schemas/ga4gh/IscnAllele/v0.0.1</td>
-  </tr>
-  <tr>
-    <td>murineAllele</td>
-    <td>https://schemablocks.org/schemas/ga4gh/MurineAllele/v0.0.1</td>
+    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/IscnAllele.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>spdiAllele</td>
-    <td>https://schemablocks.org/schemas/ga4gh/SpdiAllele/v0.0.1</td>
+    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/SpdiAllele.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>vcfAllele</td>
-    <td>https://schemablocks.org/schemas/ga4gh/VcfAllele/v0.0.1</td>
+    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/VcfAllele.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>zygosity</td>
-    <td>https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1</td>
+    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
 
 </table>
 
 
-#### background
-
-* type: string
-
-add description
-
-##### `background` Value Example  
-
-```
-"involves: 129S1/Sv * 129X1/SvJ * C57BL/6J"
-```
-
 #### hgvsAllele
 
-* type: https://schemablocks.org/schemas/ga4gh/HgvsAllele/v0.0.1
+* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HgvsAllele.html" target="_BLANK">HTML</a>]
 
 add description
 
@@ -84,7 +77,7 @@ add description
 
 #### iscnAllele
 
-* type: https://schemablocks.org/schemas/ga4gh/IscnAllele/v0.0.1
+* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/IscnAllele.html" target="_BLANK">HTML</a>]
 
 add description
 
@@ -94,25 +87,9 @@ add description
 "add example"
 ```
 
-#### murineAllele
-
-* type: https://schemablocks.org/schemas/ga4gh/MurineAllele/v0.0.1
-
-add description
-
-##### `murineAllele` Value Example  
-
-```
-{
-   "alleleSymbol" : "tm1Hcd",
-   "gene" : "Fbn1",
-   "id" : "MGI:3690325"
-}
-```
-
 #### spdiAllele
 
-* type: https://schemablocks.org/schemas/ga4gh/SpdiAllele/v0.0.1
+* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/SpdiAllele.html" target="_BLANK">HTML</a>]
 
 add description
 
@@ -130,7 +107,7 @@ add description
 
 #### vcfAllele
 
-* type: https://schemablocks.org/schemas/ga4gh/VcfAllele/v0.0.1
+* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/VcfAllele.html" target="_BLANK">HTML</a>]
 
 add description
 
@@ -148,7 +125,7 @@ add description
 
 #### zygosity
 
-* type: https://schemablocks.org/schemas/ga4gh/OntologyClass/v0.0.1
+* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
 add description
 
@@ -162,24 +139,8 @@ add description
 ```
 
 
-### `Variant` Value Examples  
+### `Variant` Value Example  
 
-```
-{
-   "background" : "involves: 129S1/Sv * 129X1/SvJ * C57BL/6J",
-   "description" : "description of variant",
-   "id" : "ID_12345",
-   "murineAllele" : {
-      "alleleSymbol" : "tm1Hcd",
-      "gene" : "Fbn1",
-      "id" : "MGI:3690325"
-   },
-   "zygosity" : {
-      "id" : "GENO:0000135",
-      "label" : "heterozygous"
-   }
-}
-```
 ```
 {
    "description" : "description of variant",

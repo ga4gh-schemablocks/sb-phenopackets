@@ -1,13 +1,6 @@
 [
    {
-      "age" : "P14Y",
-      "ageClass" : {
-         "id" : "HsapDv:0000086",
-         "label" : "adolescent stage"
-      }
-   },
-   {
-      "age" : "P56Y3M"
+      "age" : "P14Y"
    }
 ]
 

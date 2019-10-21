@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/v0.0.1/Update.json
+"$id": https://schemablocks.org/schemas/ga4gh/Update/v0.0.1
 title: Update
 description: |
   Information about when an update to a record occurred, who or what made the update and any pertinent information
