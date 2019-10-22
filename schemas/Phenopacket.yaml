@@ -35,15 +35,15 @@ properties:
       - 'phenopacketid123'
   subject:
     allof:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Individual.json
-      description: |
-        The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
-      examples:
-        - id: 'SAMN05324082-individual'
-          sex: 'MALE'
-          taxonomy:
-            id: 'NCBITaxon:9606'
-            label: 'Homo sapiens'
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Individual.json
+      - description: |
+          The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
+        examples:
+          - id: 'SAMN05324082-individual'
+            sex: 'MALE'
+            taxonomy:
+              id: 'NCBITaxon:9606'
+              label: 'Homo sapiens'
   phenotypicFeatures:
     description: |
       Phenotypic features relating to the subject of the phenopacket
@@ -118,13 +118,13 @@ properties:
           uri: 'file://data/genomes/file1.vcf.gz'
   metaData:
     allof:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json
-      description: |
-        Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
-      examples:
-        - created: '2016-06-29T12:03:03.240Z'
-          updates:
-            - timestamp: '2007-12-03T10:15:30.00Z'
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json
+      - description: |
+          Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
+        examples:
+          - created: '2016-06-29T12:03:03.240Z'
+            updates:
+              - timestamp: '2007-12-03T10:15:30.00Z'
 required:
   - id
   - metaData

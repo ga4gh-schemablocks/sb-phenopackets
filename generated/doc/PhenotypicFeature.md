@@ -10,6 +10,9 @@
 * Used by  
 
     - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/PhenotypicFeature.rst)  
+
+<!--more-->
+
 * Contributors  
 
     - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
@@ -17,8 +20,6 @@
     - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
     - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
     - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
-<!--more-->
-
 ### Source (v0.0.1)
 
 * raw source [[JSON](./current/PhenotypicFeature.json)]
@@ -84,7 +85,7 @@ Observation (https://www.hl7.org/fhir/observation.html)
 
 * type: https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Age.html" target="_BLANK">HTML</a>]
 
-the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
+The age at disease onset.
 FHIR mapping: Condition.onset
 
 
@@ -118,7 +119,8 @@ FHIR mapping: Condition.onset
 
 * type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
-the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
+The values of this will come from the HPO onset hierarchy i.e. 
+subclasses of HP:0003674
 FHIR mapping: Condition.onset
 
 

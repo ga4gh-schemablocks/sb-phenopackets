@@ -10,6 +10,9 @@
 * Used by  
 
     - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/cohort.rst)  
+
+<!--more-->
+
 * Contributors  
 
     - GA4GH Data Working Group  
@@ -18,8 +21,6 @@
     - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
     - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
     - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
-<!--more-->
-
 ### Source (v0.0.1)
 
 * raw source [[JSON](./current/Cohort.json)]

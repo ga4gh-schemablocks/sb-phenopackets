@@ -10,6 +10,9 @@
 * Used by  
 
     - [Phenopackets](https://github.com/phenopackets/phenopacket-schema/blob/master/docs/variant.rst)  
+
+<!--more-->
+
 * Contributors  
 
     - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
@@ -17,8 +20,6 @@
     - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
     - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
     - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
-<!--more-->
-
 ### Source (v0.0.1)
 
 * raw source [[JSON](./current/Variant.json)]
@@ -67,7 +68,7 @@ Tools for interconversion between SPDI, HGVS and VCF exist at https://api.ncbi.n
 
 * type: https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HgvsAllele.html" target="_BLANK">HTML</a>]
 
-add description
+HGVS version of describing a sequence variation
 
 ##### `hgvsAllele` Value Example  
 
@@ -79,12 +80,12 @@ add description
 
 * type: https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/IscnAllele.html" target="_BLANK">HTML</a>]
 
-add description
+Cytogenetic variation in ISCN format
 
 ##### `iscnAllele` Value Example  
 
 ```
-"add example"
+"t(8;14)(q24;q32)"
 ```
 
 #### spdiAllele

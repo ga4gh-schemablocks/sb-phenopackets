@@ -34,15 +34,15 @@ properties:
       - 'family-id-123'
   proband:
     allof:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Phenopacket.json
-      description: |
-        The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
-      examples:
-        - id: 'phenopacketid-123'
-          metaData:
-            created: '2016-06-29T12:03:03.240Z'
-            updates:
-              - timestamp: '2007-12-03T10:15:30.00Z'
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Phenopacket.json
+      - description: |
+          The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
+        examples:
+          - id: 'phenopacketid-123'
+            metaData:
+              created: '2016-06-29T12:03:03.240Z'
+              updates:
+                - timestamp: '2007-12-03T10:15:30.00Z'
   relatives:
     description: |
       Individuals related in some way to the patient. For instance, the individuals may be genetically related or may
@@ -61,13 +61,13 @@ properties:
               - timestamp: '2007-12-03T10:15:30.00Z'
   pedigree:
     allof:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Pedigree.json
-      description: |
-        The pedigree defining the relations between the proband and their relatives. Pedigree.individual_id should
-        map to the PhenoPacket.Individual.id
-      examples:
-        - person:
-            - individualId: 'add example'
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Pedigree.json
+      - description: |
+          The pedigree defining the relations between the proband and their relatives. Pedigree.individual_id should
+          map to the PhenoPacket.Individual.id
+        examples:
+          - person:
+              - individualId: 'add example'
   htsFiles:
     description: |
       Pointer to the relevant HTS file(s) for the family. These should be files relating to one or more of the family
@@ -80,13 +80,13 @@ properties:
           uri: 'file://data/genomes/file1.vcf.gz'
   metaData:
     allof:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json
-      description: |
-        Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
-      examples:
-        - created: '2016-06-29T12:03:03.240Z'
-          updates:
-            - timestamp: '2007-12-03T10:15:30.00Z'
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json
+      - description: |
+          Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
+        examples:
+          - created: '2016-06-29T12:03:03.240Z'
+            updates:
+              - timestamp: '2007-12-03T10:15:30.00Z'
 required:
   - id
   - metaData

@@ -28,20 +28,20 @@ meta:
 properties:
   code:
     allof:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      description: |
-        FHIR mapping - Procedure.code
-      examples:
-        - id: 'NCIT:C28743'
-          label: 'Funch Biopsy'
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - description: |
+          FHIR mapping - Procedure.code
+        examples:
+          - id: 'NCIT:C28743'
+            label: 'Funch Biopsy'
   bodySite:
     allof:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
-      description: |
-        FHIR mapping - Procedure.bodySite
-      examples:
-        - id: 'UBERON:0003403'
-          label: 'skin of forearm'
+      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - description: |
+          FHIR mapping - Procedure.bodySite
+        examples:
+          - id: 'UBERON:0003403'
+            label: 'skin of forearm'
 required:
   - code
 additionalProperties: false
