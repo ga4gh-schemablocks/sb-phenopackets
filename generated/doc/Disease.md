@@ -1,5 +1,5 @@
 
-## Disease
+## Disease (sb-phenopackets)
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
     - __implemented__
@@ -22,7 +22,7 @@
     - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
     - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 
-### Source (v0.0.1)
+### Source (v1.0.0)
 
 * raw source [[JSON](./current/Disease.json)]
 * [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Disease.yaml)
@@ -42,23 +42,23 @@ __Description:__ Message to indicate a disease (diagnosis) and its recorded onse
   </tr>
   <tr>
     <td>ageOfOnset</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Age.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Age.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>ageRangeOfOnset</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/AgeRange.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/AgeRange.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>classOfOnset</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>term</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>tumorStage</td>
-    <td>array of https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
 
 </table>
@@ -66,7 +66,7 @@ __Description:__ Message to indicate a disease (diagnosis) and its recorded onse
 
 #### ageOfOnset
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Age.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Age.html" target="_BLANK">HTML</a>]
 
 The onset of the disease. The values of this will come from the HPO onset hierarchy
 i.e. subclasses of HP:0003674
@@ -83,7 +83,7 @@ FHIR mapping: Condition.onset
 
 #### ageRangeOfOnset
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/AgeRange.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/AgeRange.html" target="_BLANK">HTML</a>]
 
 The onset of the disease. The values of this will come from the HPO onset hierarchy
 i.e. subclasses of HP:0003674
@@ -102,7 +102,7 @@ FHIR mapping: Condition.onset
 
 #### classOfOnset
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/OntologyClass.html" target="_BLANK">HTML</a>]
 
 The onset of the disease. The values of this will come from the HPO onset hierarchy
 i.e. subclasses of HP:0003674
@@ -120,7 +120,7 @@ FHIR mapping: Condition.onset
 
 #### term
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/OntologyClass.html" target="_BLANK">HTML</a>]
 
 The identifier of this disease
 e.g. MONDO:0007043, OMIM:101600, Orphanet:710, DOID:14705 (note these are all equivalent)
@@ -136,7 +136,7 @@ e.g. MONDO:0007043, OMIM:101600, Orphanet:710, DOID:14705 (note these are all eq
 
 #### tumorStage
 
-* type: array of https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/OntologyClass.html" target="_BLANK">HTML</a>]
 
 Cancer findings in the TNM system that is relevant to the diagnosis of cancer.
 See https://www.cancer.gov/about-cancer/diagnosis-staging/staging

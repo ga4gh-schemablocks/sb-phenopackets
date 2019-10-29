@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Phenopacket/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/Phenopacket/v1.0.0
 title: Phenopacket
 description: |
   An anonymous phenotypic description of an individual or biosample with potential genes of interest and/or diagnoses.
@@ -35,7 +35,7 @@ properties:
       - 'phenopacketid123'
   subject:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Individual.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Individual.json
       - description: |
           The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
         examples:
@@ -49,7 +49,7 @@ properties:
       Phenotypic features relating to the subject of the phenopacket
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/PhenotypicFeature.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json
     examples:
       - - description: 'add example'
           type:
@@ -60,7 +60,7 @@ properties:
       Biosample(s) derived from the patient or a collection of biosamples in isolation
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Biosample.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json
     examples:
       - - id: 'SAMN05324082'
           individualId: 'SAMN05324082-individual'
@@ -75,7 +75,7 @@ properties:
       obfuscate the specific causative/candidate variant.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Gene.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json
     examples:
       - - id: 'HGNC:3477'
           symbol: 'ETF1'
@@ -85,7 +85,7 @@ properties:
       variants. The resources using these fields should define what this represents in their context.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Variant.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json
     examples:
       - - id: 'ID_12345'
           description: 'description of variant'
@@ -99,7 +99,7 @@ properties:
       resources using these fields should define what this represents in their context.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Disease.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json
     examples:
       - - term:
             id: 'MONDO:0007043'
@@ -112,13 +112,13 @@ properties:
       Pointer to the relevant HTS file(s) for the patient
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json
     examples:
       - - htsFormat: 'GVCF'
           uri: 'file://data/genomes/file1.vcf.gz'
   metaData:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json
       - description: |
           Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
         examples:

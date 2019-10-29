@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Pedigree/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/Pedigree/v1.0.0
 title: Pedigree
 description: |
   https://software.broadinstitute.org/gatk/documentation/article?id=11016
@@ -29,7 +29,7 @@ properties:
     description: add description
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Person.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Person.json
     examples:
       - - individualId: 'add example'
 required:

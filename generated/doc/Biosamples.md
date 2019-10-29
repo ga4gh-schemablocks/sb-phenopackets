@@ -50,11 +50,11 @@ __Description:__ A Biosample refers to a unit of biological material from which 
   </tr>
   <tr>
     <td>ageOfIndividualAtCollection</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Age.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Age.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>ageRangeOfIndividualAtCollection</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/AgeRange.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/AgeRange.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>description</td>
@@ -62,15 +62,15 @@ __Description:__ A Biosample refers to a unit of biological material from which 
   </tr>
   <tr>
     <td>diagnosticMarkers</td>
-    <td>array of https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>histologicalDiagnosis</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>htsFiles</td>
-    <td>array of https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HtsFile.html" target="_BLANK">HTML</a>]</td>
+    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HtsFile.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>id</td>
@@ -86,31 +86,31 @@ __Description:__ A Biosample refers to a unit of biological material from which 
   </tr>
   <tr>
     <td>phenotypicFeature</td>
-    <td>array of https://schemablocks.org/schemas/ga4gh/v0.0.1/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/PhenotypicFeature.html" target="_BLANK">HTML</a>]</td>
+    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/PhenotypicFeature.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>procedure</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/Procedure.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Procedure.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Procedure.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Procedure.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Procedure.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Procedure.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>sampledTissue</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>taxonomy</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>tumorGrade</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>tumorProgression</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>variants</td>
-    <td>array of https://schemablocks.org/schemas/ga4gh/v0.0.1/Variant.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Variant.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Variant.html" target="_BLANK">HTML</a>]</td>
+    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Variant.html" target="_BLANK">HTML</a>]</td>
   </tr>
 
 </table>
@@ -118,7 +118,7 @@ __Description:__ A Biosample refers to a unit of biological material from which 
 
 #### ageOfIndividualAtCollection
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Age.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Age.html" target="_BLANK">HTML</a>]
 
 An age object describing the age of the individual this biosample was
 derived from at the time of collection. The Age object allows the encoding
@@ -137,7 +137,7 @@ See http://build.fhir.org/datatypes
 
 #### ageRangeOfIndividualAtCollection
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/AgeRange.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/AgeRange.html" target="_BLANK">HTML</a>]
 
 An age range object describing the age of the individual this biosample was
 derived from at the time of collection. The Age object allows the encoding
@@ -175,7 +175,7 @@ The "description" attributes should not contain any structured data.
 
 #### diagnosticMarkers
 
-* type: array of https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
 Clinically relevant bio markers. Most of the assays such as IHC are covered by the NCIT under the sub-hierarchy
 NCIT:C25294 (Laboratory Procedure).
@@ -195,7 +195,7 @@ e.g. NCIT:C68748 (HER2/Neu Positive), NCIT:C131711 (Human Papillomavirus-18 Posi
 
 #### histologicalDiagnosis
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
 This is the pathologist’s diagnosis and may often represent a refinement of the clinical diagnosis given in the
 Patient/Clinical module. Should use the same terminology as diagnosis, but represent the pathologist’s findings.
@@ -213,7 +213,7 @@ Normal samples would be tagged with the term "NCIT:C38757", "Negative Finding"
 
 #### htsFiles
 
-* type: array of https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HtsFile.html" target="_BLANK">HTML</a>]
+* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HtsFile.html" target="_BLANK">HTML</a>]
 
 Pointer to the relevant HTS file(s) for the biosample
 
@@ -280,7 +280,7 @@ another sample that is thought to contain a pathological finding the default val
 
 #### phenotypicFeature
 
-* type: array of https://schemablocks.org/schemas/ga4gh/v0.0.1/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/PhenotypicFeature.html" target="_BLANK">HTML</a>]
+* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/PhenotypicFeature.html" target="_BLANK">HTML</a>]
 
 Phenotypic characteristics of the BioSample, for example histological findings of a biopsy
 
@@ -299,7 +299,7 @@ Phenotypic characteristics of the BioSample, for example histological findings o
 
 #### procedure
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/Procedure.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Procedure.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Procedure.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Procedure.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Procedure.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Procedure.html" target="_BLANK">HTML</a>]
 
 Clinical procedure performed on the subject in order to extract the biosample.
 
@@ -321,7 +321,7 @@ Clinical procedure performed on the subject in order to extract the biosample.
 
 #### sampledTissue
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
 UBERON class describing the tissue from which the specimen was collected.
 PDX-MI mapping: 'Specimen tumor tissue'
@@ -339,7 +339,7 @@ FHIR mapping: Specimen.type
 
 #### taxonomy
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
 NCBI taxonomic identifier (NCBITaxon) of the sample e.g. NCBITaxon:9606
 
@@ -354,7 +354,7 @@ NCBI taxonomic identifier (NCBITaxon) of the sample e.g. NCBITaxon:9606
 
 #### tumorGrade
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
 Potentially a child term of NCIT:C28076 (Disease Grade Qualifier) or equivalent
 See https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis/tumor-grade-fact-sheet
@@ -371,7 +371,7 @@ See https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis/tumor-grade-
 
 #### tumorProgression
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
 
 Is the specimen tissue from the primary tumor, a metastasis or a recurrence?
 Most likely a child term of NCIT:C7062 (Neoplasm by Special Category)
@@ -393,7 +393,7 @@ NCIT:C4813 (Recurrent Malignant Neoplasm)
 
 #### variants
 
-* type: array of https://schemablocks.org/schemas/ga4gh/v0.0.1/Variant.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Variant.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Variant.html" target="_BLANK">HTML</a>]
+* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Variant.html" target="_BLANK">HTML</a>]
 
 Field for variants relevant to this biosample
 

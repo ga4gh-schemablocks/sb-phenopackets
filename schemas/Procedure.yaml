@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Procedure/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/Procedure/v1.0.0
 title: Procedure
 description: |
   A clinical procedure performed on a subject. By preference a single concept to indicate both the procedure and the
@@ -28,7 +28,7 @@ meta:
 properties:
   code:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           FHIR mapping - Procedure.code
         examples:
@@ -36,7 +36,7 @@ properties:
             label: 'Funch Biopsy'
   bodySite:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           FHIR mapping - Procedure.bodySite
         examples:

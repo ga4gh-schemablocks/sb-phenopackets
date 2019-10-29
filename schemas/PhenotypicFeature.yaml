@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/PhenotypicFeature/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/PhenotypicFeature/v1.0.0
 title: PhenotypicFeature
 description: |
   An individual phenotypic feature, observed as either present or absent (negated),
@@ -36,7 +36,7 @@ properties:
       - 'Pancreatic Adenocarcinoma'
   type:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           The primary ontology class which describes the phenotype.
           FHIR mapping: Condition.identifier
@@ -55,7 +55,7 @@ properties:
       - 'false'
   severity:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           Severity of the condition e.g. subclasses of HP:0012824-Severity or SNOMED:272141005-Severities
           FHIR mapping: Condition.severity
@@ -66,13 +66,13 @@ properties:
     type: array
     description: subclasses of HP:0012823 ! Clinical modifier apart from Severity HP:0012824 - Severity
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
     examples:
       - - id: 'HP:0025282'
           label: 'Dull'
   ageOfOnset:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json
       - description: |
           The age at disease onset.
           FHIR mapping: Condition.onset
@@ -80,7 +80,7 @@ properties:
           - age: 'P35Y'
   ageRangeOfOnset:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json
       - description: |
           the values of this will come from the HPO onset hierarchy i.e. subclasses of HP:0003674
           FHIR mapping: Condition.onset
@@ -89,7 +89,7 @@ properties:
               age: 'P35Y'
   classOfOnset:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           The values of this will come from the HPO onset hierarchy i.e. 
           subclasses of HP:0003674
@@ -99,7 +99,7 @@ properties:
             label: 'Middle age onset'
   evidence:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Evidence.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Evidence.json
       - description: Evidences for how the phenotype was determined.
         examples:
           - evidenceCode:

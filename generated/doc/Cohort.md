@@ -1,5 +1,5 @@
 
-## Cohort
+## Cohort (sb-phenopackets)
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
     - __implemented__
@@ -22,7 +22,7 @@
     - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
     - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 
-### Source (v0.0.1)
+### Source (v1.0.0)
 
 * raw source [[JSON](./current/Cohort.json)]
 * [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Cohort.yaml)
@@ -46,7 +46,7 @@ __Description:__ A group of individuals related in some phenotypic or genotypic 
   </tr>
   <tr>
     <td>htsFiles</td>
-    <td>array of https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HtsFile.html" target="_BLANK">HTML</a>]</td>
+    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HtsFile.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>id</td>
@@ -54,11 +54,11 @@ __Description:__ A group of individuals related in some phenotypic or genotypic 
   </tr>
   <tr>
     <td>members</td>
-    <td>array of https://schemablocks.org/schemas/ga4gh/v0.0.1/Phenopacket.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Phenopacket.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Phenopacket.html" target="_BLANK">HTML</a>]</td>
+    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Phenopacket.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>metaData</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/MetaData.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/MetaData.html" target="_BLANK">HTML</a>]</td>
   </tr>
 
 </table>
@@ -78,7 +78,7 @@ description about the cohort
 
 #### htsFiles
 
-* type: array of https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HtsFile.html" target="_BLANK">HTML</a>]
+* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HtsFile.html" target="_BLANK">HTML</a>]
 
 Pointer to the relevant HTS file(s) for the cohort
 
@@ -106,7 +106,7 @@ An identifier specific to the cohort
 
 #### members
 
-* type: array of https://schemablocks.org/schemas/ga4gh/v0.0.1/Phenopacket.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/Phenopacket.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/Phenopacket.html" target="_BLANK">HTML</a>]
+* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Phenopacket.html" target="_BLANK">HTML</a>]
 
 add description
 
@@ -128,7 +128,7 @@ add description
 
 #### metaData
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/MetaData.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/MetaData.html" target="_BLANK">HTML</a>]
 
 Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
 

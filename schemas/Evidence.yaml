@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Evidence/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/Evidence/v1.0.0
 title: Evidence
 description: |
   Evidence, FHIR mapping: Condition.evidence (https://www.hl7.org/fhir/condition-definitions.html#Condition.evidence)
@@ -26,7 +26,7 @@ meta:
 properties:
   evidenceCode:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           The encoded evidence type using, for example the Evidence & Conclusion Ontology
           (ECO - http://purl.obolibrary.org/obo/eco.owl)
@@ -36,7 +36,7 @@ properties:
             label: 'add example'
   reference:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/ExternalReference.json
       - description: |
           FHIR mapping - Condition.evidence.detail
         examples:

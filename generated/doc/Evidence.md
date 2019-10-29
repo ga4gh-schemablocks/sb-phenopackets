@@ -1,5 +1,5 @@
 
-## Evidence
+## Evidence (sb-phenopackets)
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
     - __implemented__
@@ -21,7 +21,7 @@
     - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
     - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 
-### Source (v0.0.1)
+### Source (v1.0.0)
 
 * raw source [[JSON](./current/Evidence.json)]
 * [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Evidence.yaml)
@@ -41,11 +41,11 @@ __Description:__ Evidence, FHIR mapping: Condition.evidence (https://www.hl7.org
   </tr>
   <tr>
     <td>evidenceCode</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>reference</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/ExternalReference.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/ExternalReference.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/ExternalReference.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/ExternalReference.html" target="_BLANK">HTML</a>]</td>
   </tr>
 
 </table>
@@ -53,7 +53,7 @@ __Description:__ Evidence, FHIR mapping: Condition.evidence (https://www.hl7.org
 
 #### evidenceCode
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/OntologyClass.html" target="_BLANK">HTML</a>]
 
 The encoded evidence type using, for example the Evidence & Conclusion Ontology
 (ECO - http://purl.obolibrary.org/obo/eco.owl)
@@ -71,7 +71,7 @@ FHIR mapping - Condition.evidence.code
 
 #### reference
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/ExternalReference.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/ExternalReference.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/ExternalReference.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/ExternalReference.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/ExternalReference.html" target="_BLANK">HTML</a>]
 
 FHIR mapping - Condition.evidence.detail
 

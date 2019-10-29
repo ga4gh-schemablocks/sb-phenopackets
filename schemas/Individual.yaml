@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Individual/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/Individual/v1.0.0
 title: Individual
 description: |
   An individual is a single organism (here typically a human).
@@ -48,7 +48,7 @@ properties:
       - '2018-03-01T00:00:00Z'
   ageAtCollection:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json
       - description: |
           An age object describing the age of the individual at the time of collection.
           The Age object allows the encoding of the age either as ISO8601 duration or
@@ -57,7 +57,7 @@ properties:
           - age: 'P14Y'
   ageRangeAtCollection:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json
       - description: |
           An age object describing the age of the individual at the time of collection.
           The Age object allows the encoding of the age either as ISO8601 duration or
@@ -93,7 +93,7 @@ properties:
       - 'XX'
   taxonomy:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           NCBI taxonomic identifier. For resources where there may be more than one organism being studied
           it is advisable to indicate the taxonomic identifier of that organism, to its most specific level

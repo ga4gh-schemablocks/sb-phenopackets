@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Biosample/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/Biosample/v1.0.0
 title: Biosample
 description: |
   A Biosample refers to a unit of biological material from which the substrate
@@ -62,7 +62,7 @@ properties:
       - 'THP-1; 6 hours; DMSO; Replicate 1'
   sampledTissue:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           UBERON class describing the tissue from which the specimen was collected.
           PDX-MI mapping: 'Specimen tumor tissue'
@@ -74,21 +74,21 @@ properties:
     description: Phenotypic characteristics of the BioSample, for example histological findings of a biopsy
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/PhenotypicFeature.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json
     examples:
       - - type:
             id: 'EFO:0001253'
             label: 'THP-1'
   taxonomy:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: NCBI taxonomic identifier (NCBITaxon) of the sample e.g. NCBITaxon:9606
         examples:
           - type: 'NCBITaxon:9606'
             description: 'Homo sapiens'
   ageOfIndividualAtCollection:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json
       - description: |
           An age object describing the age of the individual this biosample was
           derived from at the time of collection. The Age object allows the encoding
@@ -99,7 +99,7 @@ properties:
           - age: 'P48Y3M'
   ageRangeOfIndividualAtCollection:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json
       - description: |
           An age range object describing the age of the individual this biosample was
           derived from at the time of collection. The Age object allows the encoding
@@ -113,7 +113,7 @@ properties:
               age: 'P18Y'
   histologicalDiagnosis:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           This is the pathologist’s diagnosis and may often represent a refinement of the clinical diagnosis given in the
           Patient/Clinical module. Should use the same terminology as diagnosis, but represent the pathologist’s findings.
@@ -123,7 +123,7 @@ properties:
             label: 'Acute Monocytic Leukemia'
   tumorProgression:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           Is the specimen tissue from the primary tumor, a metastasis or a recurrence?
           Most likely a child term of NCIT:C7062 (Neoplasm by Special Category)
@@ -137,7 +137,7 @@ properties:
             label: 'Primary Malignant Neoplasm'
   tumorGrade:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: |
           Potentially a child term of NCIT:C28076 (Disease Grade Qualifier) or equivalent
           See https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis/tumor-grade-fact-sheet
@@ -151,13 +151,13 @@ properties:
       e.g. NCIT:C68748 (HER2/Neu Positive), NCIT:C131711 (Human Papillomavirus-18 Positive)
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
     examples:
       - - id: 'NCIT:C131711'
           label: 'Human Papillomavirus-18 Positive'
   procedure:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Procedure.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Procedure.json
       - description: |
           Clinical procedure performed on the subject in order to extract the biosample.
         examples:
@@ -172,7 +172,7 @@ properties:
       Pointer to the relevant HTS file(s) for the biosample
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json
     examples:
       - - htsFormat: 'GVCF'
           file:
@@ -183,7 +183,7 @@ properties:
       Field for variants relevant to this biosample
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Variant.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json
     examples:
       - - hgvsAllele: 'add example'
           background: 'add example'

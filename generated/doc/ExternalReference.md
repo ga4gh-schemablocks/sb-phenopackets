@@ -1,5 +1,5 @@
 
-## ExternalReference
+## ExternalReference (sb-phenopackets)
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
     - __implemented__
@@ -19,7 +19,7 @@
     - [Jules Jacobsen](https://orcid.org/0000-0002-3265-15918)  
     - [Peter Robinson](https://orcid.org/0000-0002-0736-91998)  
 
-### Source (v0.0.1)
+### Source (v1.0.0)
 
 * raw source [[JSON](./current/ExternalReference.json)]
 * [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/ExternalReference.yaml)

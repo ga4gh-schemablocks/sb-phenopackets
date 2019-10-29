@@ -1,5 +1,5 @@
 
-## VcfAllele
+## VcfAllele (sb-phenopackets)
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
     - __implemented__
@@ -21,7 +21,7 @@
     - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
     - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 
-### Source (v0.0.1)
+### Source (v1.0.0)
 
 * raw source [[JSON](./current/VcfAllele.json)]
 * [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/VcfAllele.yaml)

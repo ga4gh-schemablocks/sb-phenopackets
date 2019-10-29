@@ -1,5 +1,5 @@
 
-## Variant
+## Variant (sb-phenopackets)
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
     - __implemented__
@@ -21,7 +21,7 @@
     - [Melanie Courtot](https://orcid.org/0000-0002-9551-6370)  
     - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 
-### Source (v0.0.1)
+### Source (v1.0.0)
 
 * raw source [[JSON](./current/Variant.json)]
 * [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Variant.yaml)
@@ -43,23 +43,23 @@ Tools for interconversion between SPDI, HGVS and VCF exist at https://api.ncbi.n
   </tr>
   <tr>
     <td>hgvsAllele</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HgvsAllele.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HgvsAllele.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HgvsAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HgvsAllele.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>iscnAllele</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/IscnAllele.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/IscnAllele.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/IscnAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/IscnAllele.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>spdiAllele</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/SpdiAllele.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/SpdiAllele.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/SpdiAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/SpdiAllele.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>vcfAllele</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/VcfAllele.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/VcfAllele.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/VcfAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/VcfAllele.html" target="_BLANK">HTML</a>]</td>
   </tr>
   <tr>
     <td>zygosity</td>
-    <td>https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]</td>
+    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/OntologyClass.html" target="_BLANK">HTML</a>]</td>
   </tr>
 
 </table>
@@ -67,7 +67,7 @@ Tools for interconversion between SPDI, HGVS and VCF exist at https://api.ncbi.n
 
 #### hgvsAllele
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/HgvsAllele.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HgvsAllele.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HgvsAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HgvsAllele.html" target="_BLANK">HTML</a>]
 
 HGVS version of describing a sequence variation
 
@@ -79,7 +79,7 @@ HGVS version of describing a sequence variation
 
 #### iscnAllele
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/IscnAllele.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/IscnAllele.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/IscnAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/IscnAllele.html" target="_BLANK">HTML</a>]
 
 Cytogenetic variation in ISCN format
 
@@ -91,7 +91,7 @@ Cytogenetic variation in ISCN format
 
 #### spdiAllele
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/SpdiAllele.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/SpdiAllele.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/SpdiAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/SpdiAllele.html" target="_BLANK">HTML</a>]
 
 add description
 
@@ -109,7 +109,7 @@ add description
 
 #### vcfAllele
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/VcfAllele.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/VcfAllele.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/VcfAllele.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/VcfAllele.html" target="_BLANK">HTML</a>]
 
 add description
 
@@ -127,7 +127,7 @@ add description
 
 #### zygosity
 
-* type: https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json [<a href="https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/ga4gh/OntologyClass.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/OntologyClass.html" target="_BLANK">HTML</a>]
 
 add description
 

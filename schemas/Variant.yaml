@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Variant/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/Variant/v1.0.0
 title: Variant
 description: |
   A variant allele. Alleles can be listed using HGVS, VCF, SPDI or ISCN notation.
@@ -28,13 +28,13 @@ meta:
 properties:
   hgvsAllele:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/HgvsAllele.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HgvsAllele.json
       - description: HGVS version of describing a sequence variation
         examples:
           - 'add example'
   vcfAllele:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/VcfAllele.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/VcfAllele.json
       - description: add description
         examples:
           - genomeAssembly: 'GRCh37'
@@ -44,7 +44,7 @@ properties:
             alt: 'G'
   spdiAllele:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/SpdiAllele.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/SpdiAllele.json
       - description: add description
         examples:
           - id: 'id_abc_123'
@@ -54,13 +54,13 @@ properties:
             insertedSequence: 'G'
   iscnAllele:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/IscnAllele.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/IscnAllele.json
       - description: Cytogenetic variation in ISCN format
         examples:
           - 't(8;14)(q24;q32)'
   zygosity:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description: add description
         examples:
           - id: 'GENO:0000135'

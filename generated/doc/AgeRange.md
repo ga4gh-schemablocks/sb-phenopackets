@@ -1,5 +1,5 @@
 
-## AgeRange
+## AgeRange (sb-phenopackets)
 
 * {S}[B] Status  [[i]](https://schemablocks.org/about/sb-status-levels.html)
     - __implemented__
@@ -20,7 +20,7 @@
     - [Michael Baudis](https://orcid.org/0000-0002-9903-4248)  
     - [Isuru Liyanage](https://orcid.org/0000-0002-4839-5158)  
 
-### Source (v0.0.1)
+### Source (v1.0.0)
 
 * raw source [[JSON](./current/AgeRange.json)]
 * [Github](https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/AgeRange.yaml)

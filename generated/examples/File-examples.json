@@ -1,8 +1,0 @@
-[
-   {
-      "description" : "file of project x",
-      "path" : "/data/genomes/file1.vcf.gz",
-      "uri" : "file://data/genomes/file1.vcf.gz"
-   }
-]
-

@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Family/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/Family/v1.0.0
 title: Family
 description: |
   Phenotype, sample and pedigree data required for a genomic diagnosis.
@@ -34,7 +34,7 @@ properties:
       - 'family-id-123'
   proband:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Phenopacket.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json
       - description: |
           The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
         examples:
@@ -52,7 +52,7 @@ properties:
       the cohort.
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Phenopacket.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json
     examples:
       - - id: 'phenopacketid-123'
           metaData:
@@ -61,7 +61,7 @@ properties:
               - timestamp: '2007-12-03T10:15:30.00Z'
   pedigree:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Pedigree.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Pedigree.json
       - description: |
           The pedigree defining the relations between the proband and their relatives. Pedigree.individual_id should
           map to the PhenoPacket.Individual.id
@@ -74,13 +74,13 @@ properties:
       members e.g a multi-sample VCF
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/HtsFile.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json
     examples:
       - - htsFormat: 'GVCF'
           uri: 'file://data/genomes/file1.vcf.gz'
   metaData:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/MetaData.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json
       - description: |
           Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
         examples:

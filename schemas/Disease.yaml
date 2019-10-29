@@ -1,5 +1,5 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Disease/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/Disease/v1.0.0
 title: Disease
 description: |
   Message to indicate a disease (diagnosis) and its recorded onset.
@@ -27,7 +27,7 @@ meta:
 properties:
   term:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
       - description:  |
           The identifier of this disease
           e.g. MONDO:0007043, OMIM:101600, Orphanet:710, DOID:14705 (note these are all equivalent)
@@ -35,7 +35,7 @@ properties:
           - id: 'MONDO:0007043'
   ageOfOnset:
     allof:
-      - "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/Age.json
+      - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json
       - description: |
           The onset of the disease. The values of this will come from the HPO onset hierarchy
           i.e. subclasses of HP:0003674
@@ -47,7 +47,7 @@ properties:
       The onset of the disease. The values of this will come from the HPO onset hierarchy
       i.e. subclasses of HP:0003674
       FHIR mapping: Condition.onset
-    "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/AgeRange.json
+    "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/AgeRange.json
     examples:
       - start:
           age: 'P35Y'
@@ -56,7 +56,7 @@ properties:
       The onset of the disease. The values of this will come from the HPO onset hierarchy
       i.e. subclasses of HP:0003674
       FHIR mapping: Condition.onset
-    "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+    "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
     examples:
       - id: 'HP:0003596'
         label: 'Middle age onset'
@@ -67,7 +67,7 @@ properties:
       e.g. Child terms of NCIT:C48232 (Cancer TNM Finding)
     type: array
     items:
-      "$ref": https://schemablocks.org/schemas/ga4gh/v0.0.1/OntologyClass.json
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
     examples:
       - - id: 'NCIT:C48706'
           label: 'N1 Stage Finding'
