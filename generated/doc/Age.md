@@ -1,6 +1,6 @@
 
 <div id="schema-header-title">
-  <h2>Age <span id="schema-header-title-project">ga4gh <a href="https://github.com/ga4gh-schemablocks/sb-phenopackets" target="_BLANK">&nearr;</a></span> </h2>
+  <h2>Age <span id="schema-header-title-project">sb-phenopackets <a href="https://github.com/ga4gh-schemablocks/sb-phenopackets" target="_BLANK">&nearr;</a></span> </h2>
 </div>
 
 <table id="schema-header-table">
@@ -32,9 +32,9 @@
     <th>Contributors</th>
     <td>
       <ul>
+<li><a href="https://orcid.org/0000-0002-9903-4248">Michael Baudis</a></li>
 <li><a href="https://orcid.org/0000-0002-3265-15918">Jules Jacobsen</a></li>
 <li><a href="https://orcid.org/0000-0002-0736-91998">Peter Robinson</a></li>
-<li><a href="https://orcid.org/0000-0002-9903-4248">Michael Baudis</a></li>
       </ul>
     </td>
   </tr>
@@ -59,7 +59,7 @@ __Description:__ Age
 
 ### Properties
 
-<table id="schema-property-table">
+<table id="schema-properties-table">
   <tr>
     <th>Property</th>
     <th>Type</th>

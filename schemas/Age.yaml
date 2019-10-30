@@ -1,16 +1,16 @@
 "$schema": http://json-schema.org/draft-07/schema#
-"$id": https://schemablocks.org/schemas/ga4gh/Age/v0.0.1
+"$id": https://schemablocks.org/schemas/sb-phenopackets/Age/v0.0.1
 title: Age
 description: Age
 type: object
 meta:
   contributors:
+    - description: "Michael Baudis"
+      id: "orcid:0000-0002-9903-4248"
     - description: "Jules Jacobsen"
       id: "orcid:0000-0002-3265-15918"
     - description: "Peter Robinson"
       id: "orcid:0000-0002-0736-91998"
-    - description: "Michael Baudis"
-      id: "orcid:0000-0002-9903-4248"
   provenance:
     - description: Phenopackets
       id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/age.rst'
