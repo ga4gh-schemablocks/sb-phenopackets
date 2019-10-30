@@ -1,2 +1,7 @@
 
 schemas/.DS_Store
+.DS_Store
+generated/doc/.DS_Store
+generated/examples/.DS_Store
+generated/json/.DS_Store
+source/.DS_Store
