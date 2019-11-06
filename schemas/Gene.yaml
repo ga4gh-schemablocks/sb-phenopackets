@@ -37,8 +37,7 @@ properties:
   alternateIds:
     description: alternate identifiers
     type: array
-    items:
-      type: string
+    items: string
     examples:
       - - 'HGNC:3477'
   symbol:

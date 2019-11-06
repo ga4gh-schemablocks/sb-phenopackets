@@ -61,7 +61,6 @@ __Description:__ A single HGVS allele.
 It is recommended that the string is validated using the VariantValidator - https://variantvalidator.org/
 See http://varnomen.hgvs.org/recommendations/DNA/variant/alleles/
 
-
 ### Properties
 
 <table id="schema-properties-table">

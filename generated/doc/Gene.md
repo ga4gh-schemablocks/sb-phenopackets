@@ -60,7 +60,6 @@
 __Type:__ object  
 __Description:__ Gene identifier
 
-
 ### Properties
 
 <table id="schema-properties-table">

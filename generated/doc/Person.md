@@ -59,7 +59,6 @@
   
 __Type:__ object  
 __Description:__ Person
-
 ### Properties
 
 <table id="schema-properties-table">

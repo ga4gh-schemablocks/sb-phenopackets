@@ -25,17 +25,16 @@ properties:
     allof:
       - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json
       - description: |
-          Age as an ISO8601 string
+          Age as an ISO8601 string.
         examples:
           - age: 'P12Y'
   end:
     allof:
       - "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Age.json
       - description: |
-          Age as an ISO8601 string
+          Age as an ISO8601 string.
         examples:
           - age: 'P16Y6M'
-
 anyof:
   - required:
       - start

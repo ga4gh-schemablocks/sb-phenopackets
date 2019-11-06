@@ -60,7 +60,6 @@
 __Type:__ object  
 __Description:__ Message to indicate a disease (diagnosis) and its recorded onset.
 
-
 ### Properties
 
 <table id="schema-properties-table">

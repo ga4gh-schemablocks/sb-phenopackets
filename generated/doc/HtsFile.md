@@ -56,7 +56,6 @@
 __Type:__ object  
 __Description:__ A file in one of the HTS formats (https://samtools.github.io/hts-specs)
 
-
 ### Properties
 
 <table id="schema-properties-table">
