@@ -60,17 +60,28 @@ properties:
     examples:
       - id: 'HP:0003596'
         label: 'Middle age onset'
-  tumorStage:
+  diseaseStage:
     description: |
-      Cancer findings in the TNM system that is relevant to the diagnosis of cancer.
-      See https://www.cancer.gov/about-cancer/diagnosis-staging/staging
-      e.g. Child terms of NCIT:C48232 (Cancer TNM Finding)
+      Disease staging, the extent to which a disease has developed.
+      For cancers, see https://www.cancer.gov/about-cancer/diagnosis-staging/staging
+      Valid values include child terms of NCIT:C28108 (Disease Stage Qualifier)
     type: array
     items:
       "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
     examples:
-      - - id: 'NCIT:C48706'
-          label: 'N1 Stage Finding'
+      - - id: 'NCIT:C90529'
+          label: 'AJCC v6 Stage'
+  tnmFinding:
+    description: |
+      Cancer findings in the TNM system that is relevant to the diagnosis of cancer.
+      See https://www.cancer.gov/about-cancer/diagnosis-staging/staging
+      Valid values include child terms of NCIT:C48232 (Cancer TNM Finding)
+    type: array
+    items:
+      "$ref": https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/OntologyClass.json
+    examples:
+      - - id: 'NCIT:C48232'
+          label: 'Cancer TNM Finding'
 required:
   - term
 oneof:
