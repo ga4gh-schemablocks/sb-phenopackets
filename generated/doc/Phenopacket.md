@@ -72,19 +72,19 @@ fields.
   </tr>
   <tr>
     <th>biosamples</th>
-    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Biosample.html" target="_BLANK">HTML</a>]</td>
+    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Biosample.html" target="_BLANK">HTML</a>]"</td>
   </tr>
   <tr>
     <th>diseases</th>
-    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Disease.html" target="_BLANK">HTML</a>]</td>
+    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Disease.html" target="_BLANK">HTML</a>]"</td>
   </tr>
   <tr>
     <th>genes</th>
-    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Gene.html" target="_BLANK">HTML</a>]</td>
+    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Gene.html" target="_BLANK">HTML</a>]"</td>
   </tr>
   <tr>
     <th>htsFiles</th>
-    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HtsFile.html" target="_BLANK">HTML</a>]</td>
+    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HtsFile.html" target="_BLANK">HTML</a>]"</td>
   </tr>
   <tr>
     <th>id</th>
@@ -96,7 +96,7 @@ fields.
   </tr>
   <tr>
     <th>phenotypicFeatures</th>
-    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/PhenotypicFeature.html" target="_BLANK">HTML</a>]</td>
+    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/PhenotypicFeature.html" target="_BLANK">HTML</a>]"</td>
   </tr>
   <tr>
     <th>subject</th>
@@ -104,7 +104,7 @@ fields.
   </tr>
   <tr>
     <th>variants</th>
-    <td>array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Variant.html" target="_BLANK">HTML</a>]</td>
+    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Variant.html" target="_BLANK">HTML</a>]"</td>
   </tr>
 
 </table>
@@ -112,7 +112,7 @@ fields.
 
 #### biosamples
 
-* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Biosample.html" target="_BLANK">HTML</a>]
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Biosample.html" target="_BLANK">HTML</a>]"
 
 Biosample(s) derived from the patient or a collection of biosamples in isolation
 
@@ -135,7 +135,7 @@ Biosample(s) derived from the patient or a collection of biosamples in isolation
 
 #### diseases
 
-* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Disease.html" target="_BLANK">HTML</a>]
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Disease.html" target="_BLANK">HTML</a>]"
 
 Field for disease identifiers - could be used for listing either diagnosed or suspected conditions. The
 resources using these fields should define what this represents in their context.
@@ -160,7 +160,7 @@ resources using these fields should define what this represents in their context
 
 #### genes
 
-* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Gene.html" target="_BLANK">HTML</a>]
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Gene.html" target="_BLANK">HTML</a>]"
 
 Field for gene identifiers - could be used for listing either candidate genes or causative genes. The
 resources using these fields should define what this represents in their context. This could be used in order to
@@ -180,7 +180,7 @@ obfuscate the specific causative/candidate variant.
 
 #### htsFiles
 
-* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HtsFile.html" target="_BLANK">HTML</a>]
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HtsFile.html" target="_BLANK">HTML</a>]"
 
 Pointer to the relevant HTS file(s) for the patient
 
@@ -230,7 +230,7 @@ Structured definitions of the resources and ontologies used within the phenopack
 
 #### phenotypicFeatures
 
-* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/PhenotypicFeature.html" target="_BLANK">HTML</a>]
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/PhenotypicFeature.html" target="_BLANK">HTML</a>]"
 
 Phenotypic features relating to the subject of the phenopacket
 
@@ -271,7 +271,7 @@ The individual representing the focus of this packet - e.g. the proband in rare 
 
 #### variants
 
-* type: array of https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Variant.html" target="_BLANK">HTML</a>]
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Variant.html" target="_BLANK">HTML</a>]"
 
 Field for genetic variants - could be used for listing either candidate variants or diagnosed causative
 variants. The resources using these fields should define what this represents in their context.
