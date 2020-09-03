@@ -29,10 +29,10 @@ meta:
       id: "orcid:0000-0002-4839-5158"
   provenance:
     - description: Phenopackets
-      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/biosamples.rst'
+      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/biosample.rst'
   used_by:
     - description: Phenopackets
-      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/biosamples.rst'
+      id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/biosample.rst'
   sb_status: implemented
 properties:
   id:
@@ -70,7 +70,7 @@ properties:
         examples:
           - id: 'UBERON:0000178'
             label: 'peripheral blood'
-  phenotypicFeature:
+  phenotypicFeatures:
     description: Phenotypic characteristics of the BioSample, for example histological findings of a biopsy
     type: array
     items:
