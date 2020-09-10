@@ -13,7 +13,7 @@
     <th>Provenance</th>
     <td>
       <ul>
-<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/biosamples.rst">Phenopackets</a></li>
+<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/biosample.rst">Phenopackets</a></li>
       </ul>
     </td>
   </tr>
@@ -21,7 +21,7 @@
     <th>Used by</th>
     <td>
       <ul>
-<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/biosamples.rst">Phenopackets</a></li>
+<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/biosample.rst">Phenopackets</a></li>
       </ul>
     </td>
   </tr>
@@ -114,7 +114,7 @@ __Description:__ A Biosample refers to a unit of biological material from which 
     <td>boolean</td>
   </tr>
   <tr>
-    <th>phenotypicFeature</th>
+    <th>phenotypicFeatures</th>
     <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/PhenotypicFeature.html" target="_BLANK">HTML</a>]"</td>
   </tr>
   <tr>
@@ -307,13 +307,13 @@ another sample that is thought to contain a pathological finding the default val
 ""
 ```
 
-#### phenotypicFeature
+#### phenotypicFeatures
 
 * type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/PhenotypicFeature.html" target="_BLANK">HTML</a>]"
 
 Phenotypic characteristics of the BioSample, for example histological findings of a biopsy
 
-##### `phenotypicFeature` Value Example  
+##### `phenotypicFeatures` Value Example  
 
 ```
 [
