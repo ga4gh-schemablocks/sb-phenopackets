@@ -1,9 +1,6 @@
 "$schema": http://json-schema.org/draft-07/schema#
 "$id": https://schemablocks.org/schemas/sb-phenopackets/IscnAllele/v1.0.0
 title: IscnAllele
-description: |
-  See https://www.humpath.com/spip.php?article13862
-type: object
 meta:
   contributors:
     - description: "Jules Jacobsen"
@@ -23,6 +20,9 @@ meta:
     - description: Phenopackets
       id: 'https://github.com/phenopackets/phenopacket-schema/blob/master/docs/variant.rst'
   sb_status: implemented
+description: |
+  See https://www.humpath.com/spip.php?article13862
+type: object
 properties:
   id:
     description: add description

@@ -1,60 +1,37 @@
 
 <div id="schema-header-title">
-  <h2>Phenopacket <span id="schema-header-title-project">sb-phenopackets <a href="https://github.com/ga4gh-schemablocks/sb-phenopackets" target="_BLANK">&nearr;</a></span> </h2>
+  <h2><span id="schema-header-title-project">sb-phenopackets</span> Phenopacket <a href="https://github.com/ga4gh-schemablocks/sb-phenopackets" target="_BLANK">[ &nearr; ]</a></h2>
 </div>
 
 <table id="schema-header-table">
-  <tr>
-    <th>{S}[B] Status <a href="https://schemablocks.org/about/sb-status-levels.html">[i]</a></th>
-    <td><div id="schema-header-status">implemented</div></td>
-  </tr>
+<tr>
+<th>{S}[B] Status <a href="https://schemablocks.org/about/sb-status-levels.html">[i]</a></th>
+<td><div id="schema-header-status">implemented</div></td>
+</tr>
+<tr><th>Provenance</th><td><ul>
+<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/phenopacket.rst">Phenopackets</a></li>
+</ul></td></tr>
+<tr><th>Used by</th><td><ul>
+<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/phenopacket.rst">Phenopackets</a></li>
+</ul></td></tr>
 
-  <tr>
-    <th>Provenance</th>
-    <td>
-      <ul>
-<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/phenopacket.rst">Phenopackets</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Used by</th>
-    <td>
-      <ul>
-<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/phenopacket.rst">Phenopackets</a></li>
-      </ul>
-    </td>
-  </tr>
 
 <!--more-->
-
-  <tr>
-    <th>Contributors</th>
-    <td>
-      <ul>
+<tr><th>Contributors</th><td><ul>
 <li>GA4GH Data Working Group</li>
 <li><a href="https://orcid.org/0000-0002-3265-15918">Jules Jacobsen</a></li>
 <li><a href="https://orcid.org/0000-0002-0736-91998">Peter Robinson</a></li>
 <li><a href="https://orcid.org/0000-0002-9903-4248">Michael Baudis</a></li>
 <li><a href="https://orcid.org/0000-0002-9551-6370">Melanie Courtot</a></li>
 <li><a href="https://orcid.org/0000-0002-4839-5158">Isuru Liyanage</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Source (v1.0.0)</th>
-    <td>
-      <ul>
-        <li><a href="current/Phenopacket.json" target="_BLANK">raw source [JSON]</a></li>
-        <li><a href="https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Phenopacket.yaml" target="_BLANK">Github</a></li>
-      </ul>
-    </td>
-  </tr>
+</ul></td></tr>
+<tr><th>Source (v1.0.0)</th><td><ul>
+<li><a href="current/Phenopacket.json" target="_BLANK">raw source [JSON]</a></li>
+<li><a href="https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Phenopacket.yaml" target="_BLANK">Github</a></li>
+</ul></td></tr>
 </table>
 
-<div id="schema-attributes-title">
-  <h3>Attributes</h3>
-</div>
+<div id="schema-attributes-title"><h3>Attributes</h3></div>
 
   
 __Type:__ object  
@@ -66,53 +43,22 @@ fields.
 ### Properties
 
 <table id="schema-properties-table">
-  <tr>
-    <th>Property</th>
-    <th>Type</th>
-  </tr>
-  <tr>
-    <th>biosamples</th>
-    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Biosample.html" target="_BLANK">HTML</a>]"</td>
-  </tr>
-  <tr>
-    <th>diseases</th>
-    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Disease.html" target="_BLANK">HTML</a>]"</td>
-  </tr>
-  <tr>
-    <th>genes</th>
-    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Gene.html" target="_BLANK">HTML</a>]"</td>
-  </tr>
-  <tr>
-    <th>htsFiles</th>
-    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HtsFile.html" target="_BLANK">HTML</a>]"</td>
-  </tr>
-  <tr>
-    <th>id</th>
-    <td>string</td>
-  </tr>
-  <tr>
-    <th>metaData</th>
-    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/MetaData.html" target="_BLANK">HTML</a>]</td>
-  </tr>
-  <tr>
-    <th>phenotypicFeatures</th>
-    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/PhenotypicFeature.html" target="_BLANK">HTML</a>]"</td>
-  </tr>
-  <tr>
-    <th>subject</th>
-    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Individual.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Individual.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Individual.html" target="_BLANK">HTML</a>]</td>
-  </tr>
-  <tr>
-    <th>variants</th>
-    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Variant.html" target="_BLANK">HTML</a>]"</td>
-  </tr>
-
+<tr><th>Property</th><th>Type</th></tr>
+<tr><th>biosamples</th><td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json">LINK</a>]"</td></tr>
+<tr><th>diseases</th><td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json">LINK</a>]"</td></tr>
+<tr><th>genes</th><td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json">LINK</a>]"</td></tr>
+<tr><th>htsFiles</th><td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json">LINK</a>]"</td></tr>
+<tr><th>id</th><td>string</td></tr>
+<tr><th>metaData</th><td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json">LINK</a>]</td></tr>
+<tr><th>phenotypicFeatures</th><td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json">LINK</a>]"</td></tr>
+<tr><th>subject</th><td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Individual.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Individual.json">LINK</a>]</td></tr>
+<tr><th>variants</th><td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json">LINK</a>]"</td></tr>
 </table>
 
 
 #### biosamples
 
-* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Biosample.html" target="_BLANK">HTML</a>]"
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Biosample.json">LINK</a>]"
 
 Biosample(s) derived from the patient or a collection of biosamples in isolation
 
@@ -135,7 +81,7 @@ Biosample(s) derived from the patient or a collection of biosamples in isolation
 
 #### diseases
 
-* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Disease.html" target="_BLANK">HTML</a>]"
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Disease.json">LINK</a>]"
 
 Field for disease identifiers - could be used for listing either diagnosed or suspected conditions. The
 resources using these fields should define what this represents in their context.
@@ -160,7 +106,7 @@ resources using these fields should define what this represents in their context
 
 #### genes
 
-* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Gene.html" target="_BLANK">HTML</a>]"
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Gene.json">LINK</a>]"
 
 Field for gene identifiers - could be used for listing either candidate genes or causative genes. The
 resources using these fields should define what this represents in their context. This could be used in order to
@@ -180,7 +126,7 @@ obfuscate the specific causative/candidate variant.
 
 #### htsFiles
 
-* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HtsFile.html" target="_BLANK">HTML</a>]"
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json">LINK</a>]"
 
 Pointer to the relevant HTS file(s) for the patient
 
@@ -210,7 +156,7 @@ An identifier specific for this phenopacket
 
 #### metaData
 
-* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/MetaData.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json">LINK</a>]
 
 Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
 
@@ -230,7 +176,7 @@ Structured definitions of the resources and ontologies used within the phenopack
 
 #### phenotypicFeatures
 
-* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/PhenotypicFeature.html" target="_BLANK">HTML</a>]"
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/PhenotypicFeature.json">LINK</a>]"
 
 Phenotypic features relating to the subject of the phenopacket
 
@@ -251,7 +197,7 @@ Phenotypic features relating to the subject of the phenopacket
 
 #### subject
 
-* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Individual.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Individual.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Individual.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Individual.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Individual.json">LINK</a>]
 
 The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
 
@@ -271,7 +217,7 @@ The individual representing the focus of this packet - e.g. the proband in rare 
 
 #### variants
 
-* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Variant.html" target="_BLANK">HTML</a>]"
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Variant.json">LINK</a>]"
 
 Field for genetic variants - could be used for listing either candidate variants or diagnosed causative
 variants. The resources using these fields should define what this represents in their context.

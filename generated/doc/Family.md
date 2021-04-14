@@ -1,60 +1,37 @@
 
 <div id="schema-header-title">
-  <h2>Family <span id="schema-header-title-project">sb-phenopackets <a href="https://github.com/ga4gh-schemablocks/sb-phenopackets" target="_BLANK">&nearr;</a></span> </h2>
+  <h2><span id="schema-header-title-project">sb-phenopackets</span> Family <a href="https://github.com/ga4gh-schemablocks/sb-phenopackets" target="_BLANK">[ &nearr; ]</a></h2>
 </div>
 
 <table id="schema-header-table">
-  <tr>
-    <th>{S}[B] Status <a href="https://schemablocks.org/about/sb-status-levels.html">[i]</a></th>
-    <td><div id="schema-header-status">implemented</div></td>
-  </tr>
+<tr>
+<th>{S}[B] Status <a href="https://schemablocks.org/about/sb-status-levels.html">[i]</a></th>
+<td><div id="schema-header-status">implemented</div></td>
+</tr>
+<tr><th>Provenance</th><td><ul>
+<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/family.rst">Phenopackets</a></li>
+</ul></td></tr>
+<tr><th>Used by</th><td><ul>
+<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/family.rst">Phenopackets</a></li>
+</ul></td></tr>
 
-  <tr>
-    <th>Provenance</th>
-    <td>
-      <ul>
-<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/family.rst">Phenopackets</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Used by</th>
-    <td>
-      <ul>
-<li><a href="https://github.com/phenopackets/phenopacket-schema/blob/master/docs/family.rst">Phenopackets</a></li>
-      </ul>
-    </td>
-  </tr>
 
 <!--more-->
-
-  <tr>
-    <th>Contributors</th>
-    <td>
-      <ul>
+<tr><th>Contributors</th><td><ul>
 <li>GA4GH Data Working Group</li>
 <li><a href="https://orcid.org/0000-0002-3265-15918">Jules Jacobsen</a></li>
 <li><a href="https://orcid.org/0000-0002-0736-91998">Peter Robinson</a></li>
 <li><a href="https://orcid.org/0000-0002-9903-4248">Michael Baudis</a></li>
 <li><a href="https://orcid.org/0000-0002-9551-6370">Melanie Courtot</a></li>
 <li><a href="https://orcid.org/0000-0002-4839-5158">Isuru Liyanage</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Source (v1.0.0)</th>
-    <td>
-      <ul>
-        <li><a href="current/Family.json" target="_BLANK">raw source [JSON]</a></li>
-        <li><a href="https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Family.yaml" target="_BLANK">Github</a></li>
-      </ul>
-    </td>
-  </tr>
+</ul></td></tr>
+<tr><th>Source (v1.0.0)</th><td><ul>
+<li><a href="current/Family.json" target="_BLANK">raw source [JSON]</a></li>
+<li><a href="https://github.com/ga4gh-schemablocks/sb-phenopackets/blob/master/schemas/Family.yaml" target="_BLANK">Github</a></li>
+</ul></td></tr>
 </table>
 
-<div id="schema-attributes-title">
-  <h3>Attributes</h3>
-</div>
+<div id="schema-attributes-title"><h3>Attributes</h3></div>
 
   
 __Type:__ object  
@@ -65,41 +42,19 @@ https://github.com/genomicsengland/GelReportModels/blob/master/schemas/IDLs/org.
 ### Properties
 
 <table id="schema-properties-table">
-  <tr>
-    <th>Property</th>
-    <th>Type</th>
-  </tr>
-  <tr>
-    <th>htsFiles</th>
-    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HtsFile.html" target="_BLANK">HTML</a>]"</td>
-  </tr>
-  <tr>
-    <th>id</th>
-    <td>string</td>
-  </tr>
-  <tr>
-    <th>metaData</th>
-    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/MetaData.html" target="_BLANK">HTML</a>]</td>
-  </tr>
-  <tr>
-    <th>pedigree</th>
-    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Pedigree.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Pedigree.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Pedigree.html" target="_BLANK">HTML</a>]</td>
-  </tr>
-  <tr>
-    <th>proband</th>
-    <td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Phenopacket.html" target="_BLANK">HTML</a>]</td>
-  </tr>
-  <tr>
-    <th>relatives</th>
-    <td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Phenopacket.html" target="_BLANK">HTML</a>]"</td>
-  </tr>
-
+<tr><th>Property</th><th>Type</th></tr>
+<tr><th>htsFiles</th><td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json">LINK</a>]"</td></tr>
+<tr><th>id</th><td>string</td></tr>
+<tr><th>metaData</th><td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json">LINK</a>]</td></tr>
+<tr><th>pedigree</th><td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Pedigree.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Pedigree.json">LINK</a>]</td></tr>
+<tr><th>proband</th><td>https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json">LINK</a>]</td></tr>
+<tr><th>relatives</th><td>array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json">LINK</a>]"</td></tr>
 </table>
 
 
 #### htsFiles
 
-* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/HtsFile.html" target="_BLANK">HTML</a>]"
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/HtsFile.json">LINK</a>]"
 
 Pointer to the relevant HTS file(s) for the family. These should be files relating to one or more of the family
 members e.g a multi-sample VCF
@@ -130,7 +85,7 @@ An identifier specific for this family
 
 #### metaData
 
-* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/MetaData.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/MetaData.json">LINK</a>]
 
 Structured definitions of the resources and ontologies used within the phenopacket. REQUIRED
 
@@ -150,7 +105,7 @@ Structured definitions of the resources and ontologies used within the phenopack
 
 #### pedigree
 
-* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Pedigree.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Pedigree.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Pedigree.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Pedigree.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Pedigree.json">LINK</a>]
 
 The pedigree defining the relations between the proband and their relatives. Pedigree.individual_id should
 map to the PhenoPacket.Individual.id
@@ -170,7 +125,7 @@ map to the PhenoPacket.Individual.id
 
 #### proband
 
-* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Phenopacket.html" target="_BLANK">HTML</a>]
+* type: https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json">LINK</a>]
 
 The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient
 
@@ -193,7 +148,7 @@ The individual representing the focus of this packet - e.g. the proband in rare 
 
 #### relatives
 
-* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json" target="_BLANK">SRC</a>] [<a href="https://schemablocks.org/schemas/sb-phenopackets/Phenopacket.html" target="_BLANK">HTML</a>]"
+* type: array of "https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json [<a href="https://schemablocks.org/schemas/sb-phenopackets/v1.0.0/Phenopacket.json">LINK</a>]"
 
 Individuals related in some way to the patient. For instance, the individuals may be genetically related or may
 be members of a cohort. If this field is used, then  it is expected that a pedigree will be included for

@@ -1,0 +1,51 @@
+---
+github_organisation: ga4gh-schemablocks
+site_domain_name: schemablocks.org
+url: 'https://schemablocks.org'
+organization_root_path_comps:
+  - ..
+  - ..
+status_levels:
+  - playground
+  - community
+  - proposed
+  - implemented
+  - core
+schema_repos:
+  - schema_repo: sb-phenopackets            # project specific
+    tags:
+      - phenopackets                        # project specific
+      - schemas
+    categories:
+      - schemas
+    schema_dir_name: schemas
+    out_dir_name: generated
+    target_doc_dirname: sb-phenopackets     # project specific
+    include_matches: [ ]
+    exclude_matches: [ ]
+    meta_header_filename: ""
+out_dirnames:
+  json: json
+  markdown: doc
+  examples: examples
+webdocs:
+  repo: 'ga4gh-schemablocks.github.io'
+  jekyll_path_comps:
+    - pages
+    - _schemas
+  schemadir: 'schemas'
+  web_schemas_rel: "/schemas"
+  web_html_rel: "/schemas"
+generator_prefix: '+generated__'
+schema_disclaimer: >
+  <div id="schema-footer">
+  This schema representation is for information purposes. The authorative 
+  version remains with the developing project (see "provenance").
+  </div>
+jekyll_excerpt_separator: "<!--more-->"
+prefix_expansions:
+  orcid: 'https://orcid.org/'
+  PMID: 'https://www.ncbi.nlm.nih.gov/pubmed/'
+  github: 'https://github.com/'
+links:
+  sb_status_levels: "https://schemablocks.org/about/sb-status-levels.html"
